@@ -83,10 +83,7 @@ body a {
   margin: 0 5px;
 }
 
-#header-container #header-nav #header-nav-items .header-nav-item a:hover {
-  padding-bottom: 22px;
-border-bottom: 2px solid white;  
-}
+
 /* HEADER-ICONS */
 #header-nav-icons {
   display: flex;

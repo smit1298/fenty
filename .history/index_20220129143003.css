@@ -83,8 +83,7 @@ body a {
   margin: 0 5px;
 }
 
-#header-container #header-nav #header-nav-items .header-nav-item a:hover {
-  padding-bottom: 22px;
+#header-container #header-nav #header-nav-items .header-nav-item li a:hover {
 border-bottom: 2px solid white;  
 }
 /* HEADER-ICONS */

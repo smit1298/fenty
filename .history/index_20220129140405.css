@@ -57,8 +57,9 @@ body a {
   color: #fff;
 }
 #header-container .header-logo {
-  width: 25%;
-  letter-spacing: 10px;
+  width: 226vw;
+  height: 12px;
+  letter-spacing: 12px;
 }
 #header-container .header-logo a {
   text-decoration: none;
@@ -69,8 +70,11 @@ body a {
 #header-nav {
   width: 50%;
 }
-
-
+#header-nav-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 
 #header-container #header-nav ul {
   list-style-type: none;
@@ -81,17 +85,6 @@ body a {
   text-transform: uppercase;
   font-family: sans-serif;
   margin: 0 5px;
-}
-
-#header-container #header-nav #header-nav-items .header-nav-item a:hover {
-  padding-bottom: 22px;
-border-bottom: 2px solid white;  
-}
-/* HEADER-ICONS */
-#header-nav-icons {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
 }
 
 #header-container #header-nav-icons ul {

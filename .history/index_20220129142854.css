@@ -75,7 +75,7 @@ body a {
 #header-container #header-nav ul {
   list-style-type: none;
 }
-#header-container #header-nav ul li {
+#header-container #header-nav  {
   display: inline;
   font-size: 12px;
   text-transform: uppercase;
@@ -83,8 +83,7 @@ body a {
   margin: 0 5px;
 }
 
-#header-container #header-nav #header-nav-items .header-nav-item a:hover {
-  padding-bottom: 22px;
+#header-container #header-nav ul li a:hover {
 border-bottom: 2px solid white;  
 }
 /* HEADER-ICONS */

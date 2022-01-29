@@ -3,10 +3,11 @@ body {
   color: black;
   /* padding: 0; */
 }
-body a {
+body a{
   text-decoration: none;
-  color: white;
+color: white;
 }
+
 
 /* FENTY TOP */
 #fenty-top a {
@@ -22,15 +23,16 @@ body a {
   letter-spacing: 10px;
   color: black;
   font-weight: bold;
-  height: 20px;
+ height: 20px;
 }
 
 .fenty-left {
   background-color: #e0beb1;
 }
 
-.fenty-top a:hover {
+.fenty-top a:hover{
   transform: scale(1.5);
+
 }
 
 /* .grow { transition: all .2s ease-in-out; }
@@ -49,7 +51,7 @@ body a {
 }
 #header-container .list-container {
   width: 95%;
-  height: 70px;
+  height: 700px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -58,7 +60,7 @@ body a {
 }
 #header-container .header-logo {
   width: 25%;
-  letter-spacing: 10px;
+  letter-spacing: 12px;
 }
 #header-container .header-logo a {
   text-decoration: none;
@@ -69,8 +71,11 @@ body a {
 #header-nav {
   width: 50%;
 }
-
-
+#header-nav-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 
 #header-container #header-nav ul {
   list-style-type: none;
@@ -83,21 +88,9 @@ body a {
   margin: 0 5px;
 }
 
-#header-container #header-nav #header-nav-items .header-nav-item a:hover {
-  padding-bottom: 22px;
-border-bottom: 2px solid white;  
-}
-/* HEADER-ICONS */
-#header-nav-icons {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
 #header-container #header-nav-icons ul {
   list-style-type: none;
   float: right;
-  /* width: 100%; */
 }
 #header-container #header-nav-icons ul li {
   display: inline;
@@ -106,17 +99,17 @@ border-bottom: 2px solid white;
   margin: 0 5px;
 }
 /* SHIPPING */
-#ship {
+#ship{
   background-color: #ebdad3;
-  height: 55px;
+  height: 50px;
   margin-top: -22px;
 }
-#ship h5 {
+#ship  h5{
   font-size: 12px;
-  padding: 19px 50px;
-  /* padding-bottom: 20px; */
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 200;
-  font-family: sans-serif;
+ padding-top: 15px;
+ /* padding-bottom: 20px; */
+ text-align: center;
+text-transform: uppercase;
+font-weight: 200;
+font-family: sans-serif;
 }
