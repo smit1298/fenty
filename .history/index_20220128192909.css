@@ -13,7 +13,7 @@ body {
   text-transform: uppercase;
   font-size: 10px;
   padding-top: 20px;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
   font-family: sans-serif;
   letter-spacing: 10px;
   color: black;
@@ -90,5 +90,4 @@ body {
   background-color: #ebdad3;
   margin: 0;
   padding: 0;
-  align-items: center;
 }

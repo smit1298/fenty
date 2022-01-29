@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  color: black;
+  colo
   /* padding: 0; */
 }
 /* FENTY TOP */
@@ -84,11 +84,4 @@ body {
   font-size: 25px;
   font-family: sans-serif;
   margin: 0 5px;
-}
-/* SHIPPING */
-#ship-container{
-  background-color: #ebdad3;
-  margin: 0;
-  padding: 0;
-  align-items: center;
 }
