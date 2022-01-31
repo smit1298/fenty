@@ -134,11 +134,3 @@ body a {
   font-weight: 200;
   font-family: sans-serif;
 }
-
-/* PAGE */
-#pages-grid {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  background-color: tomato;
-  /* width: 33%; */
-}

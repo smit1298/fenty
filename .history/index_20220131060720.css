@@ -123,7 +123,7 @@ body a {
 #ship {
   background-color: #ebdad3;
   height: 55px;
-  margin-top: -22px;
+  margin-top: -20px;
 }
 #ship > h5 {
   font-size: 13px;
@@ -133,12 +133,4 @@ body a {
   text-transform: uppercase;
   font-weight: 200;
   font-family: sans-serif;
-}
-
-/* PAGE */
-#pages-grid {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  background-color: tomato;
-  /* width: 33%; */
 }

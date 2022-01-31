@@ -135,10 +135,11 @@ body a {
   font-family: sans-serif;
 }
 
+
+
 /* PAGE */
-#pages-grid {
+#pages-grid{
   display: grid;
-  grid-template-columns: 33% 33% 33%;
-  background-color: tomato;
-  /* width: 33%; */
+  grid-template-columns: auto auto auto;
+  
 }

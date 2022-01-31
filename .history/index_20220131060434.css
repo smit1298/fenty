@@ -53,7 +53,7 @@ body a {
   background-color: black;
   color: rgb(211, 56, 56);
   width: 100vw;
-  height: 125px;
+  height: 127px;
 }
 #header-container .list-container {
   width: 95%;
@@ -68,7 +68,7 @@ body a {
   width: 25%;
   letter-spacing: 10px;
 }
-.header-logo a {
+ .header-logo a {
   text-decoration: none;
   color: white;
   font-family: sans-serif;
@@ -77,27 +77,30 @@ body a {
 #header-nav {
   display: flex;
   width: 55%;
+  /* justify-content: center; */
+  /* background-color: tomato; */
+padding-left: 0;
 }
 
-#header-nav ul {
+ #header-nav ul {
   list-style-type: none;
 }
-#header-nav ul li {
+ #header-nav ul li {
   display: inline;
   font-size: 12px;
   text-transform: uppercase;
   font-family: sans-serif;
   margin: 0 5px;
 }
-#header-nav-items {
+#header-nav-items{
   display: flex;
   width: 83%;
-  justify-content: space-between;
-  padding-left: 6px;
-  padding-right: 6px;
+  justify-content:space-between;
+padding-left: 6px;
+padding-right: 6px;
 }
 
-.header-nav-item a:hover {
+ .header-nav-item a:hover {
   padding-bottom: 22px;
   border-bottom: 2px solid white;
 }
@@ -111,9 +114,11 @@ body a {
 #header-nav-icons > ul {
   list-style-type: none;
   float: right;
+  /* width: 100%; */
 }
 #header-nav-icons > ul > li {
   display: inline;
+  /* display: none; */
   font-size: 25px;
   font-family: sans-serif;
   margin: 0 5px;
@@ -123,22 +128,14 @@ body a {
 #ship {
   background-color: #ebdad3;
   height: 55px;
-  margin-top: -22px;
+  margin-top: -20px;
 }
 #ship > h5 {
-  font-size: 13px;
+  font-size: 12px;
   padding: 19px 10px;
   padding-bottom: 20px;
   text-align: center;
   text-transform: uppercase;
   font-weight: 200;
   font-family: sans-serif;
-}
-
-/* PAGE */
-#pages-grid {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  background-color: tomato;
-  /* width: 33%; */
 }

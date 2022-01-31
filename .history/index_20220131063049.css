@@ -139,6 +139,6 @@ body a {
 #pages-grid {
   display: grid;
   grid-template-columns: 33% 33% 33%;
-  background-color: tomato;
-  /* width: 33%; */
+  border-color: tomato;
+  width: auto;
 }

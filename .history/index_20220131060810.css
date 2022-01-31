@@ -99,7 +99,7 @@ body a {
 
 .header-nav-item a:hover {
   padding-bottom: 22px;
-  border-bottom: 2px solid white;
+  border-bottom: 3px solid white;
 }
 /* HEADER-ICONS */
 #header-nav-icons {
@@ -133,12 +133,4 @@ body a {
   text-transform: uppercase;
   font-weight: 200;
   font-family: sans-serif;
-}
-
-/* PAGE */
-#pages-grid {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  background-color: tomato;
-  /* width: 33%; */
 }

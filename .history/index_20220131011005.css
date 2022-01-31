@@ -37,7 +37,7 @@ body a {
   font-size: larger;
   padding-top: -40px;
   padding-bottom: -40px;
-  width: 250px;
+  width: 20px;
 }
 
 /* .grow { transition: all .2s ease-in-out; }
@@ -53,7 +53,6 @@ body a {
   background-color: black;
   color: rgb(211, 56, 56);
   width: 100vw;
-  height: 125px;
 }
 #header-container .list-container {
   width: 95%;
@@ -68,38 +67,32 @@ body a {
   width: 25%;
   letter-spacing: 10px;
 }
-.header-logo a {
+#header-container .header-logo a {
   text-decoration: none;
   color: white;
   font-family: sans-serif;
 }
 
 #header-nav {
-  display: flex;
-  width: 55%;
+  width: 50%;
 }
 
-#header-nav ul {
+
+
+#header-container #header-nav ul {
   list-style-type: none;
 }
-#header-nav ul li {
+#header-container #header-nav ul li {
   display: inline;
   font-size: 12px;
   text-transform: uppercase;
   font-family: sans-serif;
   margin: 0 5px;
 }
-#header-nav-items {
-  display: flex;
-  width: 83%;
-  justify-content: space-between;
-  padding-left: 6px;
-  padding-right: 6px;
-}
 
-.header-nav-item a:hover {
+#header-container #header-nav #header-nav-items .header-nav-item a:hover {
   padding-bottom: 22px;
-  border-bottom: 2px solid white;
+border-bottom: 2px solid white;  
 }
 /* HEADER-ICONS */
 #header-nav-icons {
@@ -108,37 +101,29 @@ body a {
   align-items: center;
 }
 
-#header-nav-icons > ul {
+#header-container #header-nav-icons ul {
   list-style-type: none;
   float: right;
+  /* width: 100%; */
 }
-#header-nav-icons > ul > li {
+#header-container #header-nav-icons ul li {
   display: inline;
   font-size: 25px;
   font-family: sans-serif;
   margin: 0 5px;
 }
-
 /* SHIPPING */
 #ship {
   background-color: #ebdad3;
   height: 55px;
   margin-top: -22px;
 }
-#ship > h5 {
-  font-size: 13px;
-  padding: 19px 10px;
-  padding-bottom: 20px;
+#ship h5 {
+  font-size: 12px;
+  padding: 19px 50px;
+  /* padding-bottom: 20px; */
   text-align: center;
   text-transform: uppercase;
   font-weight: 200;
   font-family: sans-serif;
-}
-
-/* PAGE */
-#pages-grid {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  background-color: tomato;
-  /* width: 33%; */
 }

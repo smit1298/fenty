@@ -137,8 +137,8 @@ body a {
 
 /* PAGE */
 #pages-grid {
-  display: grid;
+  display: gri;
   grid-template-columns: 33% 33% 33%;
   background-color: tomato;
-  /* width: 33%; */
+  width: 33%;
 }
