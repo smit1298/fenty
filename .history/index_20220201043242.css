@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  color: black;
+  overflow: hidden;
+  /* padding: 0; */
+}
+body a {
+  text-decoration: none;
+  color: white;
+}
+
+/* FENTY TOP */
+#fenty-top a {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  float: left;
+  text-transform: uppercase;
+  font-size: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: sans-serif;
+  letter-spacing: 8px;
+  color: black;
+  font-weight: 900;
+  height: 20px;
+}
+
+.fenty-left {
+  background-color: #e0beb1;
+}
+
+.fenty-transition {
+  display: inline-block;
+}
+.fenty-transition :hover {
+  /* transform: scale(1.2); */
+  font-size: larger;
+  padding-top: -40px;
+  padding-bottom: -40px;
+  width: 250px;
+}
+
+/* .grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); } */
+
+.fenty-right {
+  background-color: #d8cbda;
+  text-decoration: none;
+}
+
+/* NAVBAR */
+#header-container {
+  background-color: black;
+  color: rgb(211, 56, 56);
+  width: 100vw;
+  height: 125px;
+}
+#header-container .list-container {
+  width: 95%;
+  height: 70px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+#header-container .header-logo {
+  width: 25%;
+  letter-spacing: 10px;
+}
+.header-logo a {
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+}
+
+#header-nav {
+  display: flex;
+  width: 55%;
+}
+
+#header-nav ul {
+  list-style-type: none;
+}
+#header-nav ul li {
+  display: inline;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  margin: 0 5px;
+}
+#header-nav-items {
+  display: flex;
+  width: 83%;
+  justify-content: space-between;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.header-nav-item a:hover {
+  padding-bottom: 22px;
+  border-bottom: 2px solid white;
+}
+/* HEADER-ICONS */
+#header-nav-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#header-nav-icons > ul {
+  list-style-type: none;
+  float: right;
+}
+#header-nav-icons > ul > li {
+  display: inline;
+  font-size: 25px;
+  font-family: sans-serif;
+  margin: 0 5px;
+}
+
+/* SHIPPING */
+#ship {
+  background-color: #ebdad3;
+  height: 55px;
+  margin-top: -22px;
+}
+#ship > h5 {
+  font-size: 13px;
+  padding: 19px 10px;
+  padding-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-family: sans-serif;
+}
+
+/* PAGE */
+#pages-grid {
+  display: grid;
+  grid-template-columns: auto 33.3% auto;
+  /* background-color: rgb(102, 18, 3); */
+  height: 10px;
+}
+.background {
+  background-image: url("./images/DESKTOP-SLIDER-COPY-BACKGROUND_1_1200x.jpg");
+}
+
+.page-grid img {
+  object-position: center;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.middle-content {
+  text-align: center;
+}
+.shop{
+  background-color: black;
+  padding: 15px;
+  width: 100px;
+  /* margin-top: 10px; */
+}
