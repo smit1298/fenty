@@ -249,10 +249,6 @@ header {
   color: white;
   font-size: 35px;
 }
-.heart-wanted:hover {
-   color: #dbab98;
-  font-size: 55px;
-}
 
 .grid-wanted img {
   object-position: center;

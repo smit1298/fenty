@@ -230,28 +230,15 @@ header {
   font-size: 0.9rem;
 }
 
-#grids-wanted-container {
+#grids-wanted {
   display: grid;
   grid-template-columns: 33.3% 33.3% 33.3%;
 }
 
-.grid-wanted {
-  position: relative;
+.grid-wanted{
   margin-left: 30px;
   margin-right: 30px;
   margin-top: 30px;
-}
-
-.heart-wanted {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  color: white;
-  font-size: 35px;
-}
-.heart-wanted:hover {
-   color: #dbab98;
-  font-size: 55px;
 }
 
 .grid-wanted img {
@@ -260,9 +247,14 @@ header {
   height: 100%;
   width: 100%;
 }
-.first {
+.first img{
   margin-left: 55px;
+  background-image: url("./images/productleft.jpg");
+  object-position: center;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
-.third {
+.third{
   margin-right: 55px;
 }

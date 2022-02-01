@@ -243,15 +243,7 @@ header {
 }
 
 .heart-wanted {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  color: white;
-  font-size: 35px;
-}
-.heart-wanted:hover {
-   color: #dbab98;
-  font-size: 55px;
+ppositio
 }
 
 .grid-wanted img {
