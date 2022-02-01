@@ -253,31 +253,16 @@ header {
   position: absolute;
   top: 250px;
   left: -20px;
-  font-size: 40px;
-  color: black;
-  background-color: white;
-  border-radius: 50%;
-  border: 1px solid black;
+  font-size: 45px;
+  color: #dad7d6;
+  background-color: #dad7d6 ;
 }
 .wanted-direction-right {
   position: absolute;
   top: 250px;
   right: -20px;
-  font-size: 40px;
-  color: black;
-  background-color: white;
-  border-radius: 50%;
-  border: 1px solid black;
+  font-size: 45px;
 }
-.wanted-direction-left:hover {
-  color: white;
-  background-color: black;
-}
-.wanted-direction-right:hover {
-  color: white;
-  background-color: black;
-}
-
 .heart-wanted:hover {
   color: #dbab98;
   font-size: 55px;

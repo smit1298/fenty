@@ -267,17 +267,8 @@ header {
   color: black;
   background-color: white;
   border-radius: 50%;
-  border: 1px solid black;
+  bor
 }
-.wanted-direction-left:hover {
-  color: white;
-  background-color: black;
-}
-.wanted-direction-right:hover {
-  color: white;
-  background-color: black;
-}
-
 .heart-wanted:hover {
   color: #dbab98;
   font-size: 55px;

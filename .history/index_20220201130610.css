@@ -269,7 +269,7 @@ header {
   border-radius: 50%;
   border: 1px solid black;
 }
-.wanted-direction-left:hover {
+.wanted-direction-right:hover {
   color: white;
   background-color: black;
 }
