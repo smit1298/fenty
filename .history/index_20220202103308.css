@@ -408,45 +408,12 @@ header {
   padding: 10px;
 }
 
-/* MATCH */
-#again {
+
+MATCH
+.again{
   position: relative;
   background-image: url("./images//brown.jpg");
-  margin-top: 0px;
+  margin-top: 220px;
   width: 100%;
   height: 500px;
-}
-.again-content {
-  position: absolute;
-  font-family: "IBM Plex Sans Thai Looped", sans-serif;
-  top: 100px;
-  left: 0;
-  background-color: #f3e1db;
-  width: 500px;
-  height: 250px;
-  text-align: center;
-  margin-left: 100px;
-  padding: 30px;
-  text-transform: uppercase;
-
-}
-
-.fenty1 {
-  font-weight: 300;
-  letter-spacing: 0.1em;
-  margin-top: 10px;
-  margin-bottom: 0;
-}
-
-.semi1 {
-  font-weight: 100;
-  letter-spacing: 0.1em;
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
-
-.peek1 {
-  background-color: black;
-  padding: 20px;
-  margin: 0 135px;
 }

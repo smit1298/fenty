@@ -430,20 +430,7 @@ header {
   text-transform: uppercase;
 
 }
-
-.fenty1 {
-  font-weight: 300;
-  letter-spacing: 0.1em;
-  margin-top: 10px;
-  margin-bottom: 0;
-}
-
-.semi1 {
-  font-weight: 100;
-  letter-spacing: 0.1em;
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
+/
 
 .peek1 {
   background-color: black;

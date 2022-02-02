@@ -437,13 +437,13 @@ header {
   margin-top: 10px;
   margin-bottom: 0;
 }
-
+/* 
 .semi1 {
   font-weight: 100;
   letter-spacing: 0.1em;
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
+  margin-top: 10px;
+  margin-bottom: 20px;
+} */
 
 .peek1 {
   background-color: black;
