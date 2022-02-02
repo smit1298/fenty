@@ -48,7 +48,7 @@ body a {
 /* NAVBAR */
 header {
   position: fixed;
-  z-index: 2;
+  z-index: 78;
 }
 #header-container {
   background-color: black;
