@@ -34,12 +34,15 @@ body a {
   display: inline-block;
 }
 .fenty-transition :hover {
+  /* transform: scale(1.2); */
   font-size: larger;
   padding-top: -40px;
   padding-bottom: -40px;
   width: 250px;
 }
 
+/* .grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); } */
 
 .fenty-right {
   background-color: #d8cbda;
@@ -140,7 +143,8 @@ header {
 #pages-grid {
   display: grid;
   grid-template-columns: auto 33.3% auto;
- 
+  /* background-color: rgb(102, 18, 3); */
+  /* height: 10px; */
 }
 .background {
   background-image: url("./images/DESKTOP-SLIDER-COPY-BACKGROUND_1_1200x.jpg");
@@ -158,6 +162,7 @@ header {
 }
 .middle-content h4 {
   margin-top: 90px;
+  /* font-weight: 100; */
   font-family: "IBM Plex Sans Thai Looped", sans-serif;
   letter-spacing: 0.3em;
   margin-bottom: 12px;
@@ -191,13 +196,17 @@ header {
   text-transform: uppercase;
 }
 .shop {
-   font-size: 12px;
-  letter-spacing: 0.2em;
   background-color: black;
-  margin-left: 150px;
+  width: 200px;
+  margin-left: 100px;
   margin-right: 150px;
-  padding: 10px;
+  padding: 15px;
   font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  margin-top: 25px;
+  text-align: center;
 }
 
 /* MOST WANTED PAGE */
@@ -333,10 +342,7 @@ header {
   background-color: black;
   padding: 20px;
   margin: 0 135px;
-  text-transform: uppercase;
 }
-
-/* LUNAR */
 
 #grids-lunar {
   display: grid;
@@ -348,9 +354,10 @@ header {
   text-align: center;
   text-transform: uppercase;
 }
-.lunar > p {
+.lunar >p {
   text-align: center;
 }
+
 
 .lunar-img img {
   object-position: center;
@@ -359,10 +366,4 @@ header {
   margin-top: 40px;
   margin-bottom: 40px;
   margin-left: 60px;
-}
-.shop2 {
-  background-color: black;
-  margin-left: 150px;
-  margin-right: 150px;
-  padding: 10px;
 }

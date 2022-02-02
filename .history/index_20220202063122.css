@@ -34,6 +34,7 @@ body a {
   display: inline-block;
 }
 .fenty-transition :hover {
+  /* transform: scale(1.2); */
   font-size: larger;
   padding-top: -40px;
   padding-bottom: -40px;
@@ -140,7 +141,8 @@ header {
 #pages-grid {
   display: grid;
   grid-template-columns: auto 33.3% auto;
- 
+  /* background-color: rgb(102, 18, 3); */
+  /* height: 10px; */
 }
 .background {
   background-image: url("./images/DESKTOP-SLIDER-COPY-BACKGROUND_1_1200x.jpg");
