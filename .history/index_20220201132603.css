@@ -56,7 +56,7 @@ header {
 
 #header-container {
   background-color: black;
-  /* color: rgb(211, 56, 56); */
+  color: rgb(211, 56, 56);
   width: 100vw;
   height: 125px;
 }
@@ -296,50 +296,4 @@ header {
   margin-right: 55px;
 }
 
-/* PLENTY */
-#plenty {
-  position: relative;
-  background-image: url("./images/plenty.jpg");
-  margin-top: 0;
-  width: 100%;
-  height: 500px;
-}
-
-.plenty-content {
-  position: absolute;
-  font-family: "IBM Plex Sans Thai Looped", sans-serif;
-  top: 100px;
-  left: 0;
-  background-color: #f3e1db;
-  width: 500px;
-  height: 250px;
-  text-align: center;
-  margin-left: 100px;
-  padding: 30px;
-}
-.coming {
-  font-weight: 100;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  margin-top: 10px;
-  margin-bottom: 0;
-}
-.fenty {
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-top: 10px;
-  margin-bottom: 0;
-}
-.semi {
-  font-weight: 100;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-.peek {
-  background-color: black;
-  padding: 20px;
-  margin: 0 135px;
-}
+PLENTY

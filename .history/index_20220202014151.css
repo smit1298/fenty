@@ -297,49 +297,16 @@ header {
 }
 
 /* PLENTY */
-#plenty {
-  position: relative;
-  background-image: url("./images/plenty.jpg");
-  margin-top: 0;
-  width: 100%;
-  height: 500px;
+#plenty{
+background-image: url("./images/plenty.jpg");
+margin-top: 0;
 }
-
-.plenty-content {
-  position: absolute;
-  font-family: "IBM Plex Sans Thai Looped", sans-serif;
-  top: 100px;
-  left: 0;
+.plenty-holder
+.plenty-content{
   background-color: #f3e1db;
-  width: 500px;
-  height: 250px;
+  width: fit-content;
   text-align: center;
   margin-left: 100px;
+  /* margin-top: 100px; */
   padding: 30px;
-}
-.coming {
-  font-weight: 100;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  margin-top: 10px;
-  margin-bottom: 0;
-}
-.fenty {
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-top: 10px;
-  margin-bottom: 0;
-}
-.semi {
-  font-weight: 100;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-.peek {
-  background-color: black;
-  padding: 20px;
-  margin: 0 135px;
 }

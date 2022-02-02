@@ -340,6 +340,12 @@ header {
 }
 .peek {
   background-color: black;
-  padding: 20px;
-  margin: 0 135px;
+  padding: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-left: 150px;
+  margin-right: 60px;
+  width: 200px;
 }
