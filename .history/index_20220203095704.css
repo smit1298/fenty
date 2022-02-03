@@ -582,32 +582,11 @@ header {
 .grid-used{
   display: grid;
   grid-template-columns: auto auto auto;
-  padding-left: 90px;
-  padding-right: 60px;
+  padding-left: 100px;
+  
   padding-top: 50px;
   padding-bottom: 50px;
 }
 .used-img img{
-  height: 350px;
-}
-
-/* FOOTER */
-.footer{
-  background-color: black;
-  width: 100%;
-  color: white;
-  text-align: center;
-  font-family: "IBM Plex Sans Thai Looped", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 00.2em;
-  padding: 20px 0;
-
-}
-
-.small{
-  text-transform: lowercase;
-  padding-top: 0;
-}
-.small::first-letter{
-  text-transform: uppercase;
+  height: 450px;
 }

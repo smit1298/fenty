@@ -606,8 +606,6 @@ header {
 
 .small{
   text-transform: lowercase;
-  padding-top: 0;
+  
 }
-.small::first-letter{
-  text-transform: uppercase;
-}
+sma

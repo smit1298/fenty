@@ -599,15 +599,6 @@ header {
   text-align: center;
   font-family: "IBM Plex Sans Thai Looped", sans-serif;
   text-transform: uppercase;
-  letter-spacing: 00.2em;
-  padding: 20px 0;
+  letter-spacing: ;
 
-}
-
-.small{
-  text-transform: lowercase;
-  padding-top: 0;
-}
-.small::first-letter{
-  text-transform: uppercase;
 }
