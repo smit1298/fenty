@@ -603,16 +603,13 @@ header {
 }
 .down h3{
   text-transform: uppercase;
-  margin-bottom: 2px;
+  margin-bottom: 0;
 }
 
 .small{
+  /* text-transform: lowercase; */
   padding-top: 0;
 }
 .small::first-letter{
   text-transform: uppercase;
-}
-.footer-grid{
-  display: grid;
-  grid-template-columns: 40% 20% 20% 20%;
 }

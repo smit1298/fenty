@@ -612,7 +612,7 @@ header {
 .small::first-letter{
   text-transform: uppercase;
 }
-.footer-grid{
+.gooter-grid{
   display: grid;
-  grid-template-columns: 40% 20% 20% 20%;
+  grid-template-row: 40% 20% 20% 20%;
 }
