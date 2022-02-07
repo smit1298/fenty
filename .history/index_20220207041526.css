@@ -1,0 +1,669 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+  height: auto;
+  /* padding: 0; */
+}
+body a {
+  text-decoration: none;
+  /* color: white; */
+}
+
+/* FENTY TOP */
+#fenty-top a {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  float: left;
+  text-transform: uppercase;
+  font-size: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: sans-serif;
+  letter-spacing: 8px;
+  color: black;
+  font-weight: 900;
+  height: 20px;
+}
+
+.fenty-left {
+  background-color: #e0beb1;
+}
+
+.fenty-transition {
+  display: inline-block;
+}
+.fenty-transition :hover {
+  font-size: larger;
+  padding-top: -40px;
+  padding-bottom: -40px;
+  width: 250px;
+}
+
+.fenty-right {
+  background-color: #d8cbda;
+  text-decoration: none;
+}
+
+/* NAVBAR */
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+#header-container {
+  background-color: black;
+  width: 100%;
+  height: 125px;
+}
+#header-container .list-container {
+  width: 95%;
+  height: 70px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+#header-container .header-logo {
+  width: 25%;
+  letter-spacing: 10px;
+}
+.header-logo a {
+  text-decoration: none;
+  color: white !important;
+  font-family: sans-serif;
+}
+
+#header-nav {
+  display: flex;
+  width: 55%;
+}
+
+#header-nav ul {
+  list-style-type: none;
+}
+#header-nav ul li {
+  display: inline;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  margin: 0 5px;
+}
+#header-nav-items {
+  display: flex;
+  width: 83%;
+  justify-content: space-between;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.header-nav-item a {
+  color: white;
+}
+
+.header-nav-item a:hover {
+  padding-bottom: 22px;
+  border-bottom: 2px solid white;
+}
+/* HEADER-ICONS */
+#header-nav-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#header-nav-icons > ul {
+  list-style-type: none;
+  float: right;
+}
+#header-nav-icons > ul > li {
+  display: inline;
+  font-size: 25px;
+  font-family: sans-serif;
+  margin: 0 5px;
+}
+
+/* SHIPPING */
+#ship {
+  background-color: #ebdad3;
+  height: 55px;
+  margin-top: -22px;
+}
+#ship > h5 {
+  font-size: 13px;
+  padding: 19px 10px;
+  padding-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-family: sans-serif;
+}
+
+/* PAGE */
+#pages-grid {
+  display: grid;
+  grid-template-columns: auto 33.3% auto;
+}
+.background {
+  background-image: url("./images/DESKTOP-SLIDER-COPY-BACKGROUND_1_1200x.jpg");
+}
+
+.page-grid img {
+  object-position: center;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.middle-content {
+  text-align: center;
+  text-transform: uppercase;
+}
+.middle-content h4 {
+  margin-top: 90px;
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  letter-spacing: 0.3em;
+  margin-bottom: 12px;
+  font-size: small;
+  font-weight: 400;
+}
+
+.gloss {
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+}
+
+.universal {
+  font-size: 12px;
+  margin-top: 25px;
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  font-weight: 580;
+  letter-spacing: 0.2em;
+}
+.plumper {
+  font-size: 12px;
+  margin-top: 25px;
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  font-weight: 100;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+.shop {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  background-color: black;
+  margin-left: 150px;
+  margin-right: 150px;
+  padding: 10px;
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+}
+.shop a {
+  color: white;
+}
+
+/* MOST WANTED PAGE */
+.top-most {
+  text-align: center;
+}
+.top-most > h3 {
+  letter-spacing: 0.2em;
+  margin-top: 40px;
+  margin-bottom: 0;
+  font-size: 1.1rem;
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+}
+
+.top-most > h4 {
+  letter-spacing: 0.1em;
+  margin-top: 5px;
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+#grids-wanted-container {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+.grid-wanted {
+  position: relative;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.heart-wanted {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  font-size: 35px;
+}
+.wanted-direction-left {
+  position: absolute;
+  top: 250px;
+  left: -20px;
+  font-size: 40px;
+  color: black;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.wanted-text {
+  font-weight: 100;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  letter-spacing: 0.2em;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.fill {
+  /* font-weight: 00; */
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  letter-spacing: 0.2em;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 13px;
+}
+.first-letter,
+.money,
+.notify {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.notify a {
+  color: white;
+}
+.first-letter {
+  font-weight: 100;
+}
+.first > p,
+.second > p,
+.third > p {
+  margin-left: 125px;
+  margin-right: 125px;
+  background-color: black;
+  text-transform: uppercase;
+  padding: 10px;
+  text-decoration: black;
+  font-size: 15px;
+}
+
+.wanted-direction-right {
+  position: absolute;
+  top: 250px;
+  right: -20px;
+  font-size: 40px;
+  color: black;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.wanted-direction-left:hover {
+  color: white;
+  background-color: black;
+}
+.wanted-direction-right:hover {
+  color: white;
+  background-color: black;
+}
+
+.heart-wanted:hover {
+  color: #dbab98;
+  font-size: 55px;
+}
+
+.grid-wanted img {
+  object-position: center;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.first {
+  margin-left: 55px;
+}
+
+.third {
+  margin-right: 55px;
+}
+
+/* PLENTY */
+#plenty {
+  position: relative;
+  background-image: url("./images/plenty.jpg");
+  margin-top: 220px;
+  width: 100%;
+  height: 500px;
+}
+
+.plenty-content {
+  position: absolute;
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  top: 100px;
+  left: 0;
+  background-color: #f3e1db;
+  width: 500px;
+  height: 250px;
+  text-align: center;
+  margin-left: 100px;
+  padding: 30px;
+}
+.coming {
+  font-weight: 100;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.fenty {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.semi {
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.peek {
+  background-color: black;
+  padding: 20px;
+  margin: 0 135px;
+  text-transform: uppercase;
+}
+.peek a {
+  color: white;
+}
+/* LUNAR */
+
+#grids-lunar {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  background-color: #f3e1db;
+}
+.lunar {
+  margin-top: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.lunar > p {
+  text-align: center;
+}
+
+.lunar-img img {
+  object-position: center;
+  object-fit: cover;
+  width: 90%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 60px;
+}
+.shop2 {
+  background-color: black;
+  margin-left: 150px;
+  margin-right: 150px;
+  padding: 10px;
+}
+.shop2 a {
+  color: white;
+}
+
+/* MATCH */
+#again {
+  position: relative;
+  background-image: url("./images//brown.jpg");
+  margin-top: 0px;
+  width: 100%;
+  height: 500px;
+}
+.again-content {
+  position: absolute;
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  top: 100px;
+  left: 0;
+  background-color: #f3e1db;
+  width: 500px;
+  height: 250px;
+  text-align: center;
+  margin-left: 100px;
+  padding: 30px;
+  text-transform: uppercase;
+}
+
+.fenty1 {
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.semi1 {
+  font-weight: 100;
+  letter-spacing: 0.1em;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.peek1 {
+  background-color: black;
+  padding: 20px;
+  margin: 0 135px;
+}
+.peek1 a {
+  color: white;
+}
+/* YOU-TUBE ACTION */
+#all {
+  width: 100%;
+  color: black;
+}
+.in-action {
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  font-weight: 100;
+  width: 100%;
+}
+.in-action > h3 {
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+.in-action > h5 {
+  font-weight: 100;
+}
+.grid-action {
+  display: grid;
+  grid-template-columns: 45% 45%;
+}
+.image-clip {
+  width: 100%;
+  position: relative;
+}
+.image-clip img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  margin-top: 15px;
+}
+.image-clip > p {
+  text-align: center;
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 12px;
+  padding-left: 50px;
+  margin-left: 50px;
+}
+.watch2 a {
+  padding-left: 20px;
+  padding-right: -10px;
+  margin-left: 20px;
+}
+.image-clip > p a {
+  color: black;
+}
+.clip-start {
+  margin-left: 50px;
+}
+.clip-end {
+  margin-left: 80px;
+  margin-right: -40px;
+}
+.you {
+  position: absolute;
+  font-size: 60px;
+  top: 150px;
+  right: 200px;
+  background-color: white;
+  color: black;
+}
+.view p {
+  text-align: center;
+}
+.view > p a {
+  background-color: black;
+  padding: 10px 70px;
+  color: white;
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+/* SEE */
+.see {
+  text-align: center;
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  background-image: url("./images/liquid_bg.jpg");
+}
+.see-content {
+  padding: 10px 0;
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  text-transform: uppercase;
+}
+.see-content > h4 {
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+}
+.see-content > h3 {
+  font-weight: 100;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  /* margin-bottom: 0px; */
+}
+.see-content > p {
+  margin: 30px 0;
+}
+.see-content > p a {
+  background-color: black;
+  padding: 10px 20px;
+  color: white;
+}
+
+/* SAMPLE-USED */
+.grid-used {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding-left: 90px;
+  padding-right: 60px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.used-img img {
+  height: 350px;
+}
+
+/* FOOTER */
+.footer {
+  background-color: black;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  letter-spacing: 00.2em;
+  padding: 20px 0;
+}
+.down h3 {
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+.input {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.mail {
+  position: relative;
+  width: 100%;
+  padding-left: 200px;
+  padding-right: 0;
+  margin-top: 10px;
+}
+.mail-inpu {
+  width: 50%;
+  background-color: black;
+  padding: 10px 65px;
+  margin-right: 100px;
+  margin-left: -200px;
+}
+.phone {
+  position: relative;
+  margin-top: 10px;
+  width: 100%;
+  padding-right: -300px;
+  margin-left: -200px;
+}
+.mail-input {
+  position: absolute;
+  top: -10px;
+  right: 250px;
+}
+
+.mail-input {
+  color white
+}
+/*.mail > input{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding-top: 20px;
+  width: 50%;
+}
+.mail-input{
+  width: 100%;
+  
+}
+.phone{
+  width: 100%;
+}
+.small{
+  padding-top: 0;
+}
+.small::first-letter{
+  text-transform: uppercase;
+}
+.footer-grid{
+  display: grid;
+  grid-template-columns: 50% 16% 16% 16%;
+}
+.century{
+  display: grid;
+  grid-template-columns: 50% 50%;
+} */
