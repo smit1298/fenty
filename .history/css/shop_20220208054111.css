@@ -1,0 +1,553 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    height: auto;
+    /* padding: 0; */
+  }
+  body a {
+    text-decoration: none;
+    /* color: white; */
+  }
+  
+  /* FENTY TOP */
+  #fenty-top a {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    float: left;
+    text-transform: uppercase;
+    font-size: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: sans-serif;
+    letter-spacing: 8px;
+    color: black;
+    font-weight: 900;
+    height: 20px;
+  }
+  
+  .fenty-left {
+    background-color: #e0beb1;
+  }
+  
+  .fenty-transition {
+    display: inline-block;
+  }
+  .fenty-transition :hover {
+    font-size: larger;
+    padding-top: -40px;
+    padding-bottom: -40px;
+    width: 250px;
+  }
+  
+  .fenty-right {
+    background-color: #d8cbda;
+    text-decoration: none;
+  }
+  
+  /* NAVBAR */
+  header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+  }
+  #header-container {
+    background-color: black;
+    width: 100%;
+    height: 125px;
+  }
+  #header-container .list-container {
+    width: 95%;
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+  }
+  #header-container .header-logo {
+    width: 25%;
+    letter-spacing: 10px;
+  }
+  .header-logo a {
+    text-decoration: none;
+    color: white !important;
+    font-family: sans-serif;
+  }
+  
+  #header-nav {
+    display: flex;
+    width: 55%;
+  }
+  
+  #header-nav ul {
+    list-style-type: none;
+  }
+  #header-nav ul li {
+    display: inline;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    margin: 0 5px;
+  }
+  #header-nav-items {
+    display: flex;
+    width: 83%;
+    justify-content: space-between;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  
+  .header-nav-item a {
+    color: white;
+  }
+  
+  .header-nav-item a:hover {
+    padding-bottom: 22px;
+    border-bottom: 2px solid white;
+  }
+
+  /* SHIPPING */
+#ship {
+  background-color: #ebdad3;
+  height: 95px;
+  margin-top: 22px;
+  pposition
+}
+
+#ship > h5 {
+  font-size: 13px;
+  padding: 19px 10px;
+  padding-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-family: sans-serif;
+}
+
+
+  /* HEADER-ICONS */
+  #header-nav-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  #header-nav-icons > ul {
+    list-style-type: none;
+    float: right;
+  }
+  #header-nav-icons > ul > li {
+    display: inline;
+    font-size: 25px;
+    font-family: sans-serif;
+    margin: 0 5px;
+  }
+  
+  /* SHIPPING */
+  #ship {
+    background-color: #ebdad3;
+    height: 55px;
+    margin-top: -22px;
+  }
+  #ship > h5 {
+    font-size: 13px;
+    padding: 19px 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-family: sans-serif;
+  }
+  
+  
+/* CHAT */
+.chat-icon {
+  padding: 10px;
+  height: 100px;
+  font-size: 100px;
+  position: fixed;
+  bottom: -50px;
+  top: 400px;
+  right: 5px;
+  border-radius: 100%;
+  z-index: 1;
+  background-color: #ae9cb1;
+}
+
+  /* MOST WANTED PAGE */
+  .top-most {
+    text-align: center;
+  }
+  .top-most > h3 {
+    letter-spacing: 0.2em;
+    margin-top: 40px;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  }
+  
+  .top-most > h4 {
+    letter-spacing: 0.1em;
+    margin-top: 5px;
+    font-family: "IBM Plex Sans Thai Looped", sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+  }
+  
+  #grids-wanted-container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+  
+  .grid-wanted {
+    position: relative;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .heart-wanted {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 35px;
+  }
+  .wanted-direction-left {
+    position: absolute;
+    top: 250px;
+    left: -20px;
+    font-size: 40px;
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid black;
+  }
+  .wanted-text {
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "IBM Plex Sans Thai Looped", sans-serif;
+    letter-spacing: 0.2em;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  .fill {
+    /* font-weight: 00; */
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "IBM Plex Sans Thai Looped", sans-serif;
+    letter-spacing: 0.2em;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 13px;
+  }
+  .first-letter,
+  .money,
+  .notify {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  .notify a {
+    color: white;
+  }
+  .first-letter {
+    font-weight: 100;
+  }
+  .first > p,
+  .second > p,
+  .third > p {
+    margin-left: 125px;
+    margin-right: 125px;
+    background-color: black;
+    text-transform: uppercase;
+    padding: 10px;
+    text-decoration: black;
+    font-size: 15px;
+  }
+  
+  .wanted-direction-right {
+    position: absolute;
+    top: 250px;
+    right: -20px;
+    font-size: 40px;
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid black;
+  }
+  .wanted-direction-left:hover {
+    color: white;
+    background-color: black;
+  }
+  .wanted-direction-right:hover {
+    color: white;
+    background-color: black;
+  }
+  
+  .heart-wanted:hover {
+    color: #dbab98;
+    font-size: 55px;
+  }
+  
+  .grid-wanted img {
+    object-position: center;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  .first {
+    margin-left: 55px;
+  }
+  
+  .third {
+    margin-right: 55px;
+  }
+  
+  
+  /* FOOTER */
+  .footer {
+    background-color: black;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-family: "IBM Plex Sans Thai Looped", sans-serif;
+    letter-spacing: 0.2em;
+    padding: 20px 0;
+  }
+  .down h3 {
+    text-transform: uppercase;
+    margin-bottom: 2px;
+  }
+  .input {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: white;
+    margin-bottom: 20px;
+  }
+  /* MAIL */
+  .mail {
+    position: relative;
+    width: 100%;
+    padding-left: 200px;
+    padding-right: 0;
+    margin-top: 10px;
+  }
+  .mail-inpu {
+    width: 50%;
+    background-color: black;
+    padding: 10px 65px 10px 10px;
+    margin: 0 100px 10px -200px;
+    border-color: black;
+    border-bottom: 2px solid white;
+  }
+  .mail-input {
+    position: absolute;
+    top: -6px;
+    right: 280px;
+  }
+  
+  .mail-input a {
+    color: white;
+    text-transform: uppercase;
+  }
+  .mail-inpu::placeholder {
+    text-transform: uppercase;
+    color: white;
+  }
+  /* PHONE */
+  .phone {
+    position: relative;
+    width: 100%;
+    padding-right: 200px;
+    padding-right: 0;
+    margin-top: 10px;
+  }
+  .phone-inpu {
+    width: 50%;
+    background-color: black;
+    padding: 10px 65px 10px 10px;
+    margin: 0 100px 10px -200px;
+    border-color: black;
+    border-bottom: 2px solid white;
+  }
+  .phone-input {
+    position: absolute;
+    top: -6px;
+    left: 235px;
+  }
+  
+  .phone-input a {
+    color: white;
+    text-transform: uppercase;
+  }
+  .phone-inpu::placeholder {
+    text-transform: uppercase;
+    color: white;
+  }
+  
+  /* TERMS */
+  .terms {
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: normal;
+    font-family: "IBM Plex Sans Thai Looped", sans-serif;
+    margin-bottom: 20px;
+  }
+  .style-terms {
+    text-decoration: underline;
+  }
+  
+  #fb-footer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 10px;
+    padding-top: 10px;
+    width: 100%;
+    font-family: "Times New Roman", Times, serif, sans-serif;
+  }
+  
+  .big-fb {
+    display: grid;
+    grid-template-columns: 33.3% 33.4% 33.3%;
+    color: #e0beb1;
+  }
+  
+  .big-fb > .footer-beauty h1 {
+    font-size: 50px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-left: 30px;
+    margin-right: 0;
+    margin-top: -10px;
+    padding: 0 0 -10px 0;
+  }
+  
+  .big-fb h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: -100px;
+    margin-top: 10px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  
+  .spans {
+    font-size: 25px;
+    margin-left: -10px;
+    margin-top: 8px;
+    margin-bottom: -5px;
+    padding-top: 0;
+  }
+  
+  .big-fs {
+    display: grid;
+    grid-template-columns: 33.3% 33.4% 33.3%;
+    color: #d8cbda;
+  }
+  
+  .big-fs > .footer-skin h1 {
+    font-size: 50px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-left: 100px;
+    margin-right: 0;
+    margin-top: -10px;
+    padding: 0 0 -10px 0;
+  }
+  
+  .big-fs h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: -35px;
+    margin-top: 10px;
+    margin-right: 10;
+    margin-bottom: 10px;
+  }
+  
+  .spans {
+    font-size: 25px;
+    margin-left: -10px;
+    margin-top: 8px;
+    margin-bottom: -5px;
+    padding-top: 0;
+  }
+  
+  /* FOOTER-GRID */
+  #footer-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+  }
+  .conabout-row {
+    text-align: left;
+    margin: 30px 0 0 40px;
+    padding-top: 0;
+  }
+  .con-row {
+    line-height: 20px;
+    font-size: 12px;
+    font-family: "IBM Plex Sans Thai Looped", sans-serif;
+    letter-spacing: 0.1em;
+  }
+  .con-row {
+    margin-bottom: 0;
+  }
+  .con-row a {
+    color: white;
+  }
+  
+  .about-row {
+    font-size: 12px;
+    font-family: "IBM Plex Sans Thai Looped", sans-serif;
+    margin-bottom: 40px;
+  }
+  .about-row > p {
+    line-height: 17px;
+    margin-right: 30px;
+  }
+  .about-row > p > span {
+    text-decoration: underline;
+  }
+  
+  #hbs-row {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+  }
+  .hbs h3 {
+    text-transform: uppercase;
+    text-align: left;
+    margin-left: 20px;
+  }
+  .hbs p {
+    margin-top: 20px;
+    color: white;
+    font-size: 12px;
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  .hbs p > a {
+    color: white;
+    font-size: 12px;
+    text-align: left;
+  }
+  
+  .century {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .small1 {
+    text-align: left;
+    margin: 0 40px 40px 40px;
+  }
+  
