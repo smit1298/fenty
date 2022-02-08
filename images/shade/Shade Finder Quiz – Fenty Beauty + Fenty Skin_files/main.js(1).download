@@ -1,0 +1,856 @@
+(function(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define([], factory);
+	else if(typeof exports === 'object')
+		exports["offers"] = factory();
+	else
+		root["og"] = root["og"] || {}, root["og"]["offers"] = factory();
+})(window, function() {
+  var module={}, exports={};
+ (factory => {
+if(typeof exports === 'object' && typeof module === 'object')
+  module.exports = factory();
+else if(typeof define === 'function' && define.amd)
+  define([], factory);
+else {
+  window.og = window.og || {};
+  window.og['offers'] = factory();
+}      
+})(()=>{ 
+var lib=(()=>{var La=Object.create;var Re=Object.defineProperty,ja=Object.defineProperties,Ma=Object.getOwnPropertyDescriptor,Va=Object.getOwnPropertyDescriptors,$a=Object.getOwnPropertyNames,Lo=Object.getOwnPropertySymbols,Ba=Object.getPrototypeOf,jo=Object.prototype.hasOwnProperty,Ha=Object.prototype.propertyIsEnumerable;var Mo=(t,e,r)=>e in t?Re(t,e,{enumerable:!0,configurable:!0,writable:!0,value:r}):t[e]=r,l=(t,e)=>{for(var r in e||(e={}))jo.call(e,r)&&Mo(t,r,e[r]);if(Lo)for(var r of Lo(e))Ha.call(e,r)&&Mo(t,r,e[r]);return t},m=(t,e)=>ja(t,Va(e)),Vo=t=>Re(t,"__esModule",{value:!0}),n=(t,e)=>Re(t,"name",{value:e,configurable:!0}),he=(t=>typeof require!="undefined"?require:typeof Proxy!="undefined"?new Proxy(t,{get:(e,r)=>(typeof require!="undefined"?require:e)[r]}):t)(function(t){if(typeof require!="undefined")return require.apply(this,arguments);throw new Error('Dynamic require of "'+t+'" is not supported')});var p=(t,e)=>()=>(t&&(e=t(t=0)),e);var X=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),x=(t,e)=>{Vo(t);for(var r in e)Re(t,r,{get:e[r],enumerable:!0})},za=(t,e,r)=>{if(e&&typeof e=="object"||typeof e=="function")for(let o of $a(e))!jo.call(t,o)&&o!=="default"&&Re(t,o,{get:()=>e[o],enumerable:!(r=Ma(e,o))||r.enumerable});return t},Ae=t=>za(Vo(Re(t!=null?La(Ba(t)):{},"default",t&&t.__esModule&&"default"in t?{get:()=>t.default,enumerable:!0}:{value:t,enumerable:!0})),t);var Wo={};x(Wo,{default:()=>oc,offersLiveEditor:()=>kr});function Nr(t){let e=rc(zo),r=Go(t.source);e(t)&&t.data.ogType==="READY"&&Promise.resolve().then(()=>tc(Xa("//static.ordergroove.com/@ordergroove/offers-live-editor/0.4.0/dist/client.js"))).then(({initializeClient:o})=>{o(e,r),window.removeEventListener("message",Nr)})}function kr(t=window.opener){t&&t!==window&&(window.addEventListener("message",Nr),Go(t)("READY"))}var Ga,Ze,Wa,Ya,$o,Qa,Bo,Ja,Ho,Ka,Za,St,Xa,ec,tc,rc,zo,Go,oc,Yo=p(()=>{Ga=Object.create,Ze=Object.defineProperty,Wa=Object.getOwnPropertyDescriptor,Ya=Object.getOwnPropertyNames,$o=Object.getOwnPropertySymbols,Qa=Object.getPrototypeOf,Bo=Object.prototype.hasOwnProperty,Ja=Object.prototype.propertyIsEnumerable,Ho=n((t,e,r)=>e in t?Ze(t,e,{enumerable:!0,configurable:!0,writable:!0,value:r}):t[e]=r,"d"),Ka=n((t,e)=>{for(var r in e||(e={}))Bo.call(e,r)&&Ho(t,r,e[r]);if($o)for(var r of $o(e))Ja.call(e,r)&&Ho(t,r,e[r]);return t},"c"),Za=n(t=>Ze(t,"__esModule",{value:!0}),"E"),St=n((t,e)=>Ze(t,"name",{value:e,configurable:!0}),"r"),Xa=(t=>typeof he!="undefined"?he:typeof Proxy!="undefined"?new Proxy(t,{get:(e,r)=>(typeof he!="undefined"?he:e)[r]}):t)(function(t){if(typeof he!="undefined")return he.apply(this,arguments);throw new Error('Dynamic require of "'+t+'" is not supported')}),ec=n((t,e,r)=>{if(e&&typeof e=="object"||typeof e=="function")for(let o of Ya(e))!Bo.call(t,o)&&o!=="default"&&Ze(t,o,{get:()=>e[o],enumerable:!(r=Wa(e,o))||r.enumerable});return t},"x"),tc=n(t=>ec(Za(Ze(t!=null?Ga(Qa(t)):{},"default",t&&t.__esModule&&"default"in t?{get:()=>t.default,enumerable:!0}:{value:t,enumerable:!0})),t),"v"),rc=St(t=>e=>t.indexOf(e.origin)>=0,"createIsMessageAllowed"),zo=["https://rc3.ordergroove.com","https://rc3.stg.ordergroove.com","http://localhost:3000",window.location.origin],Go=St(t=>(e,r)=>{zo.forEach(o=>t.postMessage(Ka({ogType:e},r),o))},"createBroadcastMessage");n(Nr,"f");St(Nr,"handleReady");n(kr,"I");St(kr,"offersLiveEditor");oc=kr});function qr(t){var e,r=t.Symbol;return typeof r=="function"?r.observable?e=r.observable:(e=r("observable"),r.observable=e):e="@@observable",e}var Qo=p(()=>{n(qr,"symbolObservablePonyfill")});var Ne,nc,Ir,Jo=p(()=>{Qo();typeof self!="undefined"?Ne=self:typeof window!="undefined"||typeof window!="undefined"?Ne=window:typeof module!="undefined"?Ne=module:Ne=Function("return this")();nc=qr(Ne),Ir=nc});function sc(t){if(typeof t!="object"||t===null)return!1;for(var e=t;Object.getPrototypeOf(e)!==null;)e=Object.getPrototypeOf(e);return Object.getPrototypeOf(t)===e}function Dr(t,e,r){var o;if(typeof e=="function"&&typeof r=="function"||typeof r=="function"&&typeof arguments[3]=="function")throw new Error("It looks like you are passing several store enhancers to createStore(). This is not supported. Instead, compose them together to a single function.");if(typeof e=="function"&&typeof r=="undefined"&&(r=e,e=void 0),typeof r!="undefined"){if(typeof r!="function")throw new Error("Expected the enhancer to be a function.");return r(Dr)(t,e)}if(typeof t!="function")throw new Error("Expected the reducer to be a function.");var s=t,i=e,a=[],c=a,u=!1;function h(){c===a&&(c=a.slice())}n(h,"ensureCanMutateNextListeners");function _(){if(u)throw new Error("You may not call store.getState() while the reducer is executing. The reducer has already received the state as an argument. Pass it down from the top reducer instead of reading it from the store.");return i}n(_,"getState");function f(g){if(typeof g!="function")throw new Error("Expected the listener to be a function.");if(u)throw new Error("You may not call store.subscribe() while the reducer is executing. If you would like to be notified after the store has been updated, subscribe from a component and invoke store.getState() in the callback to access the latest state. See https://redux.js.org/api-reference/store#subscribelistener for more details.");var P=!0;return h(),c.push(g),n(function(){if(!!P){if(u)throw new Error("You may not unsubscribe from a store listener while the reducer is executing. See https://redux.js.org/api-reference/store#subscribelistener for more details.");P=!1,h();var S=c.indexOf(g);c.splice(S,1),a=null}},"unsubscribe")}n(f,"subscribe");function b(g){if(!sc(g))throw new Error("Actions must be plain objects. Use custom middleware for async actions.");if(typeof g.type=="undefined")throw new Error('Actions may not have an undefined "type" property. Have you misspelled a constant?');if(u)throw new Error("Reducers may not dispatch actions.");try{u=!0,i=s(i,g)}finally{u=!1}for(var P=a=c,R=0;R<P.length;R++){var S=P[R];S()}return g}n(b,"dispatch");function w(g){if(typeof g!="function")throw new Error("Expected the nextReducer to be a function.");s=g,b({type:Xe.REPLACE})}n(w,"replaceReducer");function E(){var g,P=f;return g={subscribe:n(function(S){if(typeof S!="object"||S===null)throw new TypeError("Expected the observer to be an object.");function A(){S.next&&S.next(_())}n(A,"observeState"),A();var Fa=P(A);return{unsubscribe:Fa}},"subscribe")},g[Ir]=function(){return this},g}return n(E,"observable"),b({type:Xe.INIT}),o={dispatch:b,subscribe:f,getState:_,replaceReducer:w},o[Ir]=E,o}function ic(t,e){var r=e&&e.type,o=r&&'action "'+String(r)+'"'||"an action";return"Given "+o+', reducer "'+t+'" returned undefined. To ignore an action, you must explicitly return the previous state. If you want this reducer to hold no value, you can return null instead of undefined.'}function ac(t){Object.keys(t).forEach(function(e){var r=t[e],o=r(void 0,{type:Xe.INIT});if(typeof o=="undefined")throw new Error('Reducer "'+e+`" returned undefined during initialization. If the state passed to the reducer is undefined, you must explicitly return the initial state. The initial state may not be undefined. If you don't want to set a value for this reducer, you can use null instead of undefined.`);if(typeof r(void 0,{type:Xe.PROBE_UNKNOWN_ACTION()})=="undefined")throw new Error('Reducer "'+e+'" returned undefined when probed with a random type. '+("Don't try to handle "+Xe.INIT+' or other actions in "redux/*" ')+"namespace. They are considered private. Instead, you must return the current state for any unknown actions, unless it is undefined, in which case you must return the initial state, regardless of the action type. The initial state may not be undefined, but can be null.")})}function Ko(t){for(var e=Object.keys(t),r={},o=0;o<e.length;o++){var s=e[o];typeof t[s]=="function"&&(r[s]=t[s])}var i=Object.keys(r),a,c;try{ac(r)}catch(u){c=u}return n(function(h,_){if(h===void 0&&(h={}),c)throw c;if(!1)var f;for(var b=!1,w={},E=0;E<i.length;E++){var g=i[E],P=r[g],R=h[g],S=P(R,_);if(typeof S=="undefined"){var A=ic(g,_);throw new Error(A)}w[g]=S,b=b||S!==R}return b=b||i.length!==Object.keys(h).length,b?w:h},"combination")}function Zo(t,e){return function(){return e(t.apply(this,arguments))}}function Xo(t,e){if(typeof t=="function")return Zo(t,e);if(typeof t!="object"||t===null)throw new Error("bindActionCreators expected an object or a function, instead received "+(t===null?"null":typeof t)+'. Did you write "import ActionCreators from" instead of "import * as ActionCreators from"?');var r={};for(var o in t){var s=t[o];typeof s=="function"&&(r[o]=Zo(s,e))}return r}function cc(t,e,r){return e in t?Object.defineProperty(t,e,{value:r,enumerable:!0,configurable:!0,writable:!0}):t[e]=r,t}function en(t,e){var r=Object.keys(t);return Object.getOwnPropertySymbols&&r.push.apply(r,Object.getOwnPropertySymbols(t)),e&&(r=r.filter(function(o){return Object.getOwnPropertyDescriptor(t,o).enumerable})),r}function lc(t){for(var e=1;e<arguments.length;e++){var r=arguments[e]!=null?arguments[e]:{};e%2?en(r,!0).forEach(function(o){cc(t,o,r[o])}):Object.getOwnPropertyDescriptors?Object.defineProperties(t,Object.getOwnPropertyDescriptors(r)):en(r).forEach(function(o){Object.defineProperty(t,o,Object.getOwnPropertyDescriptor(r,o))})}return t}function Fr(){for(var t=arguments.length,e=new Array(t),r=0;r<t;r++)e[r]=arguments[r];return e.length===0?function(o){return o}:e.length===1?e[0]:e.reduce(function(o,s){return function(){return o(s.apply(void 0,arguments))}})}function tn(){for(var t=arguments.length,e=new Array(t),r=0;r<t;r++)e[r]=arguments[r];return function(o){return function(){var s=o.apply(void 0,arguments),i=n(function(){throw new Error("Dispatching while constructing your middleware is not allowed. Other middleware would not be applied to this dispatch.")},"dispatch"),a={getState:s.getState,dispatch:n(function(){return i.apply(void 0,arguments)},"dispatch")},c=e.map(function(u){return u(a)});return i=Fr.apply(void 0,c)(s.dispatch),lc({},s,{dispatch:i})}}}var Ur,Xe,vt=p(()=>{Jo();Ur=n(function(){return Math.random().toString(36).substring(7).split("").join(".")},"randomString"),Xe={INIT:"@@redux/INIT"+Ur(),REPLACE:"@@redux/REPLACE"+Ur(),PROBE_UNKNOWN_ACTION:n(function(){return"@@redux/PROBE_UNKNOWN_ACTION"+Ur()},"PROBE_UNKNOWN_ACTION")};n(sc,"isPlainObject");n(Dr,"createStore");n(ic,"getUndefinedStateErrorMessage");n(ac,"assertReducerShape");n(Ko,"combineReducers");n(Zo,"bindActionCreator");n(Xo,"bindActionCreators");n(cc,"_defineProperty");n(en,"ownKeys");n(lc,"_objectSpread2");n(Fr,"compose");n(tn,"applyMiddleware")});var on={};x(on,{connect:()=>y,createRecalcProps:()=>rn,default:()=>fc,resolveStore:()=>Lr,setStore:()=>pc,unsetStore:()=>dc});var et,uc,Lr,rn,y,pc,dc,fc,N=p(()=>{vt();et=null,uc=n(t=>({dispatch:t}),"defaultMapDispatchToProps"),Lr=n(t=>{if(!et)throw new Error("Missing redux store.");return et},"resolveStore"),rn=n((t,e)=>r=>{let{getState:o,dispatch:s}=Lr(r),i=t?t(o(),r):{},a=e(s,r);Object.assign(r,i,a)},"createRecalcProps"),y=n((t,e=uc)=>r=>{let s=rn(t,typeof e=="function"?e:i=>Xo(e,i));return class extends r{get store(){return et}connectedCallback(){super.connectedCallback&&super.connectedCallback(),this._storeUnsubscribe=Lr(this).subscribe(()=>s(this)),s(this)}attributeChangedCallback(i,a,c){super.attributeChangedCallback&&super.attributeChangedCallback(i,a,c),this._storeUnsubscribe&&a!==c&&s(this)}disconnectedCallback(){this._storeUnsubscribe(),super.disconnectedCallback&&super.disconnectedCallback()}}},"connect"),pc=n(t=>{et=t},"setStore"),dc=n(()=>{et=void 0},"unsetStore"),fc=y});function nn(t){var e=n(function(o){var s=o.dispatch,i=o.getState;return function(a){return function(c){return typeof c=="function"?c(s,i,t):a(c)}}},"middleware");return e}var sn,an,cn=p(()=>{n(nn,"createThunkMiddleware");sn=nn();sn.withExtraArgument=nn;an=sn});var ee,te,re,wt,ln,F,tt,Ot,Tt,un,Ct,ke,pn,Pt,Rt,dn,At,Nt,kt,fn,hn,qt,mn,It,qe,gn,Ut,Dt,rt,ot,Ft,Lt,me,oe,jt,Mt,Ie=p(()=>{ee="OPTIN_PRODUCT",te="OPTOUT_PRODUCT",re="PRODUCT_CHANGE_FREQUENCY",wt="SET_MERCHANT_ID",ln="REQUEST_OFFER",F="RECEIVE_OFFER",tt="PRODUCT_HAS_CHANGED",Ot="CREATED_SESSION_ID",Tt="SET_AUTH_URL",un="REQUEST_AUTH",Ct="AUTHORIZE",ke="UNAUTHORIZED",pn="REQUEST_ORDERS",Pt="RECEIVE_ORDERS",Rt="RECEIVE_ORDER_ITEMS",dn="FETCH_RESPONSE_ERROR",At="SET_ENVIRONMENT_STAGING",Nt="SET_ENVIRONMENT_DEV",kt="SET_ENVIRONMENT_PROD",fn="CONCLUDE_UPSELL",hn="REQUEST_CREATE_IU_ORDER",qt="CREATE_ONE_TIME",mn="REQUEST_CONVERT_ONE_TIME",It="CONVERT_ONE_TIME",qe="CHECKOUT",gn="RECEIVE_FETCH",Ut="SET_LOCALE",Dt="SET_CONFIG",rt="SET_PREVIEW_STANDARD_OFFER",ot="SET_PREVIEW_UPSELL_OFFER",Ft="ADD_TEMPLATE",Lt="SET_TEMPLATES",me="LOCAL_STORAGE_CHANGE",oe="LOCAL_STORAGE_CLEAR",jt="SET_FIRST_ORDER_PLACE_DATE",Mt="SET_PRODUCT_TO_SUBSCRIBE"});function hc(t,e){return t===e}function mc(t,e,r){if(e===null||r===null||e.length!==r.length)return!1;for(var o=e.length,s=0;s<o;s++)if(!t(e[s],r[s]))return!1;return!0}function gc(t){var e=arguments.length>1&&arguments[1]!==void 0?arguments[1]:hc,r=null,o=null;return function(){return mc(e,r,arguments)||(o=t.apply(null,arguments)),r=arguments,o}}function yc(t){var e=Array.isArray(t[0])?t[0]:t;if(!e.every(function(o){return typeof o=="function"})){var r=e.map(function(o){return typeof o}).join(", ");throw new Error("Selector creators expect all input-selectors to be functions, "+("instead received the following types: ["+r+"]"))}return e}function bc(t){for(var e=arguments.length,r=Array(e>1?e-1:0),o=1;o<e;o++)r[o-1]=arguments[o];return function(){for(var s=arguments.length,i=Array(s),a=0;a<s;a++)i[a]=arguments[a];var c=0,u=i.pop(),h=yc(i),_=t.apply(void 0,[function(){return c++,u.apply(null,arguments)}].concat(r)),f=t(function(){for(var b=[],w=h.length,E=0;E<w;E++)b.push(h[E].apply(null,arguments));return _.apply(null,b)});return f.resultFunc=u,f.dependencies=h,f.recomputations=function(){return c},f.resetRecomputations=function(){return c=0},f}}var Ue,yn=p(()=>{n(hc,"defaultEqualityCheck");n(mc,"areArgumentsShallowlyEqual");n(gc,"defaultMemoize");n(yc,"getDependencies");n(bc,"createSelectorCreator");Ue=bc(gc)});var Bt=X((np,On)=>{var _c="Expected a function",bn="__lodash_hash_undefined__",xc="[object Function]",Ec="[object GeneratorFunction]",Sc=/[\\^$.*+?()[\]{}|]/g,vc=/^\[object .+?Constructor\]$/,wc=typeof window=="object"&&window&&window.Object===Object&&window,Oc=typeof self=="object"&&self&&self.Object===Object&&self,_n=wc||Oc||Function("return this")();function Tc(t,e){return t==null?void 0:t[e]}n(Tc,"getValue");function Cc(t){var e=!1;if(t!=null&&typeof t.toString!="function")try{e=!!(t+"")}catch(r){}return e}n(Cc,"isHostObject");var Pc=Array.prototype,Rc=Function.prototype,xn=Object.prototype,jr=_n["__core-js_shared__"],En=function(){var t=/[^.]+$/.exec(jr&&jr.keys&&jr.keys.IE_PROTO||"");return t?"Symbol(src)_1."+t:""}(),Sn=Rc.toString,Mr=xn.hasOwnProperty,Ac=xn.toString,Nc=RegExp("^"+Sn.call(Mr).replace(Sc,"\\$&").replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g,"$1.*?")+"$"),kc=Pc.splice,qc=vn(_n,"Map"),nt=vn(Object,"create");function ge(t){var e=-1,r=t?t.length:0;for(this.clear();++e<r;){var o=t[e];this.set(o[0],o[1])}}n(ge,"Hash");function Ic(){this.__data__=nt?nt(null):{}}n(Ic,"hashClear");function Uc(t){return this.has(t)&&delete this.__data__[t]}n(Uc,"hashDelete");function Dc(t){var e=this.__data__;if(nt){var r=e[t];return r===bn?void 0:r}return Mr.call(e,t)?e[t]:void 0}n(Dc,"hashGet");function Fc(t){var e=this.__data__;return nt?e[t]!==void 0:Mr.call(e,t)}n(Fc,"hashHas");function Lc(t,e){var r=this.__data__;return r[t]=nt&&e===void 0?bn:e,this}n(Lc,"hashSet");ge.prototype.clear=Ic;ge.prototype.delete=Uc;ge.prototype.get=Dc;ge.prototype.has=Fc;ge.prototype.set=Lc;function De(t){var e=-1,r=t?t.length:0;for(this.clear();++e<r;){var o=t[e];this.set(o[0],o[1])}}n(De,"ListCache");function jc(){this.__data__=[]}n(jc,"listCacheClear");function Mc(t){var e=this.__data__,r=Vt(e,t);if(r<0)return!1;var o=e.length-1;return r==o?e.pop():kc.call(e,r,1),!0}n(Mc,"listCacheDelete");function Vc(t){var e=this.__data__,r=Vt(e,t);return r<0?void 0:e[r][1]}n(Vc,"listCacheGet");function $c(t){return Vt(this.__data__,t)>-1}n($c,"listCacheHas");function Bc(t,e){var r=this.__data__,o=Vt(r,t);return o<0?r.push([t,e]):r[o][1]=e,this}n(Bc,"listCacheSet");De.prototype.clear=jc;De.prototype.delete=Mc;De.prototype.get=Vc;De.prototype.has=$c;De.prototype.set=Bc;function ye(t){var e=-1,r=t?t.length:0;for(this.clear();++e<r;){var o=t[e];this.set(o[0],o[1])}}n(ye,"MapCache");function Hc(){this.__data__={hash:new ge,map:new(qc||De),string:new ge}}n(Hc,"mapCacheClear");function zc(t){return $t(this,t).delete(t)}n(zc,"mapCacheDelete");function Gc(t){return $t(this,t).get(t)}n(Gc,"mapCacheGet");function Wc(t){return $t(this,t).has(t)}n(Wc,"mapCacheHas");function Yc(t,e){return $t(this,t).set(t,e),this}n(Yc,"mapCacheSet");ye.prototype.clear=Hc;ye.prototype.delete=zc;ye.prototype.get=Gc;ye.prototype.has=Wc;ye.prototype.set=Yc;function Vt(t,e){for(var r=t.length;r--;)if(Xc(t[r][0],e))return r;return-1}n(Vt,"assocIndexOf");function Qc(t){if(!wn(t)||Kc(t))return!1;var e=el(t)||Cc(t)?Nc:vc;return e.test(Zc(t))}n(Qc,"baseIsNative");function $t(t,e){var r=t.__data__;return Jc(e)?r[typeof e=="string"?"string":"hash"]:r.map}n($t,"getMapData");function vn(t,e){var r=Tc(t,e);return Qc(r)?r:void 0}n(vn,"getNative");function Jc(t){var e=typeof t;return e=="string"||e=="number"||e=="symbol"||e=="boolean"?t!=="__proto__":t===null}n(Jc,"isKeyable");function Kc(t){return!!En&&En in t}n(Kc,"isMasked");function Zc(t){if(t!=null){try{return Sn.call(t)}catch(e){}try{return t+""}catch(e){}}return""}n(Zc,"toSource");function Vr(t,e){if(typeof t!="function"||e&&typeof e!="function")throw new TypeError(_c);var r=n(function(){var o=arguments,s=e?e.apply(this,o):o[0],i=r.cache;if(i.has(s))return i.get(s);var a=t.apply(this,o);return r.cache=i.set(s,a),a},"memoized");return r.cache=new(Vr.Cache||ye),r}n(Vr,"memoize");Vr.Cache=ye;function Xc(t,e){return t===e||t!==t&&e!==e}n(Xc,"eq");function el(t){var e=wn(t)?Ac.call(t):"";return e==xc||e==Ec}n(el,"isFunction");function wn(t){var e=typeof t;return!!t&&(e=="object"||e=="function")}n(wn,"isObject");On.exports=Vr});var qn={};x(qn,{api:()=>ne,compareFrequencies:()=>Nn,convertOneTimeToSubscription:()=>kn,createOneTime:()=>An,default:()=>rl,fetchItems:()=>Rn,fetchOffer:()=>Cn,fetchOrders:()=>Pn,isFrequencyValid:()=>zt,parseFrequenciesList:()=>zr,parseFrequency:()=>je,stringifyFrequencies:()=>tl,stringifyFrequency:()=>Me,toProductId:()=>Tn,toQuery:()=>Hr,withAuth:()=>st,withFetchJson:()=>Fe,withHost:()=>Le,withJsonBody:()=>Br});var Ht,$r,Fe,Le,st,Br,Hr,Tn,Cn,Pn,Rn,An,je,zt,Nn,zr,tl,Me,kn,ne,rl,se=p(()=>{Ht=Ae(Bt()),$r=n((...t)=>JSON.stringify(t),"memoizeKey"),Fe=n(t=>(...e)=>fetch(...t(...e)).then(r=>r.json()),"withFetchJson"),Le=n(t=>(e,...r)=>{if(!e)throw Error("host required");let[o,s={}]=t(...r);return[`${e.replace(/\/+$/,"")}${o}`,s]},"withHost"),st=n(t=>(e,...r)=>{if(!e)throw Error("auth required");let[o,s={}]=t(...r);return[o,m(l({},s),{headers:l({Authorization:JSON.stringify(e)},s.headers)})]},"withAuth"),Br=n(t=>(...e)=>{let[r,o={}]=t(...e);return[r,m(l({method:"POST"},o),{body:JSON.stringify(o.body),headers:l({"Content-type":"application/json"},o.headers)})]},"withJsonBody"),Hr=n((t=[])=>(Array.isArray(t)?t:Object.entries(t)).map(([e,r])=>[e,encodeURIComponent(r)].join("=")).join("&"),"toQuery"),Tn=n(t=>JSON.stringify([].concat(t).map(e=>typeof e=="object"?e.id:e).filter(e=>e)),"toProductId"),Cn=(0,Ht.default)(Fe(Le((t,e,r,o="pdp")=>{if(!t)throw Error("merchantId required");if(!e)throw Error("sessionId required");if(!r)throw Error("product required");let s=Hr([["session_id",e],["page_type",1],["p",Tn(r)],["module_view",JSON.stringify(["regular"])]]);return[`/offer/${t}/${o}?${s}`]})),$r),Pn=(0,Ht.default)(Fe(Le(st((t=1,e="place")=>[`/orders/?${Hr([["status",t],["ordering",e]])}`]))),$r),Rn=(0,Ht.default)(Fe(Le(st(t=>{if(!t)throw Error("orderId required");return[`/items/?order=${t}`]}))),$r),An=Fe(Le(st(Br((t,e,r,o)=>{if(!t)throw Error("product required");if(!e)throw Error("order required");if(!r)throw Error("quantity required");if(r<=0)throw Error("quantity must be greater or equal than one");if(!o)throw Error("offer required");return["/items/iu/",{body:{product:t,order:e,quantity:r,offer:o}}]})))),je=n(t=>{if(typeof t=="object")return l({},t);let[e,r]=(t||"").split(/_/).map(o=>parseInt(o,10));return e&&r&&{every:e,every_period:r}},"parseFrequency"),zt=n(t=>t.match(/^\d+_\d$/),"isFrequencyValid"),Nn=n((t,e)=>String.prototype.localeCompare.call(t&&t.split("_").reverse().join("_"),e&&e.split("_").reverse().join("_")),"compareFrequencies"),zr=n(t=>[...new Set(t&&t.split(/\s+/))].filter(zt).sort(Nn),"parseFrequenciesList"),tl=n(t=>t==null?t:t.join(" "),"stringifyFrequencies"),Me=n(t=>{if(typeof t=="object"){let{every:e,period:r,every_period:o}=t;return`${e}_${r||o}`}return typeof t=="string"?t:""},"stringifyFrequency"),kn=Fe(Le(st(Br((t,e,r)=>{if(!t)throw Error("item required");if(!e)throw Error("frequency required");let o=je(e);if(!o)throw Error("invalid frequency");return["/subscriptions/create_from_item/",{body:l({item:t.public_id,offer:r},o)}]})))),ne={fetchOffer:Cn,fetchOrders:Pn,fetchItems:Rn,createOneTime:An,convertOneTimeToSubscription:kn},rl=ne});function ol(t,e){if(t===e)return!0;if(t===null||e===null||t.length!==e.length)return!1;for(let r=0;r<t.length;++r)if(t[r]!==e[r])return!1;return!0}var be,q,Gt,In,Gr,nl,W,Un,Dn,ie,Wt,Wr,Y,Ve,Q=p(()=>{yn();be=Ae(Bt());se();be.default.Cache=Map;n(ol,"arraysEqual");q=n((t,e)=>!!(t===e||typeof t=="object"&&typeof e=="object"&&t&&e&&t.id===e.id&&(!(Array.isArray(t.components)&&Array.isArray(e.components))||ol((t.components||[]).sort(),(e.components||[]).sort()))),"isSameProduct"),Gt=n(t=>t.optedin||[],"optedinSelector"),In=n(t=>t.optedout||[],"optedoutSelector"),Gr=n(t=>t.autoshipByDefault||{},"autoshipSelector"),nl=n(t=>t.defaultFrequencies||{},"defaultFrequenciesSelector"),W=(0,be.default)(t=>Ue(Gt,In,Gr,(e,r,o)=>{let s=e.find(i=>q(t,i));return s||(r.find(i=>q(t,i))?!1:t&&o[t.id]?{id:t.id}:!1)}),t=>JSON.stringify(t)),Un=(0,be.default)(t=>Ue(Gt,e=>{let r=e.find(o=>q(t,o));return r||!1}),t=>JSON.stringify(t)),Dn=(0,be.default)(t=>Ue(In,e=>e.find(r=>q(t,r)))),ie=(0,be.default)(t=>Ue(W(t),e=>e&&e.frequency||null)),Wt=(0,be.default)(t=>Ue(nl,e=>e[t]&&Me(e[t])||null)),Wr=n(t=>t.replace(/([a-z0-9]|(?=[A-Z]))([A-Z])/g,"$1-$2").toLowerCase(),"kebabCase"),Y=n((t,e,r,o)=>({[r]:e&&e.hasAttribute&&e.hasAttribute(Wr(r))&&e[r]||e.offer&&typeof(e.offer[r]!=="undefined")&&e.offer[r]||t.config&&t.config[r]||o}),"configSelector"),Ve=n(t=>({templates:t.templates||[]}),"templatesSelector")});var cs={};x(cs,{auth:()=>zn,authUrl:()=>Wn,autoshipByDefault:()=>ss,autoshipEligible:()=>Mn,config:()=>rs,default:()=>Yr,defaultFrequencies:()=>is,eligibilityGroups:()=>$n,environment:()=>es,firstOrderPlaceDate:()=>Zn,frequency:()=>sl,inStock:()=>Vn,incentives:()=>Hn,locale:()=>ts,merchantId:()=>Gn,nextUpcomingOrder:()=>jn,offer:()=>Yn,offerId:()=>Qn,optedin:()=>Fn,optedout:()=>Ln,previewStandardOffer:()=>os,previewUpsellOffer:()=>ns,productOffer:()=>Kn,productToSubscribe:()=>Xn,sessionId:()=>Jn,templates:()=>as});var Fn,Ln,jn,Mn,Vn,$n,Bn,Hn,sl,zn,Gn,Wn,Yn,Qn,Jn,Kn,Zn,Xn,es,ts,rs,os,ns,ss,is,as,Yr,Qr=p(()=>{vt();Ie();Q();se();Fn=n((t=[],e)=>{switch(e.type){case oe:return[];case me:return e.newValue?e.newValue.optedin:t;case ee:case re:let[[r],o]=t.reduce((s,i)=>s[q(e.payload.product,i)?0:1].push(i)&&s,[[],[]]);return(o||[]).concat(m(l(l({},r),e.payload.product),{frequency:e.payload.frequency}));case te:return t.filter(s=>!q(e.payload.product,s));case tt:return t.map(s=>q(e.payload.product,s)?l(l({},s),e.payload.newProduct):s);case It:return t.filter(s=>!q(e.payload.product,s));case qe:return[];default:return t}},"optedin"),Ln=n((t=[],e)=>{switch(e.type){case oe:return[];case me:return e.newValue?e.newValue.optedout:t;case ee:case re:return t.filter(s=>!q(e.payload.product,s));case te:let[[r],o]=t.reduce((s,i)=>s[q(e.payload.product,i)?0:1].push(i)&&s,[[],[]]);return(o||[]).concat(m(l(l({},r),e.payload.product),{frequency:e.payload.frequency}));case tt:return t.map(s=>q(e.payload.product,s)?l(l({},s),e.payload.newProduct):s);case qe:return[];default:return t}},"optedout"),jn=n((t={},{type:e,payload:r})=>{switch(e){case Pt:return r&&r.count>0?l(l({},t),r.results[0]&&m(l({},r.results[0]),{place:new Date(Date.parse(r.results[0].place.replace(/-/gi,"/")))})):t;case Rt:return m(l({},t),{products:(r.results||[]).map(o=>o.product)});case qt:return l(m(l(l({},t),r),{public_id:r.order}),r.product&&{products:(t.products||[]).concat(r.product)});default:return t}},"nextUpcomingOrder"),Mn=n((t={},e)=>{switch(e.type){case F:return l(l({},t),e.payload.autoship);default:return t}},"autoshipEligible"),Vn=n((t={},e)=>{switch(e.type){case F:return l(l({},t),e.payload.in_stock);default:return t}},"inStock"),$n=n((t={},e)=>{switch(e.type){case F:return l(l({},t),e.payload.eligibility_groups);default:return t}},"eligibilityGroups"),Bn=n((t,e)=>t.map(r=>m(l({},e[r]),{id:[r][0]})),"mapIncentive"),Hn=n((t={},e)=>{switch(e.type){case F:return l(l({},t),[...new Set(Object.keys(e.payload.incentives||{}))].reduce((r,o)=>m(l({},r),{[o]:Object.entries(e.payload.incentives).filter(([s])=>s===o).reduce((s,[,{initial:i,ongoing:a}])=>m(l({},s),{initial:[...s.initial||[],...Bn(i,e.payload.incentives_display)],ongoing:[...s.ongoing||[],...Bn(a,e.payload.incentives_display)]}),{})}),{}));default:return t}},"incentives"),sl=n((t={},e)=>{switch(e.type){case ee:case re:return m(l({},t),{[e.payload.product]:e.payload.frequency});case te:return m(l({},t),{[e.payload.product]:void 0});default:return t}},"frequency"),zn=n((t=!1,e)=>{switch(e.type){case Ct:return l({},e.payload);case ke:return!1;default:return t}},"auth"),Gn=n((t="",e)=>{switch(e.type){case wt:return e.payload;default:return t}},"merchantId"),Wn=n((t=null,e)=>{switch(e.type){case Tt:return e.payload;default:return t}},"authUrl"),Yn=n((t={},e)=>{switch(e.type){case F:return l(m(l({},t),{offerId:(e.payload.module_view||{}).regular}),e.payload.modifiers);default:return t}},"offer"),Qn=n((t="",e)=>{switch(e.type){case F:return(e.payload.module_view||{}).regular||"";default:return t}},"offerId"),Jn=n((t=null,e)=>{switch(e.type){case oe:return null;case Ot:return e.payload;default:return t}},"sessionId"),Kn=n((t={},e)=>{switch(e.type){case F:return l(l({},t),Object.entries(e.payload.autoship).map(([r])=>({[r]:Object.keys(e.payload.modifiers)})).reduce((r,o)=>l(l({},r),o)));case qe:return{};default:return t}},"productOffer"),Zn=n((t={},e)=>{switch(e.type){case jt:return m(l({},t),{[e.payload.product]:e.payload.firstOrderPlaceDate});default:return t}},"firstOrderPlaceDate"),Xn=n((t={},e)=>{switch(e.type){case Mt:return m(l({},t),{[e.payload.product]:e.payload.productToSubscribe});default:return t}},"productToSubscribe"),es=n((t={},e)=>{switch(e.type){case At:return m(l({},t),{name:"staging",apiUrl:"https://staging.om.ordergroove.com",legoUrl:"https://staging.restapi.ordergroove.com"});case Nt:return m(l({},t),{name:"dev",apiUrl:"https://dev.om.ordergroove.com",legoUrl:"https://dev.restapi.ordergroove.com"});case kt:return m(l({},t),{name:"prod",apiUrl:"https://om.ordergroove.com",legoUrl:"https://restapi.ordergroove.com"});default:return t}},"environment"),ts=n((t={offerOptInLabel:"Subscribe and Save",offerIncentiveText:"Save {{ogIncentive DiscountPercent}} when you subscribe",offerOptOutLabel:"Deliver one-time only",offerEveryLabel:"Delivery Every",offerTooltipTrigger:"[?]",offerTooltipContent:"Seems this is a great subscription offering. Many fun details about this program exist.",optinButtonLabel:"\u2022",optoutButtonLabel:"\u2022",optinStatusOptedInLabel:"You're opted in!",optinStatusOptedOutLabel:"You're not opted in.",optinToggleLabel:"\u2022",upsellButtonLabel:"Add item to order on ",upsellButtonPrefix:"",upsellModalContent:"Some upsell modal content",upsellModalOptInLabel:"Subscribe",upsellModalOptOutLabel:"Purchase one time",upsellModalTitle:"Impulse Upsell",upsellModalConfirmLabel:"Ok",upsellModalCancelLabel:"Cancel",defaultFrequencyCopy:"(Most Popular)",frequencyPeriods:{"1":"day","2":"week","3":"month"}},e)=>{switch(e.type){case Ut:return l(l({},t),e.payload);default:return t}},"locale"),rs=n((t={frequencies:["1_2","1_2","1_3"],offerType:"radio"},e)=>{switch(e.type){case Dt:return m(l(l({},t),e.payload),{defaultFrequency:e.payload.defaultFrequency?Me(e.payload.defaultFrequency):t.defaultFrequency,frequencies:e.payload.frequencies?e.payload.frequencies.map(Me):t.frequencies});default:return t}},"config"),os=n((t=!1,e)=>{switch(e.type){case rt:return e.payload;default:return t}},"previewStandardOffer"),ns=n((t=!1,e)=>{switch(e.type){case ot:return e.payload;default:return t}},"previewUpsellOffer"),ss=n((t=[],e)=>{switch(e.type){case F:return l(l({},t),e.payload.autoship_by_default);default:return t}},"autoshipByDefault"),is=n((t=[],e)=>{switch(e.type){case F:return l(l({},t),e.payload.default_frequencies);default:return t}},"defaultFrequencies"),as=n((t=[],e)=>{switch(e.type){case Lt:return[...e.payload||[]];case Ft:return[e.payload,...t];default:return t}},"templates"),Yr=Ko({environment:es,optedin:Fn,optedout:Ln,merchantId:Gn,offer:Yn,offerId:Qn,productOffer:Kn,sessionId:Jn,inStock:Vn,eligibilityGroups:$n,autoshipByDefault:ss,autoshipEligible:Mn,incentives:Hn,nextUpcomingOrder:jn,auth:zn,authUrl:Wn,locale:ts,config:rs,previewStandardOffer:os,previewUpsellOffer:ns,templates:as,defaultFrequencies:is,firstOrderPlaceDate:Zn,productToSubscribe:Xn})});var Jr=X((Yt,ls)=>{(function(t,e){typeof Yt=="object"&&typeof ls!="undefined"?e(Yt):typeof define=="function"&&define.amd?define(["exports"],e):(t=t||self,e(t.throttleDebounce={}))})(Yt,function(t){"use strict";function e(o,s,i,a){var c,u=!1,h=0;function _(){c&&clearTimeout(c)}n(_,"clearExistingTimeout");function f(){_(),u=!0}n(f,"cancel"),typeof s!="boolean"&&(a=i,i=s,s=void 0);function b(){for(var w=arguments.length,E=new Array(w),g=0;g<w;g++)E[g]=arguments[g];var P=this,R=Date.now()-h;if(u)return;function S(){h=Date.now(),i.apply(P,E)}n(S,"exec");function A(){c=void 0}n(A,"clear"),a&&!c&&S(),_(),a===void 0&&R>o?S():s!==!0&&(c=setTimeout(a?A:S,a===void 0?o-R:o))}return n(b,"wrapper"),b.cancel=f,b}n(e,"throttle");function r(o,s,i){return i===void 0?e(o,s,!1):e(o,i,s!==!1)}n(r,"debounce"),t.debounce=r,t.throttle=e,Object.defineProperty(t,"__esModule",{value:!0})})});var us,il,al,cl,ll,ps,ds=p(()=>{us=/^og_auth=/,il=n((t=us)=>(document.cookie.split(/;\s*/).find(e=>e.match(t))||"").replace(us,""),"s"),al=n(t=>{if(typeof t=="object")return t;let e=(t||"").split("|");return e.length===3?{sig_field:e[0],ts:parseInt(e[1],10),sig:e[2]}:null},"i"),cl=n(t=>new Promise((e,r)=>{let o=document.createElement("iframe");o.style.setProperty("display","none","important"),document.body.appendChild(o),o.onload=e,o.onerror=r,o.src=t}),"p"),ll=n(t=>(t.headers.get("content-type")||"").indexOf("application/json")!==-1,"c"),ps=n((t,e=il,r=cl)=>Promise.resolve(e()||t&&typeof t=="string"&&fetch(t).then(o=>o.status>=200&&o.status<300?e()||(ll(o)?o.json():Promise.resolve(r(t)).then(e)):null)).then(al).then(o=>o===null?Promise.reject(new Error("Unauthorized")):o),"l")});var Es={};x(Es,{addTemplate:()=>yl,authorize:()=>Qt,checkout:()=>hl,concludeUpsell:()=>Zr,createIu:()=>to,createSessionId:()=>fs,fetchAuth:()=>dl,fetchDone:()=>at,fetchOffer:()=>eo,fetchOrders:()=>ct,fetchResponseError:()=>Zt,optinProduct:()=>J,optoutProduct:()=>_e,productChangeFrequency:()=>it,productHasChangedComponents:()=>Kr,receiveConvertOneTime:()=>xs,receiveCreateOneTime:()=>bs,receiveItems:()=>Kt,receiveOffer:()=>xe,receiveOrders:()=>Jt,requestAuth:()=>hs,requestConvertOneTimeToSubscription:()=>_s,requestCreateOneTime:()=>ys,requestOffer:()=>gs,requestOrders:()=>ms,requestSessionId:()=>Xr,setAuthUrl:()=>pl,setConfig:()=>gl,setEnvironment:()=>fl,setFirstOrderPlaceDate:()=>ro,setLocale:()=>ml,setMerchantId:()=>ul,setProductToSubscribe:()=>oo,setTemplates:()=>bl,unauthorized:()=>ae});var J,_e,Kr,it,Zr,ul,fs,hs,Qt,ae,pl,at,dl,ms,Jt,Kt,ct,fl,Xr,xe,Zt,gs,eo,hl,ys,bs,_s,xs,to,ml,gl,yl,bl,ro,oo,I=p(()=>{ds();Ie();se();J=n((t,e)=>({type:ee,payload:{product:t,frequency:e}}),"optinProduct"),_e=n(t=>({type:te,payload:{product:t}}),"optoutProduct"),Kr=n((t,e)=>({type:tt,payload:{newProduct:t,product:e}}),"productHasChangedComponents"),it=n((t,e)=>({type:re,payload:{product:t,frequency:e}}),"productChangeFrequency"),Zr=n(t=>({type:fn,payload:{product:t}}),"concludeUpsell"),ul=n(t=>({type:wt,payload:t}),"setMerchantId"),fs=n(t=>({type:Ot,payload:`${t}.${Math.floor(Math.random()*999999)}.${Math.round(new Date().getTime()/1e3)}`}),"createSessionId"),hs=n(t=>({type:un,payload:t}),"requestAuth"),Qt=n((t,e,r,o)=>({type:Ct,payload:{public_id:t,sig_field:e,ts:r,sig:o}}),"authorize"),ae=n(t=>({type:ke,payload:t}),"unauthorized"),pl=n(t=>({type:Tt,payload:t}),"setAuthUrl"),at=n(t=>({type:gn,payload:t}),"fetchDone"),dl=n((t=ps)=>n(function(r,o){if(window.og&&window.og.previewMode)return r(ae({message:"Offers are running in preview mode"}));let{merchantId:s,authUrl:i}=o(),a=hs(i);return r(a),t(i).then(({sig_field:c,ts:u,sig:h})=>r(Qt(s,c,u,h)),c=>r(ae(c))).finally(()=>r(at(a)))},"fetchAuthThunk"),"fetchAuth"),ms=n((t,e)=>({type:pn,payload:{status:t,ordering:e}}),"requestOrders"),Jt=n(t=>({type:Pt,payload:t}),"receiveOrders"),Kt=n(t=>({type:Rt,payload:t}),"receiveItems"),ct=n((t=1,e="place")=>n(function(o,s){let{environment:{legoUrl:i},auth:a}=s();if(!a)return o(ae("No auth set."));let c=ms(t,e);return o(c),ne.fetchOrders(i,a,t,e).then(u=>{o(Jt(u));let h=(u.results[0]||{}).public_id;return h?ne.fetchItems(i,a,h).then(_=>o(Kt(_))):null},u=>o(ae(u))).finally(()=>o(at(c)))},"fetchOrdersThunk"),"fetchOrders"),fl=n(t=>{switch(t){case"dev":return{type:Nt,payload:t};case"staging":return{type:At,payload:t};case"prod":return{type:kt,payload:t};default:throw new Error(`${t} is not a supported environment`)}},"setEnvironment"),Xr=n(()=>(t,e)=>{let{merchantId:r,sessionId:o}=e();return(!o||r&&!o.startsWith(r))&&t(fs(r)),o},"requestSessionId"),xe=n(t=>({type:F,payload:t}),"receiveOffer"),Zt=n(t=>({type:dn,payload:t}),"fetchResponseError"),gs=n((t,e="pdp")=>({type:ln,payload:{product:t,module:e}}),"requestOffer"),eo=n((t,e="pdp")=>n(function(o,s){let{merchantId:i,sessionId:a,environment:{apiUrl:c}}=s(),u=gs(t,e);return o(u),ne.fetchOffer(c,i,a,t,e).then(h=>o(xe(h)),h=>o(Zt(h))).finally(()=>o(at(u)))},"fetchOfferThunk"),"fetchOffer"),hl=n(()=>({type:qe}),"checkout"),ys=n((t,e,r,o)=>({type:hn,payload:{product:t,order:e,quantity:r,offerId:o}}),"requestCreateOneTime"),bs=n(t=>({type:qt,payload:t}),"receiveCreateOneTime"),_s=n((t,e)=>({type:mn,payload:{item:t,frequency:e}}),"requestConvertOneTimeToSubscription"),xs=n((t,e)=>({type:It,payload:{response:t,product:e}}),"receiveConvertOneTime"),to=n((t,e,r,o=!1,s=null)=>n(function(a,c){let{auth:u,environment:{legoUrl:h},previewUpsellOffer:_,offerId:f}=c();if(!u)return a(ae("No auth set."));let b=ys(t,e,r,f);return a(b),(_?Promise.resolve({legoUrl:h,product:t,order:e,quantity:r,offer:f}):ne.createOneTime(h,u,t.id,e,r,f)).then(w=>(a(bs(w)),o?(a(_s(w,s)),(_?Promise.resolve({item:w,frequency:s}):ne.convertOneTimeToSubscription(h,u,w,s,f)).then(E=>a(xs(E,t)),E=>a(Zt(E)))):w),w=>a(Zt(w))).finally(()=>a(at(b)))},"createIuThunk"),"createIu"),ml=n(t=>({type:Ut,payload:t}),"setLocale"),gl=n(t=>({type:Dt,payload:t}),"setConfig"),yl=n((t,e,r)=>({type:Ft,payload:{selector:t,markup:e,config:r}}),"addTemplate"),bl=n(t=>({type:Lt,payload:t}),"setTemplates"),ro=n((t,e)=>({type:jt,payload:{product:t,firstOrderPlaceDate:e}}),"setFirstOrderPlaceDate"),oo=n((t,e)=>({type:Mt,payload:{product:t,productToSubscribe:e}}),"setProductToSubscribe")});var ws={};x(ws,{STORE_ROOT:()=>Ee,clearState:()=>xl,listenLocalStorageChanges:()=>_l,loadState:()=>io,safeParseState:()=>no,saveState:()=>ao,serializeState:()=>vs});var Ss,Ee,no,so,io,vs,ao,_l,xl,Xt=p(()=>{Ss=Ae(Jr());I();Ie();Ee="OG_STATE",no=n(t=>{try{return t===null?void 0:JSON.parse(t)}catch(e){return}},"safeParseState"),so=n(()=>window.og&&window.og.previewMode,"isPreviewMode"),io=n(()=>so()?{}:no(localStorage.getItem(Ee)),"loadState"),vs=n(t=>!t||!t.sessionId?!1:JSON.stringify({sessionId:t.sessionId,optedin:t.optedin,optedout:t.optedout,productOffer:t.productOffer,firstOrderPlaceDate:t.firstOrderPlaceDate,productToSubscribe:t.productToSubscribe}),"serializeState"),ao=n(t=>{if(so())return;let e=vs(t);e&&localStorage.getItem(Ee)!==e&&localStorage.setItem(Ee,e)},"saveState"),_l=n(t=>(0,Ss.throttle)(500,e=>{if(so())return;let{key:r,newValue:o}=e;r===Ee&&o===null?(t.dispatch({type:oe}),setTimeout(()=>t.dispatch(Xr()),0)):r===Ee&&t.dispatch({type:me,newValue:no(o)})}),"listenLocalStorageChanges"),xl=n(()=>localStorage.removeItem(Ee),"clearState")});var Os,El,Ts,Sl,Cs,Ps,Rs=p(()=>{Os=Ae(Jr());Ie();Q();Xt();El=n((t,e,r=document)=>r.dispatchEvent(new CustomEvent(t,{detail:e})),"dispatchEvent"),Ts=n(t=>({payload:{product:{id:e,components:r}={}}={}}={})=>setTimeout(()=>El("optin-changed",{productId:e,components:r,optedIn:t}),0),"dispatchOptinChangedEvent"),Sl=[{expressions:[({type:t}={})=>t===ee,({type:t}={})=>t===re],fn:Ts(!0)},{expressions:[({type:t}={})=>t===te],fn:Ts(!1)}],Cs=n(t=>e=>r=>{let o=t.getState();Sl.forEach(s=>{s.expressions.some(i=>i(r,o))&&s.fn(r)}),e(r)},"dispatchMiddleware"),Ps=n(t=>e=>r=>{e(r);let o=(0,Os.throttle)(500,()=>{ao(l({},t.getState()))});r.type!==me&&o()},"localStorageMiddleware")});var Ns={};x(Ns,{default:()=>vl,getStore:()=>As});function As(){if(window.og&&window.og.store)return window.og.store;let t=window.og&&window.og.previewMode,e=typeof window=="object"&&window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__?window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({}):Fr,r=[an,Cs];t||r.push(Ps);let o=e(tn(...r)),s=Dr(Yr,t?{}:io(),o);return window.og=window.og||{},window.og.store=s,s}var vl,ks=p(()=>{vt();cn();Qr();Xt();Rs();n(As,"getStore");vl=As});var Is={};x(Is,{default:()=>wl,getProductsForPurchasePost:()=>qs});var qs,wl,Us=p(()=>{se();qs=n((t={},e=[])=>(t.optedin||[]).map(r=>{let o={product:r.id,subscription_info:{components:r.components||[]},tracking_override:l({offer:((t.productOffer||{})[r.id]||[])[0]},je(r.frequency))};return t.firstOrderPlaceDate&&t.firstOrderPlaceDate[r.id]&&(o.subscription_info.first_order_place_date=t.firstOrderPlaceDate[r.id]),t.productToSubscribe&&t.productToSubscribe[r.id]&&(o.tracking_override.product=t.productToSubscribe[r.id]),o}).filter(r=>r.tracking_override.offer).filter(r=>e.length?e.includes(r.product):r),"getProductsForPurchasePost"),wl={getProductsForPurchasePost:qs}});var co,Se,ve=p(()=>{co=typeof window!="undefined"&&window.customElements!=null&&window.customElements.polyfillWrapFlushCallback!==void 0,Se=n((t,e,r=null)=>{for(;e!==r;){let o=e.nextSibling;t.removeChild(e),e=o}},"removeNodes")});var L,lo,Ds,$e,we,Fs,lt,H,er,ce=p(()=>{L=`{{lit-${String(Math.random()).slice(2)}}}`,lo=`<!--${L}-->`,Ds=new RegExp(`${L}|${lo}`),$e="$lit$",we=class{constructor(e,r){this.parts=[],this.element=r;let o=[],s=[],i=document.createTreeWalker(r.content,133,null,!1),a=0,c=-1,u=0,{strings:h,values:{length:_}}=e;for(;u<_;){let f=i.nextNode();if(f===null){i.currentNode=s.pop();continue}if(c++,f.nodeType===1){if(f.hasAttributes()){let b=f.attributes,{length:w}=b,E=0;for(let g=0;g<w;g++)Fs(b[g].name,$e)&&E++;for(;E-- >0;){let g=h[u],P=er.exec(g)[2],R=P.toLowerCase()+$e,S=f.getAttribute(R);f.removeAttribute(R);let A=S.split(Ds);this.parts.push({type:"attribute",index:c,name:P,strings:A}),u+=A.length-1}}f.tagName==="TEMPLATE"&&(s.push(f),i.currentNode=f.content)}else if(f.nodeType===3){let b=f.data;if(b.indexOf(L)>=0){let w=f.parentNode,E=b.split(Ds),g=E.length-1;for(let P=0;P<g;P++){let R,S=E[P];if(S==="")R=H();else{let A=er.exec(S);A!==null&&Fs(A[2],$e)&&(S=S.slice(0,A.index)+A[1]+A[2].slice(0,-$e.length)+A[3]),R=document.createTextNode(S)}w.insertBefore(R,f),this.parts.push({type:"node",index:++c})}E[g]===""?(w.insertBefore(H(),f),o.push(f)):f.data=E[g],u+=g}}else if(f.nodeType===8)if(f.data===L){let b=f.parentNode;(f.previousSibling===null||c===a)&&(c++,b.insertBefore(H(),f)),a=c,this.parts.push({type:"node",index:c}),f.nextSibling===null?f.data="":(o.push(f),c--),u++}else{let b=-1;for(;(b=f.data.indexOf(L,b+1))!==-1;)this.parts.push({type:"node",index:-1}),u++}}for(let f of o)f.parentNode.removeChild(f)}};n(we,"Template");Fs=n((t,e)=>{let r=t.length-e.length;return r>=0&&t.slice(r)===e},"endsWith"),lt=n(t=>t.index!==-1,"isTemplatePartActive"),H=n(()=>document.createComment(""),"createMarker"),er=/([ \x09\x0a\x0c\x0d])([^\0-\x1F\x7F-\x9F "'>=/]+)([ \x09\x0a\x0c\x0d]*=[ \x09\x0a\x0c\x0d]*(?:[^ \x09\x0a\x0c\x0d"'`<>=]*|"[^"]*|'[^']*))$/});function po(t,e){let{element:{content:r},parts:o}=t,s=document.createTreeWalker(r,uo,null,!1),i=ut(o),a=o[i],c=-1,u=0,h=[],_=null;for(;s.nextNode();){c++;let f=s.currentNode;for(f.previousSibling===_&&(_=null),e.has(f)&&(h.push(f),_===null&&(_=f)),_!==null&&u++;a!==void 0&&a.index===c;)a.index=_!==null?-1:a.index-u,i=ut(o,i),a=o[i]}h.forEach(f=>f.parentNode.removeChild(f))}function Ls(t,e,r=null){let{element:{content:o},parts:s}=t;if(r==null){o.appendChild(e);return}let i=document.createTreeWalker(o,uo,null,!1),a=ut(s),c=0,u=-1;for(;i.nextNode();)for(u++,i.currentNode===r&&(c=Ol(e),r.parentNode.insertBefore(e,r));a!==-1&&s[a].index===u;){if(c>0){for(;a!==-1;)s[a].index+=c,a=ut(s,a);return}a=ut(s,a)}}var uo,Ol,ut,js=p(()=>{ce();uo=133;n(po,"removeNodesFromTemplate");Ol=n(t=>{let e=t.nodeType===11?0:1,r=document.createTreeWalker(t,uo,null,!1);for(;r.nextNode();)e++;return e},"countNodes"),ut=n((t,e=-1)=>{for(let r=e+1;r<t.length;r++){let o=t[r];if(lt(o))return r}return-1},"nextActiveIndexInTemplateParts");n(Ls,"insertNodeIntoTemplate")});var Tl,Oe,fo=p(()=>{Tl=new WeakMap,Oe=n(t=>typeof t=="function"&&Tl.has(t),"isDirective")});var U,tr,ho=p(()=>{U={},tr={}});var le,rr=p(()=>{ve();ce();le=class{constructor(e,r,o){this.__parts=[],this.template=e,this.processor=r,this.options=o}update(e){let r=0;for(let o of this.__parts)o!==void 0&&o.setValue(e[r]),r++;for(let o of this.__parts)o!==void 0&&o.commit()}_clone(){let e=co?this.template.element.content.cloneNode(!0):document.importNode(this.template.element.content,!0),r=[],o=this.template.parts,s=document.createTreeWalker(e,133,null,!1),i=0,a=0,c,u=s.nextNode();for(;i<o.length;){if(c=o[i],!lt(c)){this.__parts.push(void 0),i++;continue}for(;a<c.index;)a++,u.nodeName==="TEMPLATE"&&(r.push(u),s.currentNode=u.content),(u=s.nextNode())===null&&(s.currentNode=r.pop(),u=s.nextNode());if(c.type==="node"){let h=this.processor.handleTextExpression(this.options);h.insertAfterNode(u.previousSibling),this.__parts.push(h)}else this.__parts.push(...this.processor.handleAttributeExpressions(u,c.name,c.strings,this.options));i++}return co&&(document.adoptNode(e),customElements.upgrade(e)),e}};n(le,"TemplateInstance")});var Ms,Pl,K,or=p(()=>{ve();ce();Ms=window.trustedTypes&&trustedTypes.createPolicy("lit-html",{createHTML:t=>t}),Pl=` ${L} `,K=class{constructor(e,r,o,s){this.strings=e,this.values=r,this.type=o,this.processor=s}getHTML(){let e=this.strings.length-1,r="",o=!1;for(let s=0;s<e;s++){let i=this.strings[s],a=i.lastIndexOf("<!--");o=(a>-1||o)&&i.indexOf("-->",a+1)===-1;let c=er.exec(i);c===null?r+=i+(o?Pl:lo):r+=i.substr(0,c.index)+c[1]+c[2]+$e+c[3]+L}return r+=this.strings[e],r}getTemplateElement(){let e=document.createElement("template"),r=this.getHTML();return Ms!==void 0&&(r=Ms.createHTML(r)),e.innerHTML=r,e}};n(K,"TemplateResult")});var nr,sr,Be,pt,Z,dt,ft,ir,Vs,ht,Rl,ar=p(()=>{fo();ve();ho();rr();or();ce();nr=n(t=>t===null||!(typeof t=="object"||typeof t=="function"),"isPrimitive"),sr=n(t=>Array.isArray(t)||!!(t&&t[Symbol.iterator]),"isIterable"),Be=class{constructor(e,r,o){this.dirty=!0,this.element=e,this.name=r,this.strings=o,this.parts=[];for(let s=0;s<o.length-1;s++)this.parts[s]=this._createPart()}_createPart(){return new pt(this)}_getValue(){let e=this.strings,r=e.length-1,o=this.parts;if(r===1&&e[0]===""&&e[1]===""){let i=o[0].value;if(typeof i=="symbol")return String(i);if(typeof i=="string"||!sr(i))return i}let s="";for(let i=0;i<r;i++){s+=e[i];let a=o[i];if(a!==void 0){let c=a.value;if(nr(c)||!sr(c))s+=typeof c=="string"?c:String(c);else for(let u of c)s+=typeof u=="string"?u:String(u)}}return s+=e[r],s}commit(){this.dirty&&(this.dirty=!1,this.element.setAttribute(this.name,this._getValue()))}};n(Be,"AttributeCommitter");pt=class{constructor(e){this.value=void 0,this.committer=e}setValue(e){e!==U&&(!nr(e)||e!==this.value)&&(this.value=e,Oe(e)||(this.committer.dirty=!0))}commit(){for(;Oe(this.value);){let e=this.value;this.value=U,e(this)}this.value!==U&&this.committer.commit()}};n(pt,"AttributePart");Z=class{constructor(e){this.value=void 0,this.__pendingValue=void 0,this.options=e}appendInto(e){this.startNode=e.appendChild(H()),this.endNode=e.appendChild(H())}insertAfterNode(e){this.startNode=e,this.endNode=e.nextSibling}appendIntoPart(e){e.__insert(this.startNode=H()),e.__insert(this.endNode=H())}insertAfterPart(e){e.__insert(this.startNode=H()),this.endNode=e.endNode,e.endNode=this.startNode}setValue(e){this.__pendingValue=e}commit(){if(this.startNode.parentNode===null)return;for(;Oe(this.__pendingValue);){let r=this.__pendingValue;this.__pendingValue=U,r(this)}let e=this.__pendingValue;e!==U&&(nr(e)?e!==this.value&&this.__commitText(e):e instanceof K?this.__commitTemplateResult(e):e instanceof Node?this.__commitNode(e):sr(e)?this.__commitIterable(e):e===tr?(this.value=tr,this.clear()):this.__commitText(e))}__insert(e){this.endNode.parentNode.insertBefore(e,this.endNode)}__commitNode(e){this.value!==e&&(this.clear(),this.__insert(e),this.value=e)}__commitText(e){let r=this.startNode.nextSibling;e=e==null?"":e;let o=typeof e=="string"?e:String(e);r===this.endNode.previousSibling&&r.nodeType===3?r.data=o:this.__commitNode(document.createTextNode(o)),this.value=e}__commitTemplateResult(e){let r=this.options.templateFactory(e);if(this.value instanceof le&&this.value.template===r)this.value.update(e.values);else{let o=new le(r,e.processor,this.options),s=o._clone();o.update(e.values),this.__commitNode(s),this.value=o}}__commitIterable(e){Array.isArray(this.value)||(this.value=[],this.clear());let r=this.value,o=0,s;for(let i of e)s=r[o],s===void 0&&(s=new Z(this.options),r.push(s),o===0?s.appendIntoPart(this):s.insertAfterPart(r[o-1])),s.setValue(i),s.commit(),o++;o<r.length&&(r.length=o,this.clear(s&&s.endNode))}clear(e=this.startNode){Se(this.startNode.parentNode,e.nextSibling,this.endNode)}};n(Z,"NodePart");dt=class{constructor(e,r,o){if(this.value=void 0,this.__pendingValue=void 0,o.length!==2||o[0]!==""||o[1]!=="")throw new Error("Boolean attributes can only contain a single expression");this.element=e,this.name=r,this.strings=o}setValue(e){this.__pendingValue=e}commit(){for(;Oe(this.__pendingValue);){let r=this.__pendingValue;this.__pendingValue=U,r(this)}if(this.__pendingValue===U)return;let e=!!this.__pendingValue;this.value!==e&&(e?this.element.setAttribute(this.name,""):this.element.removeAttribute(this.name),this.value=e),this.__pendingValue=U}};n(dt,"BooleanAttributePart");ft=class extends Be{constructor(e,r,o){super(e,r,o);this.single=o.length===2&&o[0]===""&&o[1]===""}_createPart(){return new ir(this)}_getValue(){return this.single?this.parts[0].value:super._getValue()}commit(){this.dirty&&(this.dirty=!1,this.element[this.name]=this._getValue())}};n(ft,"PropertyCommitter");ir=class extends pt{};n(ir,"PropertyPart");Vs=!1;(()=>{try{let t={get capture(){return Vs=!0,!1}};window.addEventListener("test",t,t),window.removeEventListener("test",t,t)}catch(t){}})();ht=class{constructor(e,r,o){this.value=void 0,this.__pendingValue=void 0,this.element=e,this.eventName=r,this.eventContext=o,this.__boundHandleEvent=s=>this.handleEvent(s)}setValue(e){this.__pendingValue=e}commit(){for(;Oe(this.__pendingValue);){let i=this.__pendingValue;this.__pendingValue=U,i(this)}if(this.__pendingValue===U)return;let e=this.__pendingValue,r=this.value,o=e==null||r!=null&&(e.capture!==r.capture||e.once!==r.once||e.passive!==r.passive),s=e!=null&&(r==null||o);o&&this.element.removeEventListener(this.eventName,this.__boundHandleEvent,this.__options),s&&(this.__options=Rl(e),this.element.addEventListener(this.eventName,this.__boundHandleEvent,this.__options)),this.value=e,this.__pendingValue=U}handleEvent(e){typeof this.value=="function"?this.value.call(this.eventContext||this.element,e):this.value.handleEvent(e)}};n(ht,"EventPart");Rl=n(t=>t&&(Vs?{capture:t.capture,passive:t.passive,once:t.once}:t.capture),"getOptions")});function mo(t){let e=Te.get(t.type);e===void 0&&(e={stringsArray:new WeakMap,keyString:new Map},Te.set(t.type,e));let r=e.stringsArray.get(t.strings);if(r!==void 0)return r;let o=t.strings.join(L);return r=e.keyString.get(o),r===void 0&&(r=new we(t,t.getTemplateElement()),e.keyString.set(o,r)),e.stringsArray.set(t.strings,r),r}var Te,cr=p(()=>{ce();n(mo,"templateFactory");Te=new Map});var ue,go,yo=p(()=>{ve();ar();cr();ue=new WeakMap,go=n((t,e,r)=>{let o=ue.get(e);o===void 0&&(Se(e,e.firstChild),ue.set(e,o=new Z(Object.assign({templateFactory:mo},r))),o.appendInto(e)),o.setValue(t),o.commit()},"render")});var lr,bo,_o=p(()=>{ar();lr=class{handleAttributeExpressions(e,r,o,s){let i=r[0];return i==="."?new ft(e,r.slice(1),o).parts:i==="@"?[new ht(e,r.slice(1),s.eventContext)]:i==="?"?[new dt(e,r.slice(1),o)]:new Be(e,r,o).parts}handleTextExpression(e){return new Z(e)}};n(lr,"DefaultTemplateProcessor");bo=new lr});var d,xo=p(()=>{_o();or();_o();fo();ve();ho();ar();yo();cr();rr();or();ce();typeof window!="undefined"&&(window.litHtmlVersions||(window.litHtmlVersions=[])).push("1.3.0");d=n((t,...e)=>new K(t,e,"html",bo),"html")});var Bs,ur,Nl,kl,ql,Hs,Il,zs,Gs=p(()=>{ve();js();yo();cr();rr();ce();xo();Bs=n((t,e)=>`${t}--${e}`,"getTemplateCacheKey"),ur=!0;typeof window.ShadyCSS=="undefined"?ur=!1:typeof window.ShadyCSS.prepareTemplateDom=="undefined"&&(console.warn("Incompatible ShadyCSS version detected. Please update to at least @webcomponents/webcomponentsjs@2.0.2 and @webcomponents/shadycss@1.3.1."),ur=!1);Nl=n(t=>e=>{let r=Bs(e.type,t),o=Te.get(r);o===void 0&&(o={stringsArray:new WeakMap,keyString:new Map},Te.set(r,o));let s=o.stringsArray.get(e.strings);if(s!==void 0)return s;let i=e.strings.join(L);if(s=o.keyString.get(i),s===void 0){let a=e.getTemplateElement();ur&&window.ShadyCSS.prepareTemplateDom(a,t),s=new we(e,a),o.keyString.set(i,s)}return o.stringsArray.set(e.strings,s),s},"shadyTemplateFactory"),kl=["html","svg"],ql=n(t=>{kl.forEach(e=>{let r=Te.get(Bs(e,t));r!==void 0&&r.keyString.forEach(o=>{let{element:{content:s}}=o,i=new Set;Array.from(s.querySelectorAll("style")).forEach(a=>{i.add(a)}),po(o,i)})})},"removeStylesFromLitTemplates"),Hs=new Set,Il=n((t,e,r)=>{Hs.add(t);let o=r?r.element:document.createElement("template"),s=e.querySelectorAll("style"),{length:i}=s;if(i===0){window.ShadyCSS.prepareTemplateStyles(o,t);return}let a=document.createElement("style");for(let h=0;h<i;h++){let _=s[h];_.parentNode.removeChild(_),a.textContent+=_.textContent}ql(t);let c=o.content;r?Ls(r,a,c.firstChild):c.insertBefore(a,c.firstChild),window.ShadyCSS.prepareTemplateStyles(o,t);let u=c.querySelector("style");if(window.ShadyCSS.nativeShadow&&u!==null)e.insertBefore(u.cloneNode(!0),e.firstChild);else if(r){c.insertBefore(a,c.firstChild);let h=new Set;h.add(a),po(r,h)}},"prepareTemplateStyles"),zs=n((t,e,r)=>{if(!r||typeof r!="object"||!r.scopeName)throw new Error("The `scopeName` option is required.");let o=r.scopeName,s=ue.has(e),i=ur&&e.nodeType===11&&!!e.host,a=i&&!Hs.has(o),c=a?document.createDocumentFragment():e;if(go(t,c,Object.assign({templateFactory:Nl(o)},r)),a){let u=ue.get(c);ue.delete(c);let h=u.value instanceof le?u.value.template:void 0;Il(o,c,h),Se(e,e.firstChild),e.appendChild(c),ue.set(e,u)}!s&&i&&window.ShadyCSS.styleElement(e.host)},"render")});var Ws,Eo,Ys,So,vo,wo,Oo,To,Co,mt,Po=p(()=>{window.JSCompiler_renameProperty=(t,e)=>t;Eo={toAttribute(t,e){switch(e){case Boolean:return t?"":null;case Object:case Array:return t==null?t:JSON.stringify(t)}return t},fromAttribute(t,e){switch(e){case Boolean:return t!==null;case Number:return t===null?null:Number(t);case Object:case Array:return JSON.parse(t)}return t}},Ys=n((t,e)=>e!==t&&(e===e||t===t),"notEqual"),So={attribute:!0,type:String,converter:Eo,reflect:!1,hasChanged:Ys},vo=1,wo=1<<2,Oo=1<<3,To=1<<4,Co="finalized",mt=class extends HTMLElement{constructor(){super();this.initialize()}static get observedAttributes(){this.finalize();let e=[];return this._classProperties.forEach((r,o)=>{let s=this._attributeNameForProperty(o,r);s!==void 0&&(this._attributeToPropertyMap.set(s,o),e.push(s))}),e}static _ensureClassProperties(){if(!this.hasOwnProperty(JSCompiler_renameProperty("_classProperties",this))){this._classProperties=new Map;let e=Object.getPrototypeOf(this)._classProperties;e!==void 0&&e.forEach((r,o)=>this._classProperties.set(o,r))}}static createProperty(e,r=So){if(this._ensureClassProperties(),this._classProperties.set(e,r),r.noAccessor||this.prototype.hasOwnProperty(e))return;let o=typeof e=="symbol"?Symbol():`__${e}`,s=this.getPropertyDescriptor(e,o,r);s!==void 0&&Object.defineProperty(this.prototype,e,s)}static getPropertyDescriptor(e,r,o){return{get(){return this[r]},set(s){let i=this[e];this[r]=s,this.requestUpdateInternal(e,i,o)},configurable:!0,enumerable:!0}}static getPropertyOptions(e){return this._classProperties&&this._classProperties.get(e)||So}static finalize(){let e=Object.getPrototypeOf(this);if(e.hasOwnProperty(Co)||e.finalize(),this[Co]=!0,this._ensureClassProperties(),this._attributeToPropertyMap=new Map,this.hasOwnProperty(JSCompiler_renameProperty("properties",this))){let r=this.properties,o=[...Object.getOwnPropertyNames(r),...typeof Object.getOwnPropertySymbols=="function"?Object.getOwnPropertySymbols(r):[]];for(let s of o)this.createProperty(s,r[s])}}static _attributeNameForProperty(e,r){let o=r.attribute;return o===!1?void 0:typeof o=="string"?o:typeof e=="string"?e.toLowerCase():void 0}static _valueHasChanged(e,r,o=Ys){return o(e,r)}static _propertyValueFromAttribute(e,r){let o=r.type,s=r.converter||Eo,i=typeof s=="function"?s:s.fromAttribute;return i?i(e,o):e}static _propertyValueToAttribute(e,r){if(r.reflect===void 0)return;let o=r.type,s=r.converter;return(s&&s.toAttribute||Eo.toAttribute)(e,o)}initialize(){this._updateState=0,this._updatePromise=new Promise(e=>this._enableUpdatingResolver=e),this._changedProperties=new Map,this._saveInstanceProperties(),this.requestUpdateInternal()}_saveInstanceProperties(){this.constructor._classProperties.forEach((e,r)=>{if(this.hasOwnProperty(r)){let o=this[r];delete this[r],this._instanceProperties||(this._instanceProperties=new Map),this._instanceProperties.set(r,o)}})}_applyInstanceProperties(){this._instanceProperties.forEach((e,r)=>this[r]=e),this._instanceProperties=void 0}connectedCallback(){this.enableUpdating()}enableUpdating(){this._enableUpdatingResolver!==void 0&&(this._enableUpdatingResolver(),this._enableUpdatingResolver=void 0)}disconnectedCallback(){}attributeChangedCallback(e,r,o){r!==o&&this._attributeToProperty(e,o)}_propertyToAttribute(e,r,o=So){let s=this.constructor,i=s._attributeNameForProperty(e,o);if(i!==void 0){let a=s._propertyValueToAttribute(r,o);if(a===void 0)return;this._updateState=this._updateState|Oo,a==null?this.removeAttribute(i):this.setAttribute(i,a),this._updateState=this._updateState&~Oo}}_attributeToProperty(e,r){if(this._updateState&Oo)return;let o=this.constructor,s=o._attributeToPropertyMap.get(e);if(s!==void 0){let i=o.getPropertyOptions(s);this._updateState=this._updateState|To,this[s]=o._propertyValueFromAttribute(r,i),this._updateState=this._updateState&~To}}requestUpdateInternal(e,r,o){let s=!0;if(e!==void 0){let i=this.constructor;o=o||i.getPropertyOptions(e),i._valueHasChanged(this[e],r,o.hasChanged)?(this._changedProperties.has(e)||this._changedProperties.set(e,r),o.reflect===!0&&!(this._updateState&To)&&(this._reflectingProperties===void 0&&(this._reflectingProperties=new Map),this._reflectingProperties.set(e,o))):s=!1}!this._hasRequestedUpdate&&s&&(this._updatePromise=this._enqueueUpdate())}requestUpdate(e,r){return this.requestUpdateInternal(e,r),this.updateComplete}async _enqueueUpdate(){this._updateState=this._updateState|wo;try{await this._updatePromise}catch(r){}let e=this.performUpdate();return e!=null&&await e,!this._hasRequestedUpdate}get _hasRequestedUpdate(){return this._updateState&wo}get hasUpdated(){return this._updateState&vo}performUpdate(){if(!this._hasRequestedUpdate)return;this._instanceProperties&&this._applyInstanceProperties();let e=!1,r=this._changedProperties;try{e=this.shouldUpdate(r),e?this.update(r):this._markUpdated()}catch(o){throw e=!1,this._markUpdated(),o}e&&(this._updateState&vo||(this._updateState=this._updateState|vo,this.firstUpdated(r)),this.updated(r))}_markUpdated(){this._changedProperties=new Map,this._updateState=this._updateState&~wo}get updateComplete(){return this._getUpdateComplete()}_getUpdateComplete(){return this._updatePromise}shouldUpdate(e){return!0}update(e){this._reflectingProperties!==void 0&&this._reflectingProperties.size>0&&(this._reflectingProperties.forEach((r,o)=>this._propertyToAttribute(o,this[o],r)),this._reflectingProperties=void 0),this._markUpdated()}updated(e){}firstUpdated(e){}};n(mt,"UpdatingElement");Ws=Co;mt[Ws]=!0});var Qs,Td,Js=p(()=>{Qs=Element.prototype,Td=Qs.msMatchesSelector||Qs.webkitMatchesSelector});var pr,Ro,gt,Ks,Ul,C,Ao=p(()=>{pr=window.ShadowRoot&&(window.ShadyCSS===void 0||window.ShadyCSS.nativeShadow)&&"adoptedStyleSheets"in Document.prototype&&"replace"in CSSStyleSheet.prototype,Ro=Symbol(),gt=class{constructor(e,r){if(r!==Ro)throw new Error("CSSResult is not constructable. Use `unsafeCSS` or `css` instead.");this.cssText=e}get styleSheet(){return this._styleSheet===void 0&&(pr?(this._styleSheet=new CSSStyleSheet,this._styleSheet.replaceSync(this.cssText)):this._styleSheet=null),this._styleSheet}toString(){return this.cssText}};n(gt,"CSSResult");Ks=n(t=>new gt(String(t),Ro),"unsafeCSS"),Ul=n(t=>{if(t instanceof gt)return t.cssText;if(typeof t=="number")return t;throw new Error(`Value passed to 'css' function must be a 'css' function result: ${t}. Use 'unsafeCSS' to pass non-literal values, but
+            take care to ensure page security.`)},"textFromCSSResult"),C=n((t,...e)=>{let r=e.reduce((o,s,i)=>o+Ul(s)+t[i+1],t[0]);return new gt(r,Ro)},"css")});var Zs,v,O=p(()=>{Gs();Po();Po();Js();xo();Ao();Ao();(window.litElementVersions||(window.litElementVersions=[])).push("2.4.0");Zs={},v=class extends mt{static getStyles(){return this.styles}static _getUniqueStyles(){if(this.hasOwnProperty(JSCompiler_renameProperty("_styles",this)))return;let e=this.getStyles();if(Array.isArray(e)){let r=n((i,a)=>i.reduceRight((c,u)=>Array.isArray(u)?r(u,c):(c.add(u),c),a),"addStyles"),o=r(e,new Set),s=[];o.forEach(i=>s.unshift(i)),this._styles=s}else this._styles=e===void 0?[]:[e];this._styles=this._styles.map(r=>{if(r instanceof CSSStyleSheet&&!pr){let o=Array.prototype.slice.call(r.cssRules).reduce((s,i)=>s+i.cssText,"");return Ks(o)}return r})}initialize(){super.initialize(),this.constructor._getUniqueStyles(),this.renderRoot=this.createRenderRoot(),window.ShadowRoot&&this.renderRoot instanceof window.ShadowRoot&&this.adoptStyles()}createRenderRoot(){return this.attachShadow({mode:"open"})}adoptStyles(){let e=this.constructor._styles;e.length!==0&&(window.ShadyCSS!==void 0&&!window.ShadyCSS.nativeShadow?window.ShadyCSS.ScopingShim.prepareAdoptedCssText(e.map(r=>r.cssText),this.localName):pr?this.renderRoot.adoptedStyleSheets=e.map(r=>r instanceof CSSStyleSheet?r:r.styleSheet):this._needsShimAdoptedStyleSheets=!0)}connectedCallback(){super.connectedCallback(),this.hasUpdated&&window.ShadyCSS!==void 0&&window.ShadyCSS.styleElement(this)}update(e){let r=this.render();super.update(e),r!==Zs&&this.constructor.render(r,this.renderRoot,{scopeName:this.localName,eventContext:this}),this._needsShimAdoptedStyleSheets&&(this._needsShimAdoptedStyleSheets=!1,this.constructor._styles.forEach(o=>{let s=document.createElement("style");s.textContent=o.cssText,this.renderRoot.appendChild(s)}))}render(){return Zs}};n(v,"LitElement");v.finalized=!0;v.render=zs});var dr=X((Fd,Xs)=>{var Dl={PAR_OPEN:"(".charCodeAt(0),PAR_CLOSE:")".charCodeAt(0),OP_NOT:"!".charCodeAt(0),BINARY_AND:"&".charCodeAt(0),BINARY_OR:"|".charCodeAt(0),LITERAL:"LITERAL",END:"END",LEAF:"LEAF",ATOMIC:"ATOMIC"};Xs.exports=Dl});var ti=X((Ld,ei)=>{var Ce=dr(),Fl=n(t=>{let e="",r=[];for(let o of t){let s=o.charCodeAt(0);switch(s){case Ce.PAR_OPEN:case Ce.PAR_CLOSE:case Ce.OP_NOT:case Ce.BINARY_AND:case Ce.BINARY_OR:e&&(r.push({type:Ce.LITERAL,value:e}),e=""),r.push({type:s,value:o});break;default:e+=o}}return e&&r.push({type:Ce.LITERAL,value:e}),r},"Tokenizer");ei.exports=Fl});var oi=X((jd,ri)=>{var pe=dr(),Ll=n(t=>{let e=[],r=[];return t.forEach(s=>{switch(s.type){case pe.LITERAL:e.unshift(s);break;case pe.BINARY_AND:case pe.BINARY_OR:case pe.OP_NOT:case pe.PAR_OPEN:r.push(s);break;case pe.PAR_CLOSE:for(;r.length&&r[r.length-1].type!==pe.PAR_OPEN;)e.unshift(r.pop());r.pop(),r.length&&r[r.length-1].type===pe.OP_NOT&&e.unshift(r.pop());break;default:break}}),r.length&&[...r.reverse(),...e]||e},"PolishNotation"),jl=n(function*(t){for(let e=0;e<t.length-1;e++)yield t[e];return t[t.length-1]},"PolishGenerator");ri.exports={PolishNotation:Ll,PolishGenerator:jl}});var si=X((Md,ni)=>{var D=dr(),V=class{constructor(e,r,o,s){this.op=e,this.left=r,this.right=o,this.literal=s}isLeaf(){return this.op===D.LEAF}isAtomic(){return this.isLeaf()||this.op===D.OP_NOT&&this.left.isLeaf()}getLiteralValue(){return this.literal}static CreateAnd(e,r){return new V(D.BINARY_AND,e,r)}static CreateNot(e){return new V(D.OP_NOT,e)}static CreateOr(e,r){return new V(D.BINARY_OR,e,r)}static CreateLiteral(e){return new V(D.LEAF,null,null,e)}};n(V,"ExpNode");var He=n(t=>{let e=t.next().value;switch(e.type){case D.LITERAL:return V.CreateLiteral(e.value);case D.OP_NOT:return V.CreateNot(He(t));case D.BINARY_AND:{let r=He(t),o=He(t);return V.CreateAnd(r,o)}case D.BINARY_OR:{let r=He(t),o=He(t);return V.CreateOr(r,o)}}return null},"make"),ze=n((t,e)=>{if(t.isLeaf())return e(t.getLiteralValue());if(t.op===D.OP_NOT)return!ze(t.left,e);if(t.op===D.BINARY_OR)return ze(t.left,e)||ze(t.right,e);if(t.op===D.BINARY_AND)return ze(t.left,e)&&ze(t.right,e)},"nodeEvaluator");ni.exports={make:He,nodeEvaluator:ze}});var li=X((Vd,ci)=>{var Ml=ti(),ii=oi(),ai=si(),Vl=n((t,e)=>{let r=Ml(t),o=ii.PolishNotation(r),s=ii.PolishGenerator(o),i=ai.make(s);return ai.nodeEvaluator(i,e)},"parse");ci.exports={parse:Vl}});var $l,ui,No,Bl,ko,j,fr,$=p(()=>{O();$l=n(t=>{let e=String(t||"").trim().match(/(\d+)\s*([dwm])/);return e?`${e[1]}_${{d:1,w:2,m:3}[e[2]]}`:t},"sanitizeFrequencyString"),ui=n(t=>t.hasAttribute("product")&&l({id:t.getAttribute("product")},t.hasAttribute("product-components")&&{components:JSON.parse(t.getAttribute("product-components"))}),"buildProduct"),No=n(t=>{let e=ui(t);if(!e){let r=t.offer;r&&(e=ui(r))}return e},"resolveProduct"),Bl=n(t=>{let e=t;for(;e;){if(e.tagName==="OG-OFFER")return e;e=e.nodeType===11?e.host:e.parentNode}},"resolveOffer"),ko=n(t=>class extends t{get offer(){return Bl(this)}connectedCallback(){super.connectedCallback(),this.offersChangeTemplate=this.offersChangeTemplate.bind(this),this.offer&&this.offer.addEventListener("template-changed",this.offersChangeTemplate)}disconnectedCallback(){super.disconnectedCallback(),this.offer&&this.offer.removeEventListener("template-changed",this.offersChangeTemplate)}offersChangeTemplate(){this._enqueueUpdate()}},"withOfferTemplate"),j=n(t=>class extends ko(t){get product(){return No(this)}},"withProduct"),fr=n(t=>class extends t{get childOptions(){return this._childOptions||{options:[]}}connectedCallback(){let e=[],r=null;this.querySelectorAll("option").forEach(o=>{let s=$l(o.value),i=o.innerText.trim();e.push({value:s,text:i}),!r&&o.selected&&(r=s)}),this._childOptions={options:e,isSelected:r},super.connectedCallback&&super.connectedCallback()}},"withChildOptions")});var hr={};x(hr,{eligibilityGroups:()=>fi,eligible:()=>pi,hasUpcomingOrder:()=>mi,hasUpsellGroup:()=>hi,inStock:()=>qo,regularEligible:()=>Gl,subscribed:()=>Hl,subscriptionEligible:()=>di,upcomingOrderContainsProduct:()=>zl,upsellEligible:()=>gi});var qo,pi,di,fi,hi,Hl,mi,zl,gi,Gl,yi=p(()=>{Q();qo=n((t,e)=>(t.inStock||{})[(e.product||{}).id],"inStock"),pi=n((t,e)=>(t.autoshipEligible||{})[(e.product||{}).id]||!1,"eligible"),di=n((t,e)=>(t.offerId&&t.offerId!=="0"||!1)&&pi(t,e)&&qo(t,e),"subscriptionEligible"),fi=n((t,e)=>(t.eligibilityGroups||{})[(e.product||{}).id]||null,"eligibilityGroups"),hi=n((t,e)=>{let r=fi(t,e);return r===null||!!r.find(o=>o==="upsell"||o==="impulse_upsell")},"hasUpsellGroup"),Hl=n((t,e)=>Un(e.product)(t),"subscribed"),mi=n(t=>!!(t.nextUpcomingOrder&&t.nextUpcomingOrder.public_id),"hasUpcomingOrder"),zl=n((t,e)=>(t.nextUpcomingOrder&&t.nextUpcomingOrder.products||[]).includes((e.product||{}).id),"upcomingOrderContainsProduct"),gi=n((t,e)=>t.offerId&&t.offerId!=="0"&&t.auth&&qo(t,e)&&mi(t)&&hi(t,e),"upsellEligible"),Gl=n((t,e)=>di(t,e)&&!gi(t,e),"regularEligible")});var Si={};x(Si,{ConnectedWhen:()=>Ei,When:()=>mr,default:()=>Wl,mapStateToProps:()=>xi,removeWhitespace:()=>_i});var bi,_i,mr,xi,Ei,Wl,vi=p(()=>{O();bi=Ae(li());N();$();yi();_i=n(t=>t.replace(/(\r\n|\n|\r|\s)+/gm,""),"removeWhitespace"),mr=class extends j(v){static get properties(){return m(l({},super.properties),{state:{type:Object,attribute:!1},test:{type:String}})}render(){return this.test&&bi.default.parse(_i(this.test),r=>hr[r]&&hr[r](this.state,this))?d`
+        <slot></slot>
+      `:d``}shouldUpdate(e){return e.size&&this.product&&this.product.id in this.state.autoshipEligible&&this.product.id in this.state.inStock}};n(mr,"When");xi=n(t=>({state:t}),"mapStateToProps"),Ei=y(xi)(mr),Wl=Ei});var wi,de,gr,Ge,fe=p(()=>{se();wi={type:Object,converter:{toAttribute(t){return t==null?t:JSON.stringify(t)},fromAttribute(t){return t&&t.match(/[{[]/)?JSON.parse(t):{id:t}}}},de={type:String,attribute:"default-frequency",converter:{fromAttribute(t){return t&&zt(t)?t:null}}},gr={type:Boolean,attribute:!0,reflect:!0},Ge={type:Object,attribute:!1}});var Yl,z,We=p(()=>{O();Q();Yl=n(t=>class extends t{getOption(e,r=e){let o=Wr(e);if(this.hasAttribute(o)){let s=this.getAttribute(o);return s.toString().toLowerCase()==="true"?!0:s.toString().toLowerCase()==="false"?!1:s}if(this.template&&this.template.config&&typeof this.template.config[r]!="undefined")return this.template.config[r];if(this.config&&typeof this.config[r]!="undefined")return this.config[r]}applyTemplate(e){this.template=e;let r=typeof e.markup=="undefined"?this.constructor.initialTemplate:e.markup;r&&this._templateMarkup!==r&&(this._templateMarkup=r,this.innerHTML=r)}refreshTemplate(){if(this._templates&&this._templates.length){let e=this._templates.find(({selector:r})=>{try{return this.matches(r)}catch(o){return!1}});this.applyTemplate(e||{})}}set templates(e){this._templates=e,this.refreshTemplate()}connectedCallback(){super.connectedCallback&&super.connectedCallback(),this.constructor.initialTemplate&&!this.innerHTML.trim()&&(this.innerHTML=this.constructor.initialTemplate)}},"withTemplate"),z=Yl(v)});var Ti={};x(Ti,{ConnectedOptinStatus:()=>Oi,OptinStatus:()=>M,default:()=>Ql,mapStateToProps:()=>G});var M,G,Oi,Ql,Ye=p(()=>{O();Q();N();fe();$();We();M=class extends j(z){static get properties(){return{subscribed:gr,frequencyMatch:{type:Boolean,reflect:!0,attribute:"frequency-match"}}}static get styles(){return C`
+      :host {
+        cursor: default;
+        display: inline-block;
+      }
+
+      :host[hidden] {
+        display: none;
+      }
+
+      .btn {
+        position: relative;
+        width: var(--og-radio-width, 1.4em);
+        height: var(--og-radio-height, 1.4em);
+        margin: var(--og-radio-margin, 0);
+        padding: 0;
+        border: 1px solid var(--og-primary-color, black);
+        background: #fff;
+        border-radius: 100%;
+        vertical-align: middle;
+        color: var(--og-primary-color, black);
+      }
+
+      .radio {
+        text-indent: -9999px;
+      }
+
+      .checkbox {
+        border-radius: 3px;
+      }
+      .checkbox.active::after,
+      .radio.active::after {
+        content: ' ';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        background: var(--og-primary-color, black);
+        box-sizing: border-box;
+        border: 2px solid #fff;
+      }
+      .checkbox.active::after {
+        border: none;
+        border-radius: 0;
+        background: #fff;
+        content: '\\2714';
+        color: var(--og-primary-color, black);
+        line-height: 1;
+        text-align: center;
+        overflow: visible;
+      }
+    `}constructor(){super();this.addEventListener("click",this.handleClick.bind(this))}updated(e){e.has("subscribed")&&(this.frequencyMatch=this.frequency===this.defaultFrequency)}handleClick(){}render(){return this.subscribed&&!this.defaultFrequency?d`
+        <slot name="subscribed"></slot>
+        <slot name="frequency-mismatch"></slot>
+      `:this.subscribed&&this.defaultFrequency===this.frequency?d`
+        <slot name="subscribed"></slot>
+        <slot name="frequency-match"></slot>
+      `:this.subscribed&&this.defaultFrequency!==this.frequency?d`
+        <slot name="subscribed"></slot>
+        <slot name="frequency-mismatch"></slot>
+      `:d`
+      <slot name="not-subscribed"></slot>
+    `}};n(M,"OptinStatus");G=n((t,e={})=>l(l({subscribed:W(e.product)(t),frequency:ie(e.product)(t)},Y(t,e,"defaultFrequency")),Ve(t,e)),"mapStateToProps"),Oi=y(G)(M),Ql=Oi});var Pi={};x(Pi,{ConnectedOptinButton:()=>Ci,OptinButton:()=>yr,default:()=>Jl});var yr,Ci,Jl,Ri=p(()=>{O();I();Ye();N();fe();$();yr=class extends M{static get properties(){return m(l({},super.properties),{frequency:{type:String,reflect:!0},defaultFrequency:de,optinButtonLabel:{type:String}})}handleClick(e){this.optinProduct(No(this),this.defaultFrequency),e.preventDefault()}render(){return d`
+      <slot name="default">
+        <button id="action-trigger" class="btn radio ${this.subscribed?"active":""}"></button>
+        <label for="action-trigger">
+          <slot>
+            <slot name="label"><og-text key="offerOptInLabel"></og-text></slot>
+          </slot>
+        </label>
+      </slot>
+    `}};n(yr,"OptinButton");Ci=y(G,{optinProduct:J})(yr),Jl=Ci});var Ni={};x(Ni,{ConnectedOptoutButton:()=>Ai,OptoutButton:()=>br,default:()=>Kl});var br,Ai,Kl,ki=p(()=>{O();I();Ye();N();br=class extends M{static get properties(){return m(l({},super.properties),{label:{type:String}})}handleClick(e){this.optoutProduct(this.product),e.preventDefault()}render(){return d`
+      <slot name="default">
+        <button id="action-trigger" class="btn radio ${this.subscribed?"":"active"}"></button>
+        <label for="action-trigger">
+          <slot>
+            <og-text key="offerOptOutLabel"></og-text>
+          </slot>
+        </label>
+      </slot>
+    `}};n(br,"OptoutButton");Ai=y(G,{optoutProduct:_e})(br),Kl=Ai});var Ii={};x(Ii,{ConnectedFrequencyStatus:()=>qi,FrequencyStatus:()=>Je,default:()=>Zl,frequencyText:()=>Qe,mapStateToProps:()=>Ke});var Qe,Je,Ke,qi,Zl,_r=p(()=>{O();Q();N();fe();se();$();We();Qe=n((t,e)=>{let{every:r,every_period:o}=je(t);return d`
+    ${r}
+    <og-text key="frequencyPeriods" variant="${o}" pluralize="${r}"></og-text>
+    ${e&&e===t?d`
+          <og-text key="defaultFrequencyCopy"></og-text>
+        `:""}
+  `},"frequencyText"),Je=class extends j(z){static get properties(){return m(l({},super.properties),{disabled:{type:Boolean},subscribed:gr,frequency:{type:String},defaultFrequency:de,productDefaultFrequency:{type:String},frequencies:{converter:{fromAttribute:zr}}})}static get styles(){return C`
+      :host[hidden] {
+        display: none;
+      }
+      :host {
+        display: inline-block;
+      }
+    `}constructor(){super();this.frequencies=[]}render(){let e=this.frequency||this.defaultFrequency;return d`
+      <span>
+        ${this.subscribed&&d`
+            <slot name="subscribed">${Qe(e)} </slot>
+          `||""}
+        ${!this.subscribed&&d`
+            <slot name="not-subscribed"></slot>
+          `||""}
+        ${this.subscribed&&this.defaultFrequency&&this.defaultFrequency!==this.frequency&&d`
+            <slot name="frequency-mismatch"></slot>
+          `||""}
+      </span>
+    `}};n(Je,"FrequencyStatus");Ke=n((t,e)=>l(l(l({subscribed:W(e.product)(t),frequency:ie(e.product)(t),productDefaultFrequency:Wt((e.product||{}).id)(t)},Y(t,e,"frequencies",[])),Y(t,e,"defaultFrequency")),Ve(t,e)),"mapStateToProps"),qi=y(Ke)(Je),Zl=qi});var Di={};x(Di,{ConnectedOptinSelect:()=>Ui,OptinSelect:()=>xr,default:()=>Xl});var xr,Ui,Xl,Fi=p(()=>{O();I();$();Ye();_r();N();fe();xr=class extends fr(M){static get properties(){return m(l({},super.properties),{frequencies:{type:Array,attribute:!1},frequency:{type:String},defaultFrequency:de})}static get styles(){return C`
+      :host {
+        display: inline-block;
+        cursor: pointer;
+        background-color: var(--og-select-bg-color, #fff);
+        border: var(--og-select-border, 1px solid #aaa);
+        border-radius: var(--og-select-border-radius, 0.5em);
+        border-width: var(--og-select-border-width, 1px);
+        box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
+      }
+    `}get isSelected(){return this.subscribed?this.frequency:"optedOut"}onOptinChange(e){e==="optedOut"?this.optoutProduct(this.product):this.productChangeFrequency(this.product,e)}render(){let{options:e,isSelected:r}=this.childOptions,o=e;return e.length||(o=[{value:"optedOut",text:d`
+            <og-text key="offerOptOutLabel"></og-text>
+          `},...(this.frequencies||[]).map(s=>({value:s,text:Qe(s,this.defaultFrequency)}))]),d`
+      <og-select
+        .options="${o}"
+        .selected="${r}"
+        .onChange="${({target:{value:s}})=>this.onOptinChange(s)}"
+      ></og-select>
+    `}};n(xr,"OptinSelect");Ui=y((t,e)=>l(l({},G(t,e)),Ke(t,e)),{productChangeFrequency:it,optoutProduct:_e})(xr),Xl=Ui});var ji={};x(ji,{ConnectedUpsellButton:()=>eu,UpsellButton:()=>yt,default:()=>tu,mapStateToProps:()=>Li});var yt,Li,eu,tu,Mi=p(()=>{O();I();N();fe();$();We();yt=class extends j(z){static get styles(){return C`
+      :host[hidden] {
+        display: none;
+      }
+      :host {
+        display: inline-block;
+      }
+    `}static get properties(){return m(l({},super.properties),{upcomingOrderDate:{type:String,attribute:!1},auth:Ge,isPreview:{type:Boolean,attribute:!1},target:{type:String}})}constructor(){super();this.fetchOrders=()=>0,this.addEventListener("click",this.handleClick.bind(this))}updated(e){e.has("auth")&&this.auth&&!this.upcomingOrderDate&&!this.isPreview&&this.fetchOrders()}handleClick(){let e;if(!this.target&&this.offer)e=this.offer.querySelector("og-upsell-modal"),e||(e=this.offer.shadowRoot.querySelector("og-upsell-modal"));else if(this.target)e=document.querySelector(this.target);else throw Error("You must specify a target attribute or place this element as child of og-offer");e&&e.setAttribute("show",!0)}render(){return d`
+      <slot>
+        <og-next-upcoming-order></og-next-upcoming-order>
+      </slot>
+    `}};n(yt,"UpsellButton");Li=n(t=>({isPreview:t.previewUpsellOffer}),"mapStateToProps"),eu=y(Li,{fetchOrders:ct})(yt),tu=yt});var $i={};x($i,{ConnectedUpsellModal:()=>ru,UpsellModal:()=>bt,default:()=>ou,mapStateToProps:()=>Vi});var bt,Vi,ru,ou,Bi=p(()=>{O();I();N();fe();Q();$();We();bt=class extends j(z){static get properties(){return m(l({},super.properties),{defaultFrequency:de,auth:Ge,subscribed:{type:Boolean,attribute:!1},frequency:{type:String,attribute:!1},nextUpcomingOrder:{type:Object,attribute:!1},show:{type:Boolean,attribute:"show"},offerId:{type:String}})}constructor(){super();this.createIu=()=>0,this.concludeUpsell=()=>0}render(){return d`
+      <og-modal ?show=${this.show} @close=${()=>this.close()} @confirm=${()=>this.confirm()}>
+        <div slot="content">
+          <slot>
+            <slot name="content">
+              <og-text key="upsellModalContent"></og-text>
+            </slot>
+            <slot name="offer">
+              <br />
+
+              <og-optout-button>
+                <slot name="opt-out-label">
+                  <og-text key="upsellModalOptOutLabel" slot="label"></og-text>
+                </slot>
+              </og-optout-button>
+              <br />
+              <og-optin-button default-frequency=${this.defaultFrequency}>
+                <slot name="opt-in-label">
+                  <og-text key="upsellModalOptInLabel" slot="label"></og-text>
+                </slot>
+              </og-optin-button>
+              <br />
+              <slot name="every-label">
+                <og-text key="offerEveryLabel"></og-text>
+              </slot>
+              <og-select-frequency det{this.defaultFrequency}></og-select-frequency>
+            </slot>
+          </slot>
+        </div>
+        <span slot="confirm">
+          <slot name="confirm"><og-text key="upsellModalConfirmLabel"></og-text></slot
+        ></span>
+        <span slot="cancel">
+          <slot name="cancel">
+            <og-text key="upsellModalCancelLabel"></og-text>
+          </slot>
+        </span>
+      </og-modal>
+    `}set defaultFrequency(e){this._defaultFrequency=e}get defaultFrequency(){let e=this.querySelector("og-select-frequency");return e?e.defaultFrequency:this._defaultFrequency}confirm(){this.createIu(this.product,this.nextUpcomingOrder.public_id,1,this.subscribed,this.frequency||this.defaultFrequency),this.close()}close(){this.concludeUpsell(),this.removeAttribute("show")}};n(bt,"UpsellModal");Vi=n((t,e)=>m(l({auth:t.auth,offerId:t.offerId,subscribed:W(e.product)(t),frequency:ie(e.product)(t)},Y(t,e,"defaultFrequency")),{nextUpcomingOrder:t.previewUpsellOffer?{public_id:"preview-order-id"}:t.nextUpcomingOrder,isPreview:t.previewUpsellOffer}),"mapStateToProps"),ru=y(Vi,{concludeUpsell:Zr,createIu:to})(bt),ou=bt});var zi={};x(zi,{ConnectedOptinToggle:()=>Hi,OptinToggle:()=>Er,default:()=>nu});var Er,Hi,nu,Gi=p(()=>{O();I();Ye();N();Er=class extends M{static get properties(){return m(l({},super.properties),{frequency:{type:String}})}handleClick(e){this.subscribed?this.optoutProduct(this.product):this.optinProduct(this.product,this.frequency||this.defaultFrequency),e.preventDefault()}render(){return d`
+      <slot name="default">
+        <button id="action-trigger" class="btn checkbox ${this.subscribed?"active":""}"></button>
+        <label for="action-trigger">
+          <slot>
+            <slot name="label"><og-text key="offerOptInLabel"></og-text></slot
+          ></slot>
+        </label>
+      </slot>
+    `}};n(Er,"OptinToggle");Hi=y(G,{optoutProduct:_e,optinProduct:J})(Er),nu=Hi});var Ji={};x(Ji,{ConnectedText:()=>Qi,Text:()=>Sr,default:()=>su,mapStateToProps:()=>Yi,pluralize:()=>Wi});var Wi,Sr,Yi,Qi,su,Ki=p(()=>{O();N();$();Wi=n((t,e)=>`${t}${parseInt(e,10)>1?"s":""}`,"pluralize"),Sr=class extends ko(v){static get properties(){return{pluralize:{type:Number},variant:{type:Number},i18n:{type:Object,attribute:!1},locale:{type:Object,attribute:!1},key:{type:String}}}createRenderRoot(){return this}connectedCallback(){super.connectedCallback(),this._textOverride=this.innerText.trim()}getText(){return this._textOverride?this._textOverride:this.getPluralizedText(this.getVariantText(this.key))}getVariantText(e){let r=l(l({},this.i18n),this.offer&&this.offer.locale),o=typeof r[e]!="undefined"?r[e]:"";return typeof this.variant=="undefined"?o:o[this.variant]}getPluralizedText(e){return typeof this.pluralize=="undefined"?e:e&&Wi(e,this.pluralize)}render(){return d`
+      ${this.getText()}
+    `}};n(Sr,"Text");Yi=n(t=>({i18n:t.locale||{}}),"mapStateToProps"),Qi=y(Yi)(Sr),su=Qi});var na={};x(na,{ConnectedIncentiveText:()=>oa,DiscountAmount:()=>Pe,IncentiveText:()=>vr,default:()=>cu,filterIncentives:()=>ta,getTransformedDiscounts:()=>iu,mapStateToProps:()=>ra,replaceText:()=>au});function ta(t){return!(xt(t).className!==this.incentiveClass||this.incentiveValue&&this.incentiveValue.toString()!==t.value.toString())}function au(t,e){return t.replace(this.textToReplace,xt(e))}var Pe,_t,Io,Uo,Do,Zi,Xi,ea,xt,iu,vr,ra,oa,cu,sa=p(()=>{O();N();$();Pe=class{constructor(e){this.value=e,this.className="DiscountAmount"}toString(){return`${this.value}`}};n(Pe,"DiscountAmount");_t=class extends Pe{constructor(e){super(e);this.className="DiscountPercent"}toString(){return`${super.toString()}%`}};n(_t,"DiscountPercent");Io=class extends _t{constructor(e){super(e);this.className="ShippingDiscountPercent"}toString(){return this.value===100?"free shipping":super.toString()}};n(Io,"ShippingDiscountPercent");Uo="Discount Percent",Do="Discount Amount",Zi="total_price",Xi="shipping_total",ea="sub_total",xt=n(({field:t,object:e,type:r,value:o})=>{let i=[[new _t(o),{field:Zi,object:"item",type:Uo}],[new Pe(o),{field:Zi,object:"item",type:Do}],[new Io(o),{field:Xi,object:"order",type:Uo}],[new Pe(o),{field:Xi,object:"order",type:Do}],[new _t(o),{field:ea,object:"order",type:Uo}],[new Pe(o),{field:ea,object:"order",type:Do}]].find(([,a])=>a.field===t&&a.object===e&&a.type===r);return i&&i[0]},"discountBuilder"),iu=n(t=>t.map(e=>xt(e)).filter(e=>e!==void 0),"getTransformedDiscounts");n(ta,"filterIncentives");n(au,"replaceText");vr=class extends j(v){static get properties(){return m(l({},super.properties),{incentives:{type:Object,attribute:!1},from:{type:String},label:{type:String},initial:{type:Boolean,default:!1},value:{type:Number}})}createRenderRoot(){return this}render(){let e=this.from,r=this.value,o=this.initial?"initial":"ongoing",s=(this.incentives[o]||[]).find(ta.bind({incentiveClass:e,incentiveValue:r}));return d`
+      ${this.label} ${s?xt(s):this.renderFallback()}
+    `}renderFallback(){let e=this.from,r=this.value,o=this.initial?"initial":"ongoing";return d`
+      ${xt({field:"sub_total",object:"order",type:"Discount Percent",value:this.value})}
+    `}};n(vr,"IncentiveText");ra=n((t,e)=>({incentives:(t.incentives||{})[e&&e.product&&e.product.id]||{}}),"mapStateToProps"),oa=y(ra)(vr),cu=oa});var aa={};x(aa,{ConnectedSelectFrequency:()=>ia,SelectFrequency:()=>wr,default:()=>uu,frequencyEquals:()=>lu});var lu,wr,ia,uu,ca=p(()=>{O();I();$();_r();N();lu=n((t,e)=>t===null||e===null?!1:t.every===e.every&&t.period===e.period,"frequencyEquals"),wr=class extends fr(Je){static get properties(){return m(l({},super.properties),{defaultText:{type:String,attribute:"default-text"}})}static get styles(){return C`
+      :host {
+        display: inline-block;
+        cursor: pointer;
+        background-color: var(--og-select-bg-color, #fff);
+        border: var(--og-select-border, 1px solid #aaa);
+        border-radius: var(--og-select-border-radius, 0.5em);
+        border-width: var(--og-select-border-width, 1px);
+        box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
+        z-index: 1;
+      }
+    `}set defaultFrequency(e){this._defaultFrequency=e}get defaultFrequency(){let{options:e,isSelected:r}=this.childOptions;return this.productDefaultFrequency?this.productDefaultFrequency:r||(e.length?e[0].value:this._defaultFrequency)}get currentFrequency(){return this.frequency||this.defaultFrequency}productChangeFrequency(e,r){this.frequency=r}render(){let{options:e}=this.childOptions;e.length||(e=(this.frequencies||[]).map(o=>({value:o,text:Qe(o,this.defaultFrequency)})));let r=this.defaultFrequency;return e=e.map(({text:o,value:s})=>({text:s===r?`${o} ${(this.defaultText||"").trim()}`.trim():o,value:s})),d`
+      <og-select
+        .options="${e}"
+        .selected="${this.currentFrequency}"
+        .onChange="${({target:{value:o}})=>{this.productChangeFrequency(this.product,o)}}"
+      ></og-select>
+    `}};n(wr,"SelectFrequency");ia=y(Ke,{productChangeFrequency:it})(wr),uu=ia});var pu,la,ua=p(()=>{pu={day:{day:"2-digit"},"day-numeric":{day:"numeric"},"day-short":{weekday:"short"},"day-long":{weekday:"long"},month:{month:"2-digit"},"month-numeric":{month:"numeric"},"month-short":{month:"short"},"month-long":{month:"long"},year:{year:"2-digit"},"year-numeric":{year:"numeric"}},la=n((t,e)=>t instanceof Date?(e||"").toString().replace(/\{\{([-\w]+)\}\}/g,r=>{let o=r.replace(/[{}]/g,""),s=pu[o];if(typeof s=="undefined")return o;let a=new Intl.DateTimeFormat("en-us",s).formatToParts(t),[{value:c}]=a;return c}):t,"formatDate")});var da={};x(da,{ConnectedNextUpcomingOrder:()=>du,FormattedDate:()=>Et,default:()=>fu,mapStateToProps:()=>pa});var Et,pa,du,fu,fa=p(()=>{O();N();ua();Et=class extends v{static get properties(){return{value:{type:String,reflect:!0},format:{type:String}}}createRenderRoot(){return this}render(){return d`
+      ${la(this.value,this.format||"{{month-long}} {{day}}, {{year-numeric}}")}
+    `}};n(Et,"FormattedDate");pa=n(t=>({value:t.previewUpsellOffer?new Date:t.nextUpcomingOrder.place}),"mapStateToProps"),du=y(pa)(Et),fu=Et});var ha,hu,ma,ga=p(()=>{I();Ie();ha=n((t,e)=>n(async function(o){await o({type:rt,payload:t}),await o({type:ke}),await o(xe({in_stock:{[e]:!0},eligibility_groups:{[e]:["subscription","upsell"]},result:"success",autoship:{[e]:!0},modifiers:{},module_view:{regular:"096135e6650111e9a444bc764e106cf4"},incentives_display:{"47c01e9aacbe40389b5c7325d79091aa":{field:"sub_total",object:"order",type:"Discount Percent",value:5},e6534b9d877f41e586c37b7d8abc3a58:{field:"total_price",object:"item",type:"Discount Percent",value:10},f35e842710b24929922db4a529eecd40:{field:"total_price",object:"item",type:"Discount Percent",value:10},"5be321d7c17f4e18a757212b9a20bfcc":{field:"total_price",object:"item",type:"Discount Percent",value:1}},incentives:{[e]:{initial:["5be321d7c17f4e18a757212b9a20bfcc"],ongoing:["e6534b9d877f41e586c37b7d8abc3a58","47c01e9aacbe40389b5c7325d79091aa","f35e842710b24929922db4a529eecd40"]}}}))},"setPreviewStandardOfferThunk"),"setPreviewStandardOffer"),hu=n((t,e)=>n(async function(o,s){await o({type:ot,payload:t});let{merchantId:i}=s();t?(await o(xe({in_stock:{[e]:!0},module_view:{regular:"096135e6650111e9a444bc764e106cf4"},default_frequencies:{[e]:{every:1,every_period:3}},eligibility_groups:{[e]:["subscription","upsell"]},result:"success",autoship:{[e]:!0},modifiers:{}})),await o(Jt({count:1,next:null,previous:null,results:[{merchant:"0e5de2bedc5e11e3a2e4bc764e106cf4",customer:"TestCust",payment:"e98e789aba0111e9b90fbc764e107990",shipping_address:"b3a5816ae59611e78937bc764e1043b0",public_id:"23322d4a83eb11ea9a1ebc764e101db1",sub_total:"206.98",tax_total:"0.00",shipping_total:"10.00",discount_total:"0.00",total:"216.98",created:"2020-04-21 11:14:11",place:"2020-06-24 00:00:00",cancelled:null,tries:0,generic_error_count:0,status:1,type:1,order_merchant_id:null,rejected_message:null,extra_data:null,locked:!1,oos_free_shipping:!1}]})),await o(Qt(i,"sig_field","ts","sig"))):await o(ae())},"setPreviewUpsellOfferThunk"),"setPreviewUpsellOffer"),ma=n((t,e,r)=>async function(o,s){switch(await o({type:oe}),await o({type:rt,payload:!1}),await o({type:ot,payload:!1}),t){case"regular":o(ha(!0,r.product.id));break;case"upsell":o(hu(!0,r.product.id));break;case"subscribed":o(ha(!0,r.product.id)),o(J(r.product,"2_2"));break;default:}},"setPreview")});var Ea={};x(Ea,{ConnectedOffer:()=>xa,Offer:()=>Or,default:()=>gu,mapStateToProps:()=>_a,productAndComponents:()=>ba});var ya,mu,ba,Or,_a,xa,gu,Sa=p(()=>{O();ya=Ae(Bt());N();ga();I();Q();fe();We();mu=n((...t)=>JSON.stringify(t),"memoizeKey"),ba=(0,ya.default)((t,e)=>Object.assign({components:e},t),mu),Or=class extends z{static get properties(){return m(l({},super.properties),{config:{type:Object,attribute:!1},product:wi,productComponents:{type:Array,attribute:"product-components"},offerId:{type:String,attribute:!1},auth:Ge,preview:{type:String,attribute:"preview",reflect:"true"},location:{type:String},autoshipByDefault:{type:Boolean,attribute:"autoship-by-default"},productDefaultFrequency:{type:String,attribute:!1},locale:{type:Object,attribute:!0},firstOrderPlaceDate:{type:String,attribute:"first-order-place-date"},productToSubscribe:{type:String,attribute:"product-to-subscribe"},subscribed:{type:Boolean,reflect:!0},frequency:{type:String,reflect:!0}})}firstUpdated(){let e=Array.from(this.getAttributeNames()).find(r=>r.startsWith("preview-"));e==="preview-standard-offer"?this.preview="regular":e==="preview-upsell-offer"?this.preview="upsell":e==="preview-subscribed-offer"&&(this.preview="subscribed")}static get styles(){return C`
+      :host[hidden] {
+        display: none;
+      }
+
+      :host {
+        display: block;
+      }
+
+      :host {
+        color: var(--og-global-color, #000);
+        font-family: var(--og-global-family, inherit);
+        font-size: var(--og-global-size, inherit);
+        padding: var(--og-wrapper-padding, 10px 0);
+      }
+
+      p {
+        margin: 0 0 0.3em;
+      }
+
+      :host og-upsell-button button {
+        font-family: var(--og-upsell-family, inherit);
+        font-size: var(--og-upsell-size, inherit);
+        background-color: var(--og-upsell-background, inherit);
+        color: var(--og-upsell-color, inherit);
+      }
+
+      .og-modal__btn {
+        font-size: var(--og-modal-button-size, 0.875rem);
+        font-family: var(--og-modal-button-family, inherit);
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        background-color: var(--og-modal-button-background, #e6e6e6);
+        color: var(--og-modal-button-color, rgba(0, 0, 0, 0.8));
+        border-radius: 0.25rem;
+        border-style: none;
+        border-width: 0;
+        cursor: pointer;
+        -webkit-appearance: button;
+        text-transform: none;
+        overflow: visible;
+        line-height: 1.15;
+        margin: 0;
+        will-change: transform;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        transition: -webkit-transform 0.25s ease-out;
+        transition: transform 0.25s ease-out;
+        transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+      }
+
+      .og-modal__btn:focus,
+      .og-modal__btn:hover {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+      }
+
+      .og-modal__btn-primary {
+        background-color: var(--og-confirm-button-background, #00449e);
+        color: var(--og-confirm-button-color, #fff);
+      }
+    `}static get initialTemplate(){return`
+    <og-when test="regularEligible">
+      <div>
+        <og-optout-button>
+          <og-text key="offerOptOutLabel"></og-text>
+        </og-optout-button>
+      </div>
+      <div>
+        <og-optin-button>
+          <og-text key="offerOptInLabel"></og-text>
+        </og-optin-button>
+        <og-tooltip placement="bottom">
+          <div slot="trigger">
+            <og-text key="offerTooltipTrigger"></og-text>
+          </div>
+          <div slot="content">
+            <og-text key="offerTooltipContent"></og-text>
+          </div>
+        </og-tooltip>
+      </div>
+      <div style="margin-left: 2.2em">
+        <og-text key="offerEveryLabel"></og-text>
+        <og-select-frequency>
+          <option value="3_1" selected>3 Days</option>
+          <option value="1_2">1 Week</option>
+          <option value="1_3">1 Month</option>
+        </og-select-frequency>
+      </div>
+    </og-when>
+
+    <og-when test="upsellEligible">
+      <og-when test="!upcomingOrderContainsProduct">
+      <div class="og-iu-offer">
+        <og-text key="upsellButtonLabel"></og-text>
+        <og-upsell-button>
+          <button type="button">
+            <og-text key="upsellButtonContent"></og-text>
+            <og-next-upcoming-order></og-next-upcoming-order>
+          </button>
+        </og-upsell-button>
+        <og-upsell-modal>
+          <og-text key="upsellModalContent"></og-text>
+          <br />
+
+          <og-optout-button>
+            <og-text key="upsellModalOptOutLabel"></og-text>
+          </og-optout-button>
+
+          <br />
+
+          <og-optin-button>
+            <og-text key="upsellModalOptInLabel"></og-text>
+          </og-optin-button>
+          <br />
+
+          <og-text key="offerEveryLabel"></og-text>
+          <og-select-frequency>
+            <option value="3_1" selected>3 Days</option>
+            <option value="1_2">1 Week</option>
+            <option value="1_3">1 Month</option>
+          </og-select-frequency>
+
+          <button slot="confirm" class="og-modal__btn og-modal__btn-primary">
+            <og-text key="upsellModalConfirmLabel"></og-text>
+          </button>
+          <button slot="cancel" class="og-modal__btn"><og-text key="upsellModalCancelLabel"></og-text></button>
+        </og-upsell-modal>
+      </div>
+      </og-when>
+      <og-when test="upcomingOrderContainsProduct">
+        The product is in your next upcomming order
+      </og-when>
+    </og-when>
+    `}constructor(){super();this.module="pdp",this.product={},this.productComponents=[],this.fetchOffer=()=>0,this.fetchOrders=()=>0,this.productHasChangedComponents=()=>0,this.setFirstOrderPlaceDate=()=>0,this.setProductToSubscribe=()=>0,this.productChangeFrequency=()=>0}applyTemplate(e){super.applyTemplate(e);let{locale:r}=e;this.locale=r;let o=new CustomEvent("template-changed");this.dispatchEvent(o)}updated(e){if(e.has("preview")&&this.setPreview(this.preview,e.get("preview"),this),this.frequency=this.defaultFrequency,e.has("product")&&this.product.id&&!this.isPreview&&this.fetchOffer(this.product.id),e.has("firstOrderPlaceDate")&&this.product.id&&!this.isPreview&&this.setFirstOrderPlaceDate(this.product.id,this.firstOrderPlaceDate),e.has("productToSubscribe")&&this.product.id&&!this.isPreview&&this.setProductToSubscribe(this.product.id,this.productToSubscribe),e.has("auth")&&this.auth&&!this.isPreview&&this.fetchOrders(),e.has("productComponents")){let r=ba(this.product,this.productComponents),o=Object.assign({},this.product,{components:e.get("productComponents")});q(r,o)||this.productHasChangedComponents(r,o)}(e.has("offerId")||e.has("autoshipByDefault")||e.has("location")||e.has("product"))&&this.offerId&&this.autoshipByDefault&&this.location==="cart"&&this.product.id&&this.optinProduct&&!(this.optedin||[]).find(r=>q(r,this.product))&&this.optinProduct(l(l({},this.product),this.productComponents.length&&{components:this.productComponents}),this.defaultFrequency)}get isPreview(){return this.preview}render(){return d`
+      <slot></slot>
+    `}get defaultFrequency(){let e=this.productFrequency||this.productDefaultFrequency;if(e)return e;let r=this.querySelector("og-select-frequency");return r&&r.currentFrequency?r.currentFrequency:this.getOption("defaultFrequency")}};n(Or,"Offer");_a=n((t,e)=>l(m(l(l({config:t.config,auth:t.auth,offerId:((t.productOffer||{})[(e.product||{}).id]||[])[0],productFrequency:ie(e.product)(t),productDefaultFrequency:Wt((e.product||{}).id)(t)},Y(t,e,"autoshipByDefault",Gr(t)[(e.product||{}).id])),Dn(e.product)(t)&&{autoshipByDefault:!1}),{optedin:Gt(t),subscribed:W(e.product)(t)}),Ve(t)),"mapStateToProps"),xa=y(_a,{fetchOffer:eo,fetchOrders:ct,productHasChangedComponents:Kr,optinProduct:J,setFirstOrderPlaceDate:ro,setProductToSubscribe:oo,setPreview:ma})(Or),gu=xa});var va={};x(va,{Modal:()=>Tr,default:()=>yu});var Tr,yu,wa=p(()=>{O();Tr=class extends v{constructor(){super();this.showCancelButton=!0,this.showConfirmButton=!0}static get properties(){return{title:{type:String,attribute:!1},content:{type:String,attribute:!1},confirmText:{type:String,attribute:!1},cancelText:{type:String,attribute:!1},showCancelButton:{type:Boolean},showConfirmButton:{type:Boolean},show:{type:Boolean,attribute:"show"}}}static get styles(){return C`
+      :host[hidden] {
+        display: none;
+      }
+
+      :host {
+        display: block;
+      }
+
+      .og-modal {
+        display: none;
+      }
+
+      .og-modal.is-open {
+        display: block;
+      }
+
+      .og-modal__overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+      }
+
+      .og-modal__container {
+        background-color: #fff;
+        padding: 30px;
+        max-width: 500px;
+        max-height: 100vh;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      .og-modal__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .og-modal__title {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 600;
+        font-size: 1.25rem;
+        line-height: 1.25;
+        color: #00449e;
+        box-sizing: border-box;
+      }
+
+      .og-modal__close {
+        background: transparent;
+        border: 0;
+      }
+
+      .og-modal__close:before {
+        content: '✕';
+      }
+
+      .og-modal__content {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        line-height: 1.5;
+      }
+
+      .og-modal__btn {
+        font-size: var(--og-modal-button-size, 0.875rem);
+        font-family: var(--og-modal-button-family, inherit);
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        background-color: var(--og-modal-button-background, #e6e6e6);
+        color: var(--og-modal-button-color, rgba(0, 0, 0, 0.8));
+        border-radius: 0.25rem;
+        border-style: none;
+        border-width: 0;
+        cursor: pointer;
+        -webkit-appearance: button;
+        text-transform: none;
+        overflow: visible;
+        line-height: 1.15;
+        margin: 0;
+        will-change: transform;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        transition: -webkit-transform 0.25s ease-out;
+        transition: transform 0.25s ease-out;
+        transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+      }
+
+      .og-modal__btn:focus,
+      .og-modal__btn:hover {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+      }
+
+      .og-modal__btn-primary {
+        background-color: var(--og-confirm-button-background, #00449e);
+        color: var(--og-confirm-button-color, #fff);
+      }
+      .btn {
+        cursor: pointer;
+      }
+    `}close(){this.removeAttribute("show"),this.dispatchEvent(new CustomEvent("close"))}confirm(){this.removeAttribute("show"),this.dispatchEvent(new CustomEvent("confirm"))}get confirmButton(){return this.showConfirmButton?d`
+          <span @click="${()=>this.confirm()}">
+            <slot name="confirm" class="btn">
+              <button class="og-modal__btn og-modal__btn-primary og-modal__confirm" @click="${()=>this.confirm()}">
+                ${this.confirmText}
+              </button>
+            </slot>
+          </span>
+        `:d``}get cancelButton(){return this.showCancelButton?d`
+          <span @click="${()=>this.close()}" class="btn">
+            <slot name="cancel">
+              <button class="og-modal__btn og-modal__cancel" @click="${()=>this.close()}">
+                ${this.cancelText}
+              </button>
+            </slot>
+          </span>
+        `:d``}render(){return this.show?d`
+      <div class="og-modal is-open" aria-hidden="true">
+        <div class="og-modal__overlay" tabindex="-1">
+          <div class="og-modal__container" role="dialog" aria-modal="true">
+            <header class="og-modal__header">
+              <h2 class="og-modal__title">
+                <slot name="title">${this.title}</slot>
+              </h2>
+              <button class="og-modal__close" aria-label="Close" @click="${()=>this.close()}"></button>
+            </header>
+            <main class="og-modal__content">
+              <slot name="content">${this.content}</slot>
+            </main>
+            <footer class="og-modal__footer">
+              ${this.confirmButton} ${this.cancelButton}
+            </footer>
+          </div>
+        </div>
+      </div>
+    `:d``}};n(Tr,"Modal");yu=Tr});var Oa={};x(Oa,{Select:()=>Cr,default:()=>bu});var Cr,bu,Ta=p(()=>{O();Cr=class extends v{static get styles(){return C`
+      :host {
+        display: inline-block;
+        color: inherit;
+        position: relative;
+        height: 100%;
+        cursor: inherit;
+        font-family: inherit;
+        font-weight: inherit;
+      }
+      select {
+        font-weight: inherit;
+        display: block;
+        height: 100%;
+        cursor: inherit;
+        color: inherit;
+        font-family: inherit;
+        font-size: 1em;
+        line-height: 1.3;
+        padding: var(--og-select-padding, 0.4em 1.8em 0.3em 0.5em);
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        border: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background-color: transparent;
+      }
+      select::-ms-expand {
+        display: none;
+      }
+      select:hover {
+        // border-color: #888;
+      }
+      select:focus {
+        // border-color: #aaa;
+        // box-shadow: 0 0 1px 3px rgba(59, 153, 252, 0.7);
+        // box-shadow: 0 0 0 3px -moz-mac-focusring;
+        // color: #222;
+        outline: none;
+      }
+      select option {
+        font-weight: inherit;
+      }
+      span {
+        position: absolute;
+        // background: white;
+        color: inherit;
+        fill: white;
+        pointer-events: none;
+        right: 0.3em;
+        top: 50%;
+        z-index: 1;
+        font-size: 1em;
+        line-height: 0.2em;
+        transform: scaleY(0.5);
+      }
+    `}static get properties(){return{options:{type:Array},selected:{type:String}}}render(){return d`
+      <select @change="${this.onChange}" .value="${this.selected}">
+        ${this.options.map(e=>d`
+            <option value="${e.value}" ?selected=${this.selected===e.value}>${e.text}</option>
+          `)}
+      </select>
+      <span>&#9660;</span>
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" width="36" height="100%" viewBox="0 0 36 36">
+        <path d="M10.5 15l7.5 7.5 7.5-7.5z" />
+        <path d="M0 0h36v36h-36z" fill="none" />
+      </svg> -->
+    `}};n(Cr,"Select");bu=Cr});var Ca={};x(Ca,{Tooltip:()=>Pr,default:()=>_u});var Pr,_u,Pa=p(()=>{O();Pr=class extends v{static get properties(){return{placement:{type:String,default:"bottom"}}}static get styles(){return C`
+      :host[hidden] {
+        display: none;
+      }
+
+      :host {
+        display: inline-block;
+        position: relative;
+      }
+
+      .trigger {
+        display: block;
+        cursor: pointer;
+      }
+
+      .content {
+        box-sizing: border-box;
+        font-family: var(--og-tooltip-family, inherit);
+        font-size: var(--og-tooltip-size, inherit);
+        color: var(--og-tooltip-color, inherit);
+        background-color: var(--og-tooltip-background, #ececec);
+        box-shadow: var(--og-tooltip-box-shadow, 2px 2px 6px rgba(0, 0, 0, 0.28));
+        display: block;
+        width: 200px;
+        opacity: 0;
+        padding: var(--og-tooltip-padding, 0.5em);
+        text-align: var(--og-tooltip-text-align, left);
+        pointer-events: none;
+        position: absolute;
+        transform: translateY(10px);
+        transition: transform 0.25s ease-out;
+        z-index: 99999;
+        border-radius: var(--og-tooltip-border-radius, 0);
+      }
+
+      .content:after {
+        content: ' ';
+        height: 0;
+        position: absolute;
+        width: 0;
+      }
+
+      .top {
+        bottom: 100%;
+        margin-bottom: 10px;
+      }
+
+      .bottom {
+        top: 100%;
+        margin-top: 10px;
+      }
+
+      .left {
+        right: 100%;
+        margin-right: 10px;
+      }
+
+      .right {
+        left: 100%;
+        margin-left: 10px;
+      }
+
+      .top-left {
+        bottom: 100%;
+        margin-bottom: 10px;
+        right: 100%;
+        margin-right: -16px;
+      }
+
+      .top-right {
+        bottom: 100%;
+        margin-bottom: 10px;
+        left: 100%;
+        margin-left: -16px;
+      }
+
+      .bottom-left {
+        top: 100%;
+        margin-top: 10px;
+        right: 100%;
+        margin-right: -16px;
+      }
+
+      .bottom-right {
+        top: 100%;
+        margin-top: 10px;
+        left: 100%;
+        margin-left: -16px;
+      }
+
+      .bottom-left:after,
+      .bottom-right:after,
+      .top-left:after,
+      .top-right:after,
+      .top:after,
+      .bottom:after {
+        margin-left: -10px;
+        left: 50%;
+        border-left: solid transparent 10px;
+        border-right: solid transparent 10px;
+      }
+
+      .top-left:after,
+      .top-right:after,
+      .top:after {
+        bottom: -10px;
+        border-top: solid var(--og-tooltip-background, #ececec) 10px;
+      }
+      .bottom-left:after,
+      .top-left:after {
+        left: auto;
+        right: 0;
+      }
+
+      .bottom-right:after,
+      .top-right:after {
+        left: 0;
+        right: auto;
+        margin-left: 0;
+      }
+
+      .bottom-left:after,
+      .bottom-right:after,
+      .bottom:after {
+        top: -10px;
+        border-bottom: solid var(--og-tooltip-background, #ececec) 10px;
+      }
+
+      .left:after,
+      .right:after {
+        margin-top: -10px;
+        top: 50%;
+        border-top: solid transparent 10px;
+        border-bottom: solid transparent 10px;
+      }
+      .right:after {
+        left: -10px;
+        border-right: solid var(--og-tooltip-background, #ececec) 10px;
+      }
+      .left:after {
+        right: -10px;
+        border-left: solid var(--og-tooltip-background, #ececec) 10px;
+      }
+
+      .tooltip:hover .content {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0px);
+      }
+    `}connectedCallback(){super.connectedCallback(),this.showTooltip=this.showTooltip.bind(this),this.addEventListener("mouseenter",this.showTooltip)}showTooltip(){let r=this.shadowRoot.querySelector(".trigger").getBoundingClientRect(),o=this.shadowRoot.querySelector(".content"),s=o.getBoundingClientRect();!this.placement||this.placement==="top"||this.placement==="bottom"?o.style.left=`${(-1*s.width+r.width)/2}px`:(this.placement==="left"||this.placement==="right")&&(o.style.top=`${(-1*s.height+r.height)/2}px`)}disconnectedCallback(){super.disconnectedCallback(),this.removeEventListener("mouseenter",this.showTooltip),this.removeEventListener("mouseout",this.hideTooltip)}render(){return d`
+      <span class="tooltip">
+        <span class="trigger">
+          <slot name="trigger">
+            ${this.trigger}
+          </slot>
+        </span>
+        <div class="content ${this.placement||"bottom"}">
+          <slot name="content">
+            ${this.content}
+          </slot>
+        </div>
+      </span>
+    `}};n(Pr,"Tooltip");_u=Pr});var Ra={};x(Ra,{TestWizard:()=>Rr,default:()=>xu});var Rr,xu,Aa=p(()=>{O();I();Rr=class extends v{static get styles(){return C`
+      :host {
+        position: fixed;
+        top: 5em;
+        right: 5em;
+        background-color: rgba(255, 255, 255, 0.7);
+        width: 400px;
+        padding: 1em;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 0 0 #000;
+      }
+
+      button {
+        margin: 0 0.5em 0.5em;
+        background-color: gray;
+        color: white;
+        border: 0;
+        border-radius: 3px;
+        cursor: pointer;
+        padding: 0.5em;
+      }
+
+      button.primary {
+        background-color: blue;
+        padding: 1em;
+        color: white;
+        border: 0;
+        border-radius: 3px;
+      }
+
+      button[disabled] {
+        background-color: #777;
+      }
+
+      div {
+        margin-bottom: 0.5em;
+      }
+
+      .message {
+        margin-left: 0.5em;
+        margin: 1em;
+      }
+
+      .success {
+        color: green;
+      }
+
+      .error {
+        color: red;
+      }
+
+      .warning {
+        color: orange;
+      }
+      a {
+        color: white;
+      }
+    `}runTests(){this.results=[],this.disabled=!0,this.requestUpdate(),document.querySelectorAll("og-offer").forEach(r=>{let o=r.store.getState(),s=r.getAttribute("product"),i=r.getAttribute("location"),a={messages:this.getOfferAttributeMessages(s,i).concat(this.getOfferRequestMessages(s,o)),product:s};this.results.push(a)}),this.testsRan=!0,this.disabled=!1,this.requestUpdate()}getOfferAttributeMessages(e,r){let o=[];return e||o.push({name:"Offer element found but missing product attribute",type:"error"}),r||o.push({name:"Offer element found but missing location attribute",type:"warning"}),e&&r&&o.push({name:"Offer element found and properly tagged",type:"success"}),o}getOfferRequestMessages(e,r){let o=r.inStock[e],s=r.autoshipEligible[e],i=[];return e&&o===!1&&i.push({name:"This product is marked as out of stock in the OG database",type:"warning"}),e&&s===!1&&i.push({name:"This product is not eligible for autoship",type:"warning"}),e&&o===null&&s===null&&i.push({name:"This product does not exist in our database",type:"error"}),i}resultsCodeBlock(){return this.results.length===0?d`
+          <div class="message error">No offer element found on the page</div>
+        `:this.results.map((e,r)=>d`
+              <div>For offer tag with product = "${e.product}"</div>
+              ${e.messages.map(o=>d`
+                  <div class="message ${o.type}">
+                    ${o.name}
+                  </div>
+                `)}
+              <button @click=${this.toggleProductFlags(r,{})}>
+                Set inStock and eligible
+              </button>
+              <br />
+              <button @click=${this.toggleProductFlags(r,{inStock:!1})}>
+                Set to not inStock
+              </button>
+              <br />
+              <button @click=${this.toggleProductFlags(r,{autoship:!1})}>
+                Set to not eligible
+              </button>
+              <br />
+              <button @click=${this.toggleProductFlags(r,{autoship:!1,inStock:!1})}>
+                Set to not eligible and not in stock
+              </button>
+              <br />
+              <button @click=${this.toggleUpsellPreview(r)}>
+                Toggle upsell/regular in this offer
+              </button>
+              <br />
+              <button @click=${this.toggleUpsellNextOrder(r)}>
+                upsell product is in next order
+              </button>
+              <br />
+            `)}toggleUpsellPreview(e){return r=>{r.preventDefault();let o=document.querySelectorAll("og-offer")[e];o.getAttribute("preview-upsell-offer")?o.removeAttribute("preview-upsell-offer"):o.setAttribute("preview-upsell-offer",!0),this.runTests()}}toggleProductFlags(e,{inStock:r=!0,autoship:o=!0,groups:s=["subscription","upsell"]}){return i=>{i.preventDefault();let a=document.querySelectorAll("og-offer")[e],c=a.product.id;a.store.dispatch(xe({in_stock:{[c]:r},eligibility_groups:{[c]:s},result:"success",autoship:{[c]:o},module_view:{regular:"58a01e9aacbe40389b5c7325d79091bb"},modifiers:{},incentives_display:{"47c01e9aacbe40389b5c7325d79091aa":{field:"sub_total",object:"order",type:"Discount Percent",value:5},e6534b9d877f41e586c37b7d8abc3a58:{field:"total_price",object:"item",type:"Discount Percent",value:5},f35e842710b24929922db4a529eecd40:{field:"total_price",object:"item",type:"Discount Percent",value:10},"5be321d7c17f4e18a757212b9a20bfcc":{field:"total_price",object:"item",type:"Discount Percent",value:1}},incentives:{[c]:{initial:["5be321d7c17f4e18a757212b9a20bfcc"],ongoing:["e6534b9d877f41e586c37b7d8abc3a58","47c01e9aacbe40389b5c7325d79091aa","f35e842710b24929922db4a529eecd40"]}}})),this.runTests()}}toggleUpsellNextOrder(e){return r=>{let o=document.querySelectorAll("og-offer")[e],s=o.product.id;r.preventDefault(),o.store.dispatch(Kt({count:1,next:null,previous:null,results:[{order:"24d50352579511ea806cbc764e100cfd",offer:null,subscription:"8a076b7a0ea011e7a5bcbc764e105eda",product:s,components:[],quantity:1,public_id:"24d6901e579511ea806cbc764e100cfd",product_attribute:null,price:"14.99",extra_cost:"0.00",total_price:"13.49",one_time:!1,frozen:!1,first_placed:null}]})),this.runTests()}}render(){return d`
+      <div>
+        ${this.testsRan?this.resultsCodeBlock():d`
+              <div>Click the button to run tests</div>
+            `}
+        <button ?disabled=${this.disabled} @click="${this.runTests.bind(this)}" class="primary">Run Test</button>
+      </div>
+    `}};n(Rr,"TestWizard");xu=Rr});function Fo(){let t="og-test-wizard";customElements.get(t)||customElements.define(t,Eu);let e=document.createElement(t);document.body.appendChild(e)}var Eu,Na=p(()=>{({TestWizard:Eu}=(Aa(),Ra));n(Fo,"default")});var qa={};x(qa,{default:()=>Su,enable:()=>ka,keys:()=>Ar});var Ar,ka,Su,Ia=p(()=>{Na();Ar=[79,71,68,69,86],ka=n(()=>{if(window.OG_OFFERS_TEST_MODE_ENABLE)return;window.OG_OFFERS_TEST_MODE_ENABLE=!0;let t=0;document.addEventListener("keyup",async function(e){if(e.which===Ar[t]){let o=Ar[t];setTimeout(function(){t<=o&&(t=0)},5e3),t+=1,t>=Ar.length&&Fo()}else t=0},!1)},"enable"),Su=ka});var Wu=X((Th,Da)=>{var{offersLiveEditor:vu}=(Yo(),Wo),{setStore:wu}=(N(),on),{getStore:Ou}=(ks(),Ns),{listenLocalStorageChanges:Tu}=(Xt(),ws),Ua=(Us(),Is),B=(I(),Es),{ConnectedWhen:Cu}=(vi(),Si),{ConnectedOptinButton:Pu}=(Ri(),Pi),{ConnectedOptoutButton:Ru}=(ki(),Ni),{ConnectedOptinSelect:Au}=(Fi(),Di),{ConnectedUpsellButton:Nu}=(Mi(),ji),{ConnectedUpsellModal:ku}=(Bi(),$i),{ConnectedOptinToggle:qu}=(Gi(),zi),{ConnectedOptinStatus:Iu}=(Ye(),Ti),{ConnectedText:Uu}=(Ki(),Ji),{ConnectedIncentiveText:Du}=(sa(),na),{ConnectedSelectFrequency:Fu}=(ca(),aa),{ConnectedNextUpcomingOrder:Lu}=(fa(),da),{ConnectedOffer:ju}=(Sa(),Ea),{Modal:Mu}=(wa(),va),{Select:Vu}=(Ta(),Oa),{Tooltip:$u}=(Pa(),Ca),{ConnectedFrequencyStatus:Bu}=(_r(),Ii),Hu=(Ia(),qa),{default:zu}=(se(),qn),{environment:Gu}=(Qr(),cs);Hu.enable();var k,T={setEnvironment(t){return k.dispatch(B.setEnvironment(t)),T},setMerchantId(t){return k.dispatch(B.setMerchantId(t)),T},setAuthUrl(t){return k.dispatch(B.setAuthUrl(t)),T},getProductsForPurchasePost(t=[]){return Ua.getProductsForPurchasePost(k.getState(),t)},getOptins(t=[]){return Ua.getProductsForPurchasePost(k.getState(),t)},clear(){k.dispatch(B.checkout())},addOptinChangedCallback(t){typeof t=="function"&&document.addEventListener("optin-changed",e=>t(e.detail))},disableOptinChangedCallbacks(){document.addEventListener("optin-changed",t=>t.stopPropagation(),!0)},register(){try{customElements.define("og-when",Cu),customElements.define("og-text",Uu),customElements.define("og-incentive-text",Du),customElements.define("og-offer",ju),customElements.define("og-select-frequency",Fu),customElements.define("og-optout-button",Ru),customElements.define("og-optin-toggle",qu),customElements.define("og-optin-status",Iu),customElements.define("og-optin-button",Pu),customElements.define("og-optin-select",Au),customElements.define("og-upsell-button",Nu),customElements.define("og-frequency-status",Bu),customElements.define("og-modal",Mu),customElements.define("og-select",Vu),customElements.define("og-tooltip",$u),customElements.define("og-upsell-modal",ku),customElements.define("og-next-upcoming-order",Lu)}catch(t){console.log("this?",t)}T.register=()=>0},previewMode(t){return window.og=window.og||{},t===!1?delete window.og:window.og.previewMode=!0,this},initialize(t,e,r){if(T.isReady)return console.warn("og.offers has been initialized already. Skipping."),T;k=Ou();let o=window.og_settings;if(t&&e&&o){let s=[];o.product?s.push(o.product):o.cart&&Array.isArray(o.cart.products)&&(s=s.concat(o.cart.products));let{apiUrl:i}=Gu({},B.setEnvironment(e)),{sessionId:a}=k.getState();a&&s.forEach(c=>zu.fetchOffer(i,t,a,`${c}`,"pdp"))}return wu(k),t&&T.setMerchantId(t),e&&T.setEnvironment(e),r&&T.setAuthUrl(r),window.addEventListener("storage",Tu(k)),t&&e&&(k.dispatch(B.requestSessionId()),k.dispatch(B.fetchAuth()),T.register()),T.isReady=!0,T},config(t){return k.dispatch(B.setConfig(t)),T},setLocale(t){return k.dispatch(B.setLocale(t)),T},addTemplate(t,e,r){return k.dispatch(B.addTemplate(t,e,r)),T},setTemplates(t){return k.dispatch(B.setTemplates(t)),T},setPublicPath(t){return T}};window.OG=window.OG||{};Object.assign(window.OG,T);Object.assign(T.initialize,T);vu();Da.exports=T.initialize});return Wu();})();
+; return lib; });
+//# sourceMappingURL=offers.js.map
+
+module.exports.initialize("f7d7ee5010f211ec969fdab0a78507fc","prod","/s/RefArch/authiframe").setTemplates([{markup:'\x3c!-- PDP Offer --\x3e\n<og-when test="regularEligible">\n    <p>\n      <og-optout-button>Deliver one-time only</og-optout-button>\n    </p>\n    <p style="padding-bottom: 1%">\n        <og-optin-button>\n            Auto-Replenish + save 10% + FREE shipping\n        </og-optin-button>        <og-tooltip placement="top" >\n            \x3c!--<span slot="trigger">learn more</span>--\x3e\n            <span slot="trigger" class="og-tooltip"><span>?</span></span>\n            <span slot="content">Subscribe + secure your faves to never run out of your Fenty Beauty + Fenty Skin drip again. Read the FAQ <a href="https://www.fentybeauty.com/pages/auto-replenish-save">here</a>. Promotion subject to change.</span>\n        </og-tooltip>\n    </p>\n    <p style="margin-left: 1.5em">\n        Ships every: \n        <og-select-frequency default-text="recommended">\n          <option value="1_3" >\n            1 month\n          </option>\n          <option value="2_3" >\n            2 months\n          </option>\n          <option value="3_3" selected="selected"\n            >\n            3 months\n          </option>\n          <option value="6_3" >\n            6 months\n          </option>\n        </og-select-frequency>\n    </p>\n</og-when>\x3c!-- PDP Offer --\x3e\n\n\x3c!-- IU Offer --\x3e\n<og-when test="upsellEligible">\n    <og-when test="!upcomingOrderContainsProduct">\n        <p class="og-iu-header">Add to upcoming subscription order and get 10% off</p>\n        <og-upsell-button>\n            <button type="button" class="og-iu-btn">\n                Add to Next Order on&nbsp;<og-next-upcoming-order format="{{month-short}} {{day}}, {{year-numeric}}"></og-next-upcoming-order>\n            </button>\n        </og-upsell-button>\n\n        <og-upsell-modal>\n            <div class="og-modal-header">\n            \n            <og-when test="subscriptionEligible">\n                <p class="og-iu-body">Subscribe to this product and have it conveniently delivered to you at the frequency you choose! Read the <a href="https://www.fentybeauty.com/pages/auto-replenish-save">FAQ here</a>. Promotion subject to change.</p>\n                <og-optout-button>Get one-time</og-optout-button>\n                <og-optin-button>Subscribe and get 10% off on every order</og-optin-button>\n                <div>\n                  <span>Ships Every: </span>\n                  <og-select-frequency default-text="recommended">\n                      <option value="1_3" >1 month</option>\n                      <option value="2_3" >2 months</option>\n                      <option value="3_3" selected="selected">3 months</option>\n                      <option value="6_3" >6 months</option>\n                  </og-select-frequency>\n                </div>\n            </og-when>\n\n            <og-when test="!subscriptionEligible">\n              You will receive this item in your next order on <og-next-upcoming-order format="{{month-short}} {{day}}, {{year-numeric}}"></og-next-upcoming-order>              \n            </og-when>\n        </div>\n\n          <button slot="confirm" class="og-btn">Add to Order</button>\n          <button slot="cancel" class="og-hide">Cancel</button>\n\n        </og-upsell-modal>\n    </og-when>\n\n\n\n\n\x3c!-- IU Success --\x3e\n<og-when test="upcomingOrderContainsProduct">\n  <h4 class="og-header-success">Item Successfully Added!</h4>\n  <p>\n    This item will be added to your next subscription order scheduled to be placed on\n    <og-next-upcoming-order format="{{month-short}} {{day}}, {{year-numeric}}"></og-next-upcoming-order>\n  </p>\n  <p>\n    <a class="og-iu-view-order" href="/account">View Upcoming Order</a>\n    <a class="og-iu-view-order" href="/">Keep Shopping</a>\n  </p>\n</og-when>\n\n</og-when>\x3c!-- IU Offer --\x3e',selector:"og-offer"}]).setPublicPath("//static.ordergroove.com/@ordergroove/offers/2.24.3/dist/"),function(o){const n=o.createElement("style");n.type="text/css",n.appendChild(o.createTextNode("og-offer {\n--og-global-family: 'Brown', sans-serif;\n--og-global-size: 14px;\n--og-global-color: rgba(0,0,0,1);\n--og-wrapper-padding: 10px 0 15px 0;\n--og-tooltip-family: 'Brown', sans-serif;\n--og-tooltip-size: 12px;\n--og-tooltip-color: rgba(0,0,0,1);\n--og-tooltip-background: #fff;\n--og-tooltip-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);\n--og-tooltip-placement: top;\n--og-upsell-background: rgba(225,220,228,1);\n--og-upsell-family: 'Brown', sans-serif;\n--og-upsell-size: 14px;\n--og-upsell-color: rgba(0,0,0,1);\n--og-modal-button-family: 'Brown', sans-serif;\n--og-modal-button-size: 12px;\n--og-modal-button-color: rgba(0,0,0,1);\n--og-confirm-button-background: rgba(0,0,0,1);\n--og-confirm-button-color: #fff;\n--og-modal-button-background: #e6e6e6;\n}\n\n/*PDP Styling*/\nog-offer og-when[test=\"regularEligible\"] p:first-child{\n  margin-bottom: 5px;\n}\nog-offer .og-tooltip{\n  align-items: center;\n  background: transparent;\n  border: 1px solid #000;\n  border-radius: 50%;\n  color: #000;\n  display: flex;\n  justify-content: center;\n  padding: 0 5px;\n  transition: all 300ms;\n}\nog-offer .og-tooltip:hover{\n  background: #000;\n  color: #fff;\n}\nog-offer .og-tooltip + span{\n  text-align: left;\n}\nog-offer .og-tooltip + span a{\n  color: #000;\n  text-decoration: underline;\n}\nog-offer .og-tooltip + span a:hover, og-offer .og-tooltip + span a:active{\n  color: #373737;\n}\n\n/*IU Styling*/\nog-offer .og-hide{\n  display:none;\n}\nog-offer .og-iu-header{\n  font-size: 18px;\n  margin-bottom: 10px;\n}\nog-offer .og-iu-body{\n  font-size: 16px;\n  margin-top: -1.5rem;\n  margin-bottom: 15px;\n  text-align: left;\n}\nog-offer .og-iu-body a{\n  color: #000;\n  text-decoration: underline;\n}\nog-offer .og-iu-body a:hover, og-offer .og-iu-body a:active{\n  color: #373737;\n}\nog-offer .og-modal-header p ~ og-optout-button, og-offer .og-modal-header p ~ og-optin-button{\n  display: block;\n  margin-top: 5px;\n  text-align: left;\n}\nog-offer p.og-iu-body ~ div{\n  margin-left: 22px;\n  text-align: left;\n}\nog-offer .og-iu-view-order, og-offer .og-iu-btn, og-offer .og-btn{\n  align-items: center;\n  display: inline-flex;\n  flex: 1;\n  font-size: var(--og-modal-button-size);\n  font-family: var(--og-modal-button-family);\n  font-weight: bold;\n  height: 44px;\n  justify-content: center;\n  letter-spacing: 0.2em;\n  padding: 0 20px;\n  text-align: center;\n  text-transform: uppercase;\n}\nog-offer .og-iu-btn, og-offer .og-btn{\n  width: 100%;\n}\nog-offer .og-btn{\n  color: #fff;\n  background: #000;\n}\nog-offer .og-iu-view-order, og-offer .og-iu-btn{\n  border: 1px solid #d8d8d8;\n  color: #000;\n  background: #fff;\n  transition: all 300ms;\n}\nog-offer .og-iu-view-order:hover, og-offer .og-iu-btn:hover{\n  border-color: #000;\n}\nog-offer og-upsell-button{\n  border: none;\n  padding: 0;\n  width: 100%;\n}\nog-offer .og-header-success{\n  font-size: 18px;\n}\nog-offer .og-header-success + p + p{\n  display: inline-flex;\n  gap: 5px;\n  margin-top: 10px;\n  width: 100%;\n}\n")),o.head.appendChild(n)}(document);return module.exports;});
+//# sourceMappingURL=offers.js.map?v=2.24.3
