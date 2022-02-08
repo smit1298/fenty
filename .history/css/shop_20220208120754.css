@@ -236,7 +236,6 @@ header {
 #grids-wanted {
   padding-bottom: 60px;
 }
-
 #grids-wanted-container {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
@@ -316,23 +315,6 @@ header {
 
 .third {
   margin-right: 55px;
-}
-
-.load{
-display: flex;
-justify-content: space-between;
-padding-bottom: 40px;
-}
-.load > span > h5{
-  padding-left: 40px;
-}
-.load-more > p {
-  padding-right: 40px;text-transform: uppercase;
-}
-.load-more > p > a{
-  background-color: black;
-  color: white;
-  padding: 20px;
 }
 
 /* FOOTER */

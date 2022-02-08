@@ -167,14 +167,14 @@ header {
 }
 
 /* HOME */
-#homep p {
-  margin-left: 50px;
+#homep p{
+margin-left: 50px;
 }
-#homep p > a {
+#homep p > a{
   color: grey;
   font-family: "IBM Plex Sans Thai Looped", sans-serif;
-  font-size: 12px;
-  letter-spacing: 0.2em;
+font-size: 12px;
+letter-spacing: 0.2em;
 }
 
 /* NEW */
@@ -210,32 +210,29 @@ header {
   margin-bottom: 0;
   font-size: 1.1rem;
   font-family: "IBM Plex Sans Thai Looped", sans-serif;
-  text-transform: uppercase;
-  text-align: left;
-  margin-left: 50px;
+  text-transform: uppercase;  
+  text-align: left;margin-left: 50px;
 }
 
-.items {
+.items{
   display: flex;
   justify-content: space-between;
-  margin-right: 40px;
+  margin-right: ;
 }
 
-.items > span h5 {
+.items > span h5{
   text-transform: uppercase;
   margin-left: 50px;
 }
 
-.filters > ul {
+.filters > ul{
   display: flex;
+  margin-right: 10px;
 }
-.filters > ul > li {
+.filters > ul > li{
   list-style: none;
 }
 
-#grids-wanted {
-  padding-bottom: 60px;
-}
 
 #grids-wanted-container {
   display: grid;
@@ -267,6 +264,7 @@ header {
   margin-bottom: 0;
 }
 .fill {
+  /* font-weight: 00; */
   text-transform: uppercase;
   text-align: center;
   font-family: "IBM Plex Sans Thai Looped", sans-serif;
@@ -276,28 +274,30 @@ header {
   font-size: 13px;
 }
 .first-letter,
-.money {
+.money,
+.notify {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 0;
 }
-.first > p > a {
-  color: black;
-  background-color: white;
-  text-transform: uppercase;
-  padding: 10px;
-  border: 1px solid black;
-}
-.black > p > a {
-  color: rgb(252, 250, 250);
-  background-color: rgb(5, 5, 5);
-  text-transform: uppercase;
-  padding: 10px;
-  border: 1px solid black;
+.notify a {
+  color: white;
 }
 .first-letter {
   font-weight: 100;
 }
+.first > p,
+.second > p,
+.third > p {
+  margin-left: 125px;
+  margin-right: 125px;
+  background-color: black;
+  text-transform: uppercase;
+  padding: 10px;
+  text-decoration: black;
+  font-size: 15px;
+}
+
 
 .heart-wanted:hover {
   color: #dbab98;
@@ -307,7 +307,7 @@ header {
 .grid-wanted img {
   object-position: center;
   object-fit: cover;
-  height: 60%;
+  height: 50%;
   width: 100%;
 }
 .first {
@@ -316,23 +316,6 @@ header {
 
 .third {
   margin-right: 55px;
-}
-
-.load{
-display: flex;
-justify-content: space-between;
-padding-bottom: 40px;
-}
-.load > span > h5{
-  padding-left: 40px;
-}
-.load-more > p {
-  padding-right: 40px;text-transform: uppercase;
-}
-.load-more > p > a{
-  background-color: black;
-  color: white;
-  padding: 20px;
 }
 
 /* FOOTER */

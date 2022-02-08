@@ -321,7 +321,7 @@ header {
 .load{
 display: flex;
 justify-content: space-between;
-padding-bottom: 40px;
+pb
 }
 .load > span > h5{
   padding-left: 40px;
