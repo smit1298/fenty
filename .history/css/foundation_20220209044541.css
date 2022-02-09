@@ -131,86 +131,9 @@ body {
     font-weight: 200;
     font-family: sans-serif;
   }
-  
-  /* HEADER-ICONS */
-  #header-nav-icons {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  
-  #header-nav-icons > ul {
-    list-style-type: none;
-    float: right;
-  }
-  #header-nav-icons > ul > li {
-    display: inline;
-    font-size: 25px;
-    font-family: sans-serif;
-    margin: 0 5px;
-  }
-  
-  /* SHIPPING */
-  #ship {
-    background-color: #ebdad3;
-    height: 55px;
-    margin-top: -22px;
-  }
-  #ship > h5 {
-    font-size: 13px;
-    padding: 19px 10px;
-    padding-bottom: 20px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 200;
-    font-family: sans-serif;
-  }
-  
-  /* HOME */
-  #homep p {
-    margin-left: 50px;
-  }
-  #homep p > a {
-    color: grey;
-    font-family: "IBM Plex Sans Thai Looped", sans-serif;
-    font-size: 12px;
-    letter-spacing: 0.2em;
-  }
-  
-  /* NEW */
-  #new img {
-    object-position: center;
-    object-fit: cover;
-    height: 50%;
-    width: 100%;
-  }
-  
-  /* CHAT */
-  .chat-icon {
-    padding: 10px;
-    height: 100px;
-    font-size: 100px;
-    position: fixed;
-    bottom: -50px;
-    top: 400px;
-    right: 5px;
-    border-radius: 100%;
-    z-index: 1;
-    background-color: #ae9cb1;
-  }
-  
-/* FOUNDED */
-#founded{
-  display: grid;
-  grid-template-columns: 35% 65%;
-}
-.lionel{
-  text-align: center;
-}
-.lionel-img img{
-  height: 550px;
-  width: 100%;
-}
+ 
+  /*  */
+ 
   /* FOOTER */
   .footer {
     background-color: black;

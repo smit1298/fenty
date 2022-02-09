@@ -169,6 +169,7 @@ body {
   /* HOME */
   #homep p {
     margin-left: 50px;
+    
   }
   #homep p > a {
     color: grey;
@@ -206,6 +207,7 @@ body {
 }
 .lionel{
   text-align: center;
+  padding: 0 20px;
 }
 .lionel-img img{
   height: 550px;

@@ -199,18 +199,6 @@ body {
     background-color: #ae9cb1;
   }
   
-/* FOUNDED */
-#founded{
-  display: grid;
-  grid-template-columns: 35% 65%;
-}
-.lionel{
-  text-align: center;
-}
-.lionel-img img{
-  height: 550px;
-  width: 100%;
-}
   /* FOOTER */
   .footer {
     background-color: black;

@@ -204,13 +204,7 @@ body {
   display: grid;
   grid-template-columns: 35% 65%;
 }
-.lionel{
-  text-align: center;
-}
-.lionel-img img{
-  height: 550px;
-  width: 100%;
-}
+.lin
   /* FOOTER */
   .footer {
     background-color: black;
